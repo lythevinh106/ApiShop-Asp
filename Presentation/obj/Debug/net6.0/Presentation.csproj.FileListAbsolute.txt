@@ -373,3 +373,4 @@ C:\Users\VINH\source\repos\ApiShop\Presentation\bin\Debug\net6.0\Service.pdb
 C:\Users\VINH\source\repos\ApiShop\Presentation\bin\Debug\net6.0\DataAccess.pdb
 C:\Users\VINH\source\repos\ApiShop\Presentation\bin\Debug\net6.0\DtoShared.pdb
 C:\Users\VINH\source\repos\ApiShop\Presentation\bin\Debug\net6.0\Model.pdb
+C:\Users\VINH\source\repos\ApiShop\Presentation\obj\Debug\net6.0\Presentation.sourcelink.json

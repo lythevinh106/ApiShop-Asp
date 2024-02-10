@@ -10,3 +10,4 @@ C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Debug\net6.0\DtoShared.dll
 C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Debug\net6.0\refint\DtoShared.dll
 C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Debug\net6.0\DtoShared.pdb
 C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Debug\net6.0\ref\DtoShared.dll
+C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Debug\net6.0\DtoShared.sourcelink.json

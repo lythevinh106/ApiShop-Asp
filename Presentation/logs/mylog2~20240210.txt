@@ -1,0 +1,302 @@
+2024-02-10 18:03:33.474 +07:00 [INF] Start installing Hangfire SQL objects...
+2024-02-10 18:03:44.496 +07:00 [WRN] An exception occurred while trying to perform the migration. Retrying...
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "ApiShopHangFire" requested by the login. The login failed.
+Login failed for user 'LAPTOP-2S90T1IK\VINH'.
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:39fe005a-d010-4948-ad6c-3d0f0742b0e6
+Error Number:4060,State:1,Class:11
+2024-02-10 18:03:44.565 +07:00 [WRN] An exception occurred while trying to perform the migration. Retrying...
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "ApiShopHangFire" requested by the login. The login failed.
+Login failed for user 'LAPTOP-2S90T1IK\VINH'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:39fe005a-d010-4948-ad6c-3d0f0742b0e6
+Error Number:4060,State:1,Class:11
+2024-02-10 18:03:44.604 +07:00 [WRN] An exception occurred while trying to perform the migration.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "ApiShopHangFire" requested by the login. The login failed.
+Login failed for user 'LAPTOP-2S90T1IK\VINH'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:39fe005a-d010-4948-ad6c-3d0f0742b0e6
+Error Number:4060,State:1,Class:11
+2024-02-10 18:03:44.607 +07:00 [WRN] Was unable to perform the Hangfire schema migration due to an exception. Ignore this message unless you've just installed or upgraded Hangfire.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "ApiShopHangFire" requested by the login. The login failed.
+Login failed for user 'LAPTOP-2S90T1IK\VINH'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:39fe005a-d010-4948-ad6c-3d0f0742b0e6
+Error Number:4060,State:1,Class:11
+2024-02-10 18:03:44.657 +07:00 [ERR] Was unable to use the TryAutoDetectSchemaDependentOptions option due to an exception.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "ApiShopHangFire" requested by the login. The login failed.
+Login failed for user 'LAPTOP-2S90T1IK\VINH'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.Initialize()
+ClientConnectionId:39fe005a-d010-4948-ad6c-3d0f0742b0e6
+Error Number:4060,State:1,Class:11
+2024-02-10 18:03:44.885 +07:00 [INF] Now listening on: https://localhost:7148
+2024-02-10 18:03:44.886 +07:00 [INF] Now listening on: http://localhost:5170
+2024-02-10 18:03:44.895 +07:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: LAPTOP-2S90T1IK\SQLEXPRESS@ApiShopHangFire'
+2024-02-10 18:03:44.896 +07:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-02-10 18:03:44.896 +07:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-02-10 18:03:44.920 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-10 18:03:44.921 +07:00 [INF] Hosting environment: Development
+2024-02-10 18:03:44.958 +07:00 [INF] Content root path: C:\Users\VINH\source\repos\ApiShop\Presentation\
+2024-02-10 18:03:44.972 +07:00 [ERR] Execution BackgroundServerProcess is in the Failed state now due to an exception, execution will be retried no more than in 00:00:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open database "ApiShopHangFire" requested by the login. The login failed.
+Login failed for user 'LAPTOP-2S90T1IK\VINH'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Hangfire.SqlServer.SqlServerStorage.CreateAndOpenConnection()
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection[T](DbConnection dedicatedConnection, Func`2 func)
+   at Hangfire.SqlServer.SqlServerStorage.UseConnection(DbConnection dedicatedConnection, Action`1 action)
+   at Hangfire.Server.BackgroundServerProcess.CreateServer(BackgroundServerContext context)
+   at Hangfire.Server.BackgroundServerProcess.Execute(Guid executionId, BackgroundExecution execution, CancellationToken stoppingToken, CancellationToken stoppedToken, CancellationToken shutdownToken)
+   at Hangfire.Server.BackgroundProcessingServer.RunServer(Guid executionId, Object state)
+   at Hangfire.Processing.BackgroundExecution.Run(Action`2 callback, Object state)
+ClientConnectionId:39fe005a-d010-4948-ad6c-3d0f0742b0e6
+Error Number:4060,State:1,Class:11
+2024-02-10 18:03:47.101 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger - -
+2024-02-10 18:03:47.285 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger - - - 301 0 - 185.9297ms
+2024-02-10 18:03:47.286 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/index.html - -
+2024-02-10 18:03:47.454 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/index.html - - - 200 - text/html;charset=utf-8 168.4677ms
+2024-02-10 18:03:47.474 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/swagger-ui-standalone-preset.js - -
+2024-02-10 18:03:47.474 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - -
+2024-02-10 18:03:47.474 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/swagger-ui-bundle.js - -
+2024-02-10 18:03:47.474 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/swagger-ui.css - -
+2024-02-10 18:03:47.474 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_vs/browserLink - -
+2024-02-10 18:03:47.478 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - - - 200 13760 application/javascript;+charset=utf-8 4.8690ms
+2024-02-10 18:03:47.510 +07:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-02-10 18:03:47.514 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/swagger-ui.css - - - 200 144929 text/css 39.1526ms
+2024-02-10 18:03:47.528 +07:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-02-10 18:03:47.542 +07:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-02-10 18:03:47.542 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/swagger-ui-standalone-preset.js - - - 200 312163 application/javascript 69.0290ms
+2024-02-10 18:03:47.543 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/swagger-ui-bundle.js - - - 200 1061536 application/javascript 69.5083ms
+2024-02-10 18:03:47.562 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 88.1855ms
+2024-02-10 18:03:47.697 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - -
+2024-02-10 18:03:47.717 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/favicon-32x32.png - -
+2024-02-10 18:03:47.718 +07:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-02-10 18:03:47.720 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/favicon-32x32.png - - - 200 628 image/png 3.9052ms
+2024-02-10 18:03:47.727 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 29.8140ms
+2024-02-10 19:51:02.408 +07:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-02-10 19:51:02.528 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-10 19:51:02.558 +07:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-02-10 19:51:10.550 +07:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-02-10 19:51:10.672 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-10 19:51:10.936 +07:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-02-10 19:51:10.962 +07:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-02-10 19:51:10.965 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-02-10 19:51:10.966 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-02-10 19:51:10.987 +07:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-02-10 19:51:10.998 +07:00 [INF] Applying migration '20240210125102_Add-DescriptionProduct'.
+2024-02-10 19:51:11.068 +07:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Products] ADD [Description] nvarchar(max) NOT NULL DEFAULT N'';
+2024-02-10 19:51:11.074 +07:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [AspNetUsers] SET [ConcurrencyStamp] = N'6ce9dd0e-de66-44b6-8ba3-00b7c9e07107', [Email] = N'user13@gmail.com', [LastName] = N'37', [SecurityStamp] = N'0580c64f-039d-4d3b-bab5-d77b1f33f8fc'
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2051';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.075 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [AspNetUsers] SET [ConcurrencyStamp] = N'b8e8bf51-a2b7-4f0e-aefb-7b14d3732b47', [Email] = N'user25@gmail.com', [LastName] = N'2', [SecurityStamp] = N'e739bacb-e89e-47e9-9cd9-a4090612944f'
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2052';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.075 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [AspNetUsers] SET [ConcurrencyStamp] = N'85ccd1e5-0365-41db-83b2-7973610f8c11', [Email] = N'user34@gmail.com', [LastName] = N'44', [SecurityStamp] = N'1e65c994-739b-4e09-8065-ef95bcaaae74'
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2053';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.076 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [AspNetUsers] SET [ConcurrencyStamp] = N'9c7ee594-f6a5-44fb-8ed4-16d2c2957c27', [Email] = N'user41@gmail.com', [LastName] = N'26', [SecurityStamp] = N'2b6e31f1-82ba-44c0-8f53-f4e441d9acb0'
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2054';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.077 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [AspNetUsers] SET [ConcurrencyStamp] = N'8e254b2e-0853-42d2-831f-2bc979ea6591', [Email] = N'user9@gmail.com', [LastName] = N'23', [SecurityStamp] = N'2c2bc2f7-0297-410c-bc6a-c8421d79824e'
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2055';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.077 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [AspNetUsers] SET [ConcurrencyStamp] = N'c9ded8a4-1261-4461-a39e-54967c2dd795', [Email] = N'user2@gmail.com', [LastName] = N'36', [SecurityStamp] = N'456bcdec-5bcb-43b1-93df-04bdec0a48fa'
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2056';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.078 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [AspNetUsers] SET [ConcurrencyStamp] = N'ce6853b7-a690-4111-82f2-0ea323e9afab', [Email] = N'user33@gmail.com', [LastName] = N'48', [SecurityStamp] = N'fefc0344-45f2-4dd5-8891-8b0b8a079924'
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2057';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.078 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [AspNetUsers] SET [ConcurrencyStamp] = N'769a96a5-5b7b-4041-97c4-3cbf25f522c4', [Email] = N'user35@gmail.com', [LastName] = N'36', [SecurityStamp] = N'71169b04-d6fe-4b8e-bee4-b2f56e2bbe53'
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2058';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.079 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [AspNetUsers] SET [ConcurrencyStamp] = N'4fb9c52f-f356-43f2-bc70-d356ef9bf8e4', [Email] = N'user37@gmail.com', [LastName] = N'18', [SecurityStamp] = N'463cfe01-5c9f-4c92-bead-666bc52a9db7'
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2059';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.081 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Categories] SET [Name] = N'category name  38'
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2051';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.082 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Categories] SET [Name] = N'category name  49'
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2052';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.082 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Categories] SET [Name] = N'category name  47'
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2053';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.348 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Categories] SET [Name] = N'category name  15'
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2054';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.348 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Categories] SET [Name] = N'category name  47'
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2055';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.349 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Categories] SET [Name] = N'category name  27'
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2056';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.349 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Categories] SET [Name] = N'category name  38'
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2057';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.350 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Categories] SET [Name] = N'category name  8'
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2058';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.350 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Categories] SET [Name] = N'category name  11'
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2059';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.353 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [ProductOrders] SET [Quantity] = 16
+WHERE [OrderId] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2051' AND [ProductId] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2051';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.354 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [ProductOrders] SET [Quantity] = 30
+WHERE [OrderId] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2052' AND [ProductId] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2052';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.354 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [ProductOrders] SET [Quantity] = 38
+WHERE [OrderId] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2053' AND [ProductId] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2053';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.354 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [ProductOrders] SET [Quantity] = 38
+WHERE [OrderId] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2054' AND [ProductId] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2054';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.355 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [ProductOrders] SET [Quantity] = 38
+WHERE [OrderId] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2055' AND [ProductId] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2055';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.355 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [ProductOrders] SET [Quantity] = 10
+WHERE [OrderId] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2056' AND [ProductId] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2056';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.356 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [ProductOrders] SET [Quantity] = 44
+WHERE [OrderId] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2057' AND [ProductId] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2057';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.356 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [ProductOrders] SET [Quantity] = 19
+WHERE [OrderId] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2058' AND [ProductId] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2058';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.357 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [ProductOrders] SET [Quantity] = 45
+WHERE [OrderId] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2059' AND [ProductId] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2059';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:11.358 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Products] SET [Description] = N'Mô tả điện thoại', [Name] = N'ProductName 30', [Price] = 2563.0
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2051';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:13.513 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Products] SET [Description] = N'Mô tả điện thoại', [Name] = N'ProductName 17', [Price] = 2548.0
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2052';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:13.514 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Products] SET [Description] = N'Mô tả điện thoại', [Name] = N'ProductName 46', [Price] = 2559.0
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2053';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:13.514 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Products] SET [Description] = N'Mô tả điện thoại', [Name] = N'ProductName 29', [Price] = 2538.0
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2054';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:13.514 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Products] SET [Description] = N'Mô tả điện thoại', [Name] = N'ProductName 44', [Price] = 2559.0
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2055';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:13.516 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Products] SET [Description] = N'Mô tả điện thoại', [Name] = N'ProductName 18', [Price] = 2573.0
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2056';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:13.517 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Products] SET [Description] = N'Mô tả điện thoại', [Name] = N'ProductName 11', [Price] = 2547.0
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2057';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:13.517 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Products] SET [Description] = N'Mô tả điện thoại', [Name] = N'ProductName 2', [Price] = 2557.0
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2058';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:13.518 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [Products] SET [Description] = N'Mô tả điện thoại', [Name] = N'ProductName 4', [Price] = 2569.0
+WHERE [Id] = N'79640b64-94d3-4cb2-89c8-a5fefe3c2059';
+SELECT @@ROWCOUNT;
+2024-02-10 19:51:13.519 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240210125102_Add-DescriptionProduct', N'6.0.25');

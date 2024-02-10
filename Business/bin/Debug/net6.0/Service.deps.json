@@ -3302,6 +3302,7 @@
       },
       "Model/1.0.0": {
         "dependencies": {
+          "AutoMapper": "12.0.1",
           "DtoShared": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.25",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.25",
