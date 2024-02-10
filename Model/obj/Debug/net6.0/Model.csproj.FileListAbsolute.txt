@@ -15,3 +15,4 @@ C:\Users\VINH\source\repos\ApiShop\Model\obj\Debug\net6.0\ref\Model.dll
 C:\Users\VINH\source\repos\ApiShop\Model\bin\Debug\net6.0\DtoShared.dll
 C:\Users\VINH\source\repos\ApiShop\Model\bin\Debug\net6.0\DtoShared.pdb
 C:\Users\VINH\source\repos\ApiShop\Model\obj\Debug\net6.0\Model.csproj.CopyComplete
+C:\Users\VINH\source\repos\ApiShop\Model\obj\Debug\net6.0\Model.sourcelink.json

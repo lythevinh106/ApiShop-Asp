@@ -17,3 +17,4 @@ C:\Users\VINH\source\repos\ApiShop\Business\bin\Debug\net6.0\DataAccess.pdb
 C:\Users\VINH\source\repos\ApiShop\Business\bin\Debug\net6.0\DtoShared.pdb
 C:\Users\VINH\source\repos\ApiShop\Business\bin\Debug\net6.0\Model.pdb
 C:\Users\VINH\source\repos\ApiShop\Business\obj\Debug\net6.0\Service.csproj.CopyComplete
+C:\Users\VINH\source\repos\ApiShop\Business\obj\Debug\net6.0\Service.sourcelink.json
