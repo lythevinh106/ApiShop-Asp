@@ -1,26 +1,52 @@
 ﻿using AutoMapper;
+using DtoShared.FetchData;
+using DtoShared.ModulesDto;
+using Model.Modules.CategoryModel;
+using Model.Modules.OrderModel;
+using Model.Modules.ProductModel;
+using Model.Modules.UserModel;
 
 namespace Model.Mapping
 {
     public class MappingProfile : Profile
     {
+        //https://viblo.asia/p/su-dung-automapper-de-anh-xa-mot-object-toi-mot-object-khac-trong-aspnet-core-ORNZqx2rK0n
         public MappingProfile()
         {
             //product module
-            //CreateMap<ProductRequest, Product>().ReverseMap();
-            //CreateMap<Product, ProductResponse>().ReverseMap();
-            //CreateMap<ProductRequest, ProductResponse>().ReverseMap();
-            //CreateMap<FetchDataRequest, FetchDataProductRequest>().ReverseMap();
+            //      CreateMap<Product, ProductRequest>()
+            //.ForMember(dest => dest.Image, opt => opt.MapFrom(pr => pr.Image));
+
+
+            CreateMap<Product, ProductRequest>()
+           .ForMember(dest => dest.Image, opt => opt.Ignore()).ReverseMap();
+
+            CreateMap<Product, ProductUpdate>()
+           .ForMember(dest => dest.Image, opt => opt.Ignore()).ReverseMap();
+
+
+            CreateMap<Product, ProductResponse>().ReverseMap();
+            CreateMap<ProductRequest, ProductResponse>().ReverseMap();
+            CreateMap<FetchDataRequest, FetchDataProductRequest>().ReverseMap();
 
             ////Categorymodule
-            //CreateMap<CategoryRequest, Category>().ReverseMap();
-            //CreateMap<Category, CategoryResponse>().ReverseMap();
-            //CreateMap<FetchDataRequest, FetchDataCategoryRequest>().ReverseMap();
+            ///
+
+            CreateMap<CategoryRequest, Category>().ReverseMap();
+            CreateMap<Category, CategoryResponse>().ReverseMap();
+            CreateMap<FetchDataRequest, FetchDataCategoryRequest>().ReverseMap();
 
             ////User module
 
-            //CreateMap<User, UserInfo>().ReverseMap();
+            CreateMap<User, UserResponse>().ReverseMap();
+            CreateMap<User, UserRequest>().ReverseMap();
 
+
+
+            //Order
+            CreateMap<Order, OrderResponse>().ReverseMap();
+            CreateMap<Order, OrderRequest>().ReverseMap();
+            CreateMap<Order, OrderUpdate>().ReverseMap();
 
             ////Room
 

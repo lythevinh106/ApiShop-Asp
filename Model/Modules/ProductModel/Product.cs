@@ -24,6 +24,8 @@ namespace Model.Modules.ProductModel
 
         public string CategoryId { get; set; }
 
+        public DateTime Time { get; set; } = DateTime.Now;
+
         public virtual Category Category { get; set; }
 
 

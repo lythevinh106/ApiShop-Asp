@@ -4,15 +4,20 @@
     {
         public int? Price { get; set; } = null;
 
-        public int? CategoryId { get; set; } = null;
+        public string? CategoryId { get; set; } = null;
 
+
+
+        //private SortProductOption? _sort;
         public SortProductOption? Sort { get; set; } = null;
+
+
+
     }
 
     public enum SortProductOption
     {
-        PriceAscending,
-        PriceDescending,
-
+        Ascending,
+        Descending,
     }
 }

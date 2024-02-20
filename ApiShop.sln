@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation", "Presentation\Presentation.csproj", "{A108A26E-CCAF-4712-BC26-61D2B8884A8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation", "Presentation\Presentation.csproj", "{A108A26E-CCAF-4712-BC26-61D2B8884A8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Business\Service.csproj", "{CFCCD249-C953-48C1-BA0C-6E48B9193476}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Business\Service.csproj", "{CFCCD249-C953-48C1-BA0C-6E48B9193476}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{6BCB150E-901D-4889-BAE2-84564948091D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{6BCB150E-901D-4889-BAE2-84564948091D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{51C6B88C-DB63-4ACB-97EA-CAD2744A3782}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{51C6B88C-DB63-4ACB-97EA-CAD2744A3782}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DtoShared", "DtoShared\DtoShared.csproj", "{74051E1C-1AE5-4EB1-8123-4CAB2E000CBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DtoShared", "DtoShared\DtoShared.csproj", "{74051E1C-1AE5-4EB1-8123-4CAB2E000CBD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopBlazor", "ShopBlazor\ShopBlazor.csproj", "{7C27C0E2-7B29-4A61-AA2F-A0A3B315077D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{74051E1C-1AE5-4EB1-8123-4CAB2E000CBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74051E1C-1AE5-4EB1-8123-4CAB2E000CBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74051E1C-1AE5-4EB1-8123-4CAB2E000CBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C27C0E2-7B29-4A61-AA2F-A0A3B315077D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C27C0E2-7B29-4A61-AA2F-A0A3B315077D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C27C0E2-7B29-4A61-AA2F-A0A3B315077D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C27C0E2-7B29-4A61-AA2F-A0A3B315077D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

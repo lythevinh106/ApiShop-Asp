@@ -1,0 +1,1425 @@
+2024-02-17 14:04:44.077 +07:00 [INF] Start installing Hangfire SQL objects...
+2024-02-17 14:04:45.012 +07:00 [INF] Hangfire SQL objects installed.
+2024-02-17 14:04:45.050 +07:00 [INF] User profile is available. Using 'C:\Users\VINH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-17 14:04:45.177 +07:00 [INF] Now listening on: https://localhost:7148
+2024-02-17 14:04:45.178 +07:00 [INF] Now listening on: http://localhost:5170
+2024-02-17 14:04:45.186 +07:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: LAPTOP-2S90T1IK\SQLEXPRESS@ApiShopHangFire'
+2024-02-17 14:04:45.187 +07:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-02-17 14:04:45.188 +07:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-02-17 14:04:45.203 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-17 14:04:45.205 +07:00 [INF] Hosting environment: Development
+2024-02-17 14:04:45.205 +07:00 [INF] Content root path: C:\Users\VINH\source\repos\ApiShop\Presentation\
+2024-02-17 14:04:45.637 +07:00 [INF] Server laptop-2s90t1ik:9600:7e0a5ae9 successfully announced in 435,2451 ms
+2024-02-17 14:04:45.642 +07:00 [INF] Server laptop-2s90t1ik:9600:7e0a5ae9 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-02-17 14:04:45.724 +07:00 [INF] 1 servers were removed due to timeout
+2024-02-17 14:04:45.811 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/index.html - -
+2024-02-17 14:04:45.841 +07:00 [INF] Server laptop-2s90t1ik:9600:7e0a5ae9 all the dispatchers started
+2024-02-17 14:04:46.180 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/index.html - - - 200 - text/html;charset=utf-8 371.3648ms
+2024-02-17 14:04:46.248 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_vs/browserLink - -
+2024-02-17 14:04:46.248 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - -
+2024-02-17 14:04:46.253 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - - - 200 13760 application/javascript;+charset=utf-8 4.1993ms
+2024-02-17 14:04:46.286 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.0896ms
+2024-02-17 14:04:47.582 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - -
+2024-02-17 14:04:47.884 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 301.4426ms
+2024-02-17 14:05:13.174 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:05:13.179 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:05:13.219 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:13.251 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:05:14.029 +07:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-02-17 14:05:14.129 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:05:14.342 +07:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:05:14.375 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:05:14.409 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:05:14.422 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 1166.4327ms
+2024-02-17 14:05:14.423 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:14.426 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 1251.7497ms
+2024-02-17 14:05:15.528 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:05:15.531 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:05:15.532 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:15.533 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:05:15.574 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:05:15.579 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:05:15.582 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:05:15.583 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:05:15.585 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 50.1063ms
+2024-02-17 14:05:15.588 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:15.589 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 60.3929ms
+2024-02-17 14:05:30.672 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=2&Search=&PageSize=8 - -
+2024-02-17 14:05:30.673 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:05:30.675 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:30.675 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:05:30.686 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:05:30.689 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:05:30.698 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+2024-02-17 14:05:30.700 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:05:30.702 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 25.1315ms
+2024-02-17 14:05:30.703 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:30.705 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=2&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 33.0577ms
+2024-02-17 14:05:32.784 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:05:32.785 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:05:32.785 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:32.786 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:05:32.788 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:05:32.790 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:05:32.792 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:05:32.794 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:05:32.795 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 8.0559ms
+2024-02-17 14:05:32.796 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:32.797 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 13.0592ms
+2024-02-17 14:05:35.560 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=2&Search=&PageSize=8 - -
+2024-02-17 14:05:35.560 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:05:35.561 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:35.562 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:05:35.563 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:05:35.565 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:05:35.567 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+2024-02-17 14:05:35.569 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:05:35.570 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 7.4838ms
+2024-02-17 14:05:35.571 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:35.572 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=2&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 12.2309ms
+2024-02-17 14:05:37.697 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Descending&PageNumber=2&Search=&PageSize=8 - -
+2024-02-17 14:05:37.697 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:05:37.698 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:37.698 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:05:37.700 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:05:37.704 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:05:37.708 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+2024-02-17 14:05:37.710 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:05:37.710 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 10.8914ms
+2024-02-17 14:05:37.711 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:37.712 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Descending&PageNumber=2&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 15.5150ms
+2024-02-17 14:05:39.880 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Descending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:05:39.880 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:05:39.881 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:39.882 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:05:39.883 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:05:39.885 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:05:39.890 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:05:39.892 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:05:39.893 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 10.4621ms
+2024-02-17 14:05:39.894 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:39.895 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Descending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 15.0335ms
+2024-02-17 14:05:41.872 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:05:41.873 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:05:41.873 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:41.874 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:05:41.878 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:05:41.881 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:05:41.883 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:05:41.885 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:05:41.886 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 10.4468ms
+2024-02-17 14:05:41.887 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:41.888 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 16.4758ms
+2024-02-17 14:05:43.880 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Descending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:05:43.881 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:05:43.881 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:43.882 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:05:43.884 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:05:43.886 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:05:43.888 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:05:43.889 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:05:43.890 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 7.2736ms
+2024-02-17 14:05:43.891 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:43.892 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Descending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 12.0380ms
+2024-02-17 14:05:46.016 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:05:46.016 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:05:46.017 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:46.018 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:05:46.019 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:05:46.021 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:05:46.023 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:05:46.025 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:05:46.026 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 7.1189ms
+2024-02-17 14:05:46.027 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:46.028 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 11.9781ms
+2024-02-17 14:05:48.863 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=2&Search=&PageSize=8 - -
+2024-02-17 14:05:48.864 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:05:48.865 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:48.865 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:05:48.868 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:05:48.871 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:05:48.875 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+2024-02-17 14:05:48.877 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:05:48.879 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 11.9418ms
+2024-02-17 14:05:48.880 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:48.881 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=2&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 17.7756ms
+2024-02-17 14:05:51.080 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:05:51.080 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:05:51.081 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:51.081 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:05:51.083 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:05:51.086 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:05:51.090 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:05:51.091 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:05:51.092 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 9.7292ms
+2024-02-17 14:05:51.093 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:51.094 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 14.2769ms
+2024-02-17 14:05:54.576 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=2&Search=&PageSize=8 - -
+2024-02-17 14:05:54.577 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:05:54.577 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:54.578 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:05:54.579 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:05:54.582 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:05:54.585 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+2024-02-17 14:05:54.587 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:05:54.588 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 9.3939ms
+2024-02-17 14:05:54.589 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:54.590 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=2&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 14.3373ms
+2024-02-17 14:05:58.080 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:05:58.081 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:05:58.081 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:58.082 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:05:58.084 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:05:58.085 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:05:58.089 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:05:58.091 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:05:58.092 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 9.2399ms
+2024-02-17 14:05:58.093 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:05:58.094 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 14.3451ms
+2024-02-17 14:06:01.499 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2059 - -
+2024-02-17 14:06:01.499 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:06:01.500 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:06:01.504 +07:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.ModulesDto.CategoryResponse]] GetCategory(System.String) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:06:01.508 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:06:01.552 +07:00 [INF] Executed DbCommand (10ms) [Parameters=[@__request__category_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__request__category_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-02-17 14:06:01.584 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__p_0
+2024-02-17 14:06:01.588 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.ModulesDto.CategoryResponse'.
+2024-02-17 14:06:01.590 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetCategory (Presentation) in 84.2888ms
+2024-02-17 14:06:01.591 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:06:01.593 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2059 - - - 200 - application/json;+charset=utf-8 94.3125ms
+2024-02-17 14:06:08.200 +07:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2059 - -
+2024-02-17 14:06:08.200 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:06:08.201 +07:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2059 - - - 204 - - 1.7206ms
+2024-02-17 14:06:08.203 +07:00 [INF] Request starting HTTP/2 PUT https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2059 application/json;+charset=utf-8 30
+2024-02-17 14:06:08.204 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:06:08.205 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.UpdateCategory (Presentation)'
+2024-02-17 14:06:08.208 +07:00 [INF] Route matched with {action = "UpdateCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.ModulesDto.CategoryResponse]] UpdateCategory(System.String, DtoShared.ModulesDto.CategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:06:08.277 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:06:08.282 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__request__categoryId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__request__categoryId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-02-17 14:06:08.342 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@p1='?' (Size = 450), @p0='?' (Size = 500)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Categories] SET [Name] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+2024-02-17 14:06:08.351 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.ModulesDto.CategoryResponse'.
+2024-02-17 14:06:08.352 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.UpdateCategory (Presentation) in 143.6021ms
+2024-02-17 14:06:08.353 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.UpdateCategory (Presentation)'
+2024-02-17 14:06:08.354 +07:00 [INF] Request finished HTTP/2 PUT https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2059 application/json;+charset=utf-8 30 - 200 - application/json;+charset=utf-8 150.4390ms
+2024-02-17 14:06:08.377 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:06:08.377 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:06:08.378 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:06:08.379 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:06:08.381 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:06:08.383 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:06:08.385 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:06:08.387 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:06:08.388 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 8.277ms
+2024-02-17 14:06:08.389 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:06:08.390 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 13.0636ms
+2024-02-17 14:06:09.401 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:06:09.402 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:06:09.403 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:06:09.403 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:06:09.405 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:06:09.408 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:06:09.411 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:06:09.412 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:06:09.413 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 8.7769ms
+2024-02-17 14:06:09.414 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:06:09.415 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 13.4749ms
+2024-02-17 14:06:18.016 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2059 - -
+2024-02-17 14:06:18.017 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:06:18.017 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:06:18.018 +07:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.ModulesDto.CategoryResponse]] GetCategory(System.String) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:06:18.020 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:06:18.021 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__request__category_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__request__category_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-02-17 14:06:18.023 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__p_0
+2024-02-17 14:06:18.025 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.ModulesDto.CategoryResponse'.
+2024-02-17 14:06:18.025 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetCategory (Presentation) in 6.5069ms
+2024-02-17 14:06:18.026 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:06:18.027 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2059 - - - 200 - application/json;+charset=utf-8 10.7148ms
+2024-02-17 14:06:19.779 +07:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2059 - -
+2024-02-17 14:06:19.779 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:06:19.781 +07:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2059 - - - 204 - - 2.0935ms
+2024-02-17 14:06:19.785 +07:00 [INF] Request starting HTTP/2 PUT https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2059 application/json;+charset=utf-8 30
+2024-02-17 14:06:19.786 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:06:19.788 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.UpdateCategory (Presentation)'
+2024-02-17 14:06:19.790 +07:00 [INF] Route matched with {action = "UpdateCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.ModulesDto.CategoryResponse]] UpdateCategory(System.String, DtoShared.ModulesDto.CategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:06:19.795 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:06:19.799 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__request__categoryId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__request__categoryId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-02-17 14:06:19.802 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@p1='?' (Size = 450), @p0='?' (Size = 500)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Categories] SET [Name] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+2024-02-17 14:06:19.807 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.ModulesDto.CategoryResponse'.
+2024-02-17 14:06:19.810 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.UpdateCategory (Presentation) in 16.6339ms
+2024-02-17 14:06:19.811 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.UpdateCategory (Presentation)'
+2024-02-17 14:06:19.812 +07:00 [INF] Request finished HTTP/2 PUT https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2059 application/json;+charset=utf-8 30 - 200 - application/json;+charset=utf-8 27.6753ms
+2024-02-17 14:06:19.824 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:06:19.825 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:06:19.826 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:06:19.826 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:06:19.828 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:06:19.830 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:06:19.832 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:06:19.834 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:06:19.835 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 7.9064ms
+2024-02-17 14:06:19.836 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:06:19.837 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 12.6434ms
+2024-02-17 14:06:20.850 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:06:20.851 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:06:20.851 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:06:20.852 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:06:20.854 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:06:20.856 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:06:20.858 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:06:20.860 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:06:20.861 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 7.309ms
+2024-02-17 14:06:20.862 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:06:20.863 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 12.8405ms
+2024-02-17 14:08:12.646 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:08:12.647 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:08:12.648 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:08:12.649 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:08:12.652 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:08:12.657 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:08:12.661 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:08:12.663 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:08:12.665 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 13.364ms
+2024-02-17 14:08:12.666 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:08:12.667 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 21.3327ms
+2024-02-17 14:08:13.790 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:08:13.792 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:08:13.793 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:08:13.794 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:08:13.796 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:08:13.799 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:08:13.801 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:08:13.803 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:08:13.804 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 8.5441ms
+2024-02-17 14:08:13.804 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:08:13.805 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 15.3083ms
+2024-02-17 14:08:15.923 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2059 - -
+2024-02-17 14:08:15.923 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:08:15.924 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:08:15.925 +07:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.ModulesDto.CategoryResponse]] GetCategory(System.String) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:08:15.926 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:08:15.929 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__request__category_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__request__category_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-02-17 14:08:15.934 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__p_0
+2024-02-17 14:08:15.935 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.ModulesDto.CategoryResponse'.
+2024-02-17 14:08:15.936 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetCategory (Presentation) in 10.403ms
+2024-02-17 14:08:15.937 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:08:15.937 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2059 - - - 200 - application/json;+charset=utf-8 14.8431ms
+2024-02-17 14:08:18.929 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2059 - -
+2024-02-17 14:08:18.930 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:08:18.931 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:08:18.932 +07:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.ModulesDto.CategoryResponse]] GetCategory(System.String) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:08:18.933 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:08:18.936 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__request__category_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__request__category_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-02-17 14:08:18.938 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__p_0
+2024-02-17 14:08:18.939 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.ModulesDto.CategoryResponse'.
+2024-02-17 14:08:18.940 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetCategory (Presentation) in 7.379ms
+2024-02-17 14:08:18.941 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:08:18.942 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2059 - - - 200 - application/json;+charset=utf-8 12.9506ms
+2024-02-17 14:28:39.483 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:28:39.484 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:28:39.484 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:28:39.485 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:28:39.487 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:28:39.546 +07:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:28:39.551 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:28:39.553 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:28:39.554 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 67.5609ms
+2024-02-17 14:28:39.555 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:28:39.556 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 73.3489ms
+2024-02-17 14:28:40.678 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:28:40.679 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:28:40.680 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:28:40.681 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:28:40.684 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:28:40.688 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:28:40.692 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:28:40.694 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:28:40.696 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 12.8159ms
+2024-02-17 14:28:40.697 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:28:40.698 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 19.4587ms
+2024-02-17 14:28:46.636 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2059 - -
+2024-02-17 14:28:46.637 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:28:46.637 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:28:46.638 +07:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.ModulesDto.CategoryResponse]] GetCategory(System.String) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:28:46.640 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:28:46.644 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@__request__category_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__request__category_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-02-17 14:28:46.648 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__p_0
+2024-02-17 14:28:46.649 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.ModulesDto.CategoryResponse'.
+2024-02-17 14:28:46.650 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetCategory (Presentation) in 11.2485ms
+2024-02-17 14:28:46.651 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:28:46.652 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2059 - - - 200 - application/json;+charset=utf-8 16.3888ms
+2024-02-17 14:28:49.794 +07:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2059 - -
+2024-02-17 14:28:49.795 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:28:49.796 +07:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2059 - - - 204 - - 1.1673ms
+2024-02-17 14:28:49.798 +07:00 [INF] Request starting HTTP/2 DELETE https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2059 - -
+2024-02-17 14:28:49.798 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:28:49.799 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.DeleteCategory (Presentation)'
+2024-02-17 14:28:49.801 +07:00 [INF] Route matched with {action = "DeleteCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.ModulesDto.CategoryResponse]] DeleteCategory(System.String) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:28:49.805 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:28:49.810 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__request__categoryId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__request__categoryId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-02-17 14:28:49.813 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__p_0
+2024-02-17 14:28:49.835 +07:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Categories]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2024-02-17 14:28:49.841 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.ModulesDto.CategoryResponse'.
+2024-02-17 14:28:49.842 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.DeleteCategory (Presentation) in 39.4806ms
+2024-02-17 14:28:49.843 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.DeleteCategory (Presentation)'
+2024-02-17 14:28:49.843 +07:00 [INF] Request finished HTTP/2 DELETE https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2059 - - - 200 - application/json;+charset=utf-8 45.7804ms
+2024-02-17 14:28:50.351 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:28:50.352 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:28:50.353 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:28:50.353 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:28:50.355 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:28:50.358 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:28:50.360 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:28:50.362 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:28:50.363 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 8.4849ms
+2024-02-17 14:28:50.364 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:28:50.364 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 13.0444ms
+2024-02-17 14:28:51.382 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:28:51.383 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:28:51.384 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:28:51.384 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:28:51.387 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:28:51.390 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:28:51.393 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:28:51.394 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:28:51.395 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 9.0034ms
+2024-02-17 14:28:51.396 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:28:51.397 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 15.2161ms
+2024-02-17 14:28:58.033 +07:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2058 - -
+2024-02-17 14:28:58.034 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:28:58.035 +07:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2058 - - - 204 - - 1.3040ms
+2024-02-17 14:28:58.037 +07:00 [INF] Request starting HTTP/2 DELETE https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2058 - -
+2024-02-17 14:28:58.038 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:28:58.038 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.DeleteCategory (Presentation)'
+2024-02-17 14:28:58.039 +07:00 [INF] Route matched with {action = "DeleteCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.ModulesDto.CategoryResponse]] DeleteCategory(System.String) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:28:58.041 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:28:58.045 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__request__categoryId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__request__categoryId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-02-17 14:28:58.048 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__p_0
+2024-02-17 14:28:58.056 +07:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Categories]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2024-02-17 14:28:58.058 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.ModulesDto.CategoryResponse'.
+2024-02-17 14:28:58.059 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.DeleteCategory (Presentation) in 18.5223ms
+2024-02-17 14:28:58.060 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.DeleteCategory (Presentation)'
+2024-02-17 14:28:58.061 +07:00 [INF] Request finished HTTP/2 DELETE https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2058 - - - 200 - application/json;+charset=utf-8 23.4378ms
+2024-02-17 14:28:58.568 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:28:58.569 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:28:58.570 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:28:58.570 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:28:58.572 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:28:58.575 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:28:58.578 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:28:58.579 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:28:58.580 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 8.4236ms
+2024-02-17 14:28:58.581 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:28:58.581 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 12.9797ms
+2024-02-17 14:28:59.597 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:28:59.597 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:28:59.598 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:28:59.599 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:28:59.601 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:28:59.604 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:28:59.606 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:28:59.608 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:28:59.609 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 8.8144ms
+2024-02-17 14:28:59.609 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:28:59.610 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 13.7758ms
+2024-02-17 14:29:03.665 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:29:03.666 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:29:03.666 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:29:03.667 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:29:03.669 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:29:03.672 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:29:03.675 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:29:03.677 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:29:03.678 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 9.9242ms
+2024-02-17 14:29:03.679 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:29:03.680 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 14.7563ms
+2024-02-17 14:29:05.054 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:29:05.055 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:29:05.056 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:29:05.060 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:29:05.063 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:29:05.066 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:29:05.070 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:29:05.072 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:29:05.073 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 11.8934ms
+2024-02-17 14:29:05.074 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:29:05.075 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 21.4002ms
+2024-02-17 14:31:59.950 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:31:59.951 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:31:59.952 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:31:59.952 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:31:59.955 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:31:59.963 +07:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:31:59.969 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:31:59.973 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:31:59.974 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 19.9057ms
+2024-02-17 14:31:59.975 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:31:59.976 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 26.3367ms
+2024-02-17 14:32:01.098 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:32:01.100 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:32:01.101 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:32:01.102 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:32:01.103 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:32:01.111 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:32:01.113 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:32:01.115 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:32:01.116 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 12.9678ms
+2024-02-17 14:32:01.117 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:32:01.117 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 19.2296ms
+2024-02-17 14:35:05.385 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:35:05.386 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:35:05.386 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:35:05.387 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:35:05.389 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:35:05.394 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:35:05.398 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:35:05.400 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:35:05.401 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 13.1415ms
+2024-02-17 14:35:05.402 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:35:05.403 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 18.5262ms
+2024-02-17 14:35:06.519 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:35:06.521 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:35:06.522 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:35:06.522 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:35:06.524 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:35:06.527 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:35:06.530 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:35:06.532 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:35:06.532 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 9.1556ms
+2024-02-17 14:35:06.533 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:35:06.534 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 15.0095ms
+2024-02-17 14:35:12.442 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2057 - -
+2024-02-17 14:35:12.443 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:35:12.444 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:35:12.444 +07:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.ModulesDto.CategoryResponse]] GetCategory(System.String) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:35:12.446 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:35:12.450 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@__request__category_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__request__category_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-02-17 14:35:12.453 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__p_0
+2024-02-17 14:35:12.454 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.ModulesDto.CategoryResponse'.
+2024-02-17 14:35:12.455 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetCategory (Presentation) in 10.1431ms
+2024-02-17 14:35:12.456 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:35:12.457 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2057 - - - 200 - application/json;+charset=utf-8 14.4233ms
+2024-02-17 14:35:14.856 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2056 - -
+2024-02-17 14:35:14.857 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:35:14.857 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:35:14.858 +07:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.ModulesDto.CategoryResponse]] GetCategory(System.String) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:35:14.859 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:35:14.863 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__request__category_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__request__category_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-02-17 14:35:14.866 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__p_0
+2024-02-17 14:35:14.868 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.ModulesDto.CategoryResponse'.
+2024-02-17 14:35:14.868 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetCategory (Presentation) in 9.9744ms
+2024-02-17 14:35:14.869 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:35:14.870 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2056 - - - 200 - application/json;+charset=utf-8 14.1971ms
+2024-02-17 14:35:16.816 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2055 - -
+2024-02-17 14:35:16.816 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:35:16.817 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:35:16.817 +07:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.ModulesDto.CategoryResponse]] GetCategory(System.String) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:35:16.819 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:35:16.823 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__request__category_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__request__category_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-02-17 14:35:16.826 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__p_0
+2024-02-17 14:35:16.827 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.ModulesDto.CategoryResponse'.
+2024-02-17 14:35:16.828 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetCategory (Presentation) in 9.8262ms
+2024-02-17 14:35:16.829 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:35:16.830 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2055 - - - 200 - application/json;+charset=utf-8 14.2794ms
+2024-02-17 14:35:24.368 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2055 - -
+2024-02-17 14:35:24.369 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:35:24.369 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:35:24.370 +07:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.ModulesDto.CategoryResponse]] GetCategory(System.String) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:35:24.371 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:35:24.375 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__request__category_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__request__category_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-02-17 14:35:24.377 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__p_0
+2024-02-17 14:35:24.379 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.ModulesDto.CategoryResponse'.
+2024-02-17 14:35:24.379 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetCategory (Presentation) in 8.4462ms
+2024-02-17 14:35:24.380 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:35:24.381 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2055 - - - 200 - application/json;+charset=utf-8 12.9015ms
+2024-02-17 14:35:27.729 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2053 - -
+2024-02-17 14:35:27.730 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:35:27.731 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:35:27.731 +07:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.ModulesDto.CategoryResponse]] GetCategory(System.String) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:35:27.733 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:35:27.734 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__request__category_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__request__category_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-02-17 14:35:27.736 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__p_0
+2024-02-17 14:35:27.737 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.ModulesDto.CategoryResponse'.
+2024-02-17 14:35:27.738 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetCategory (Presentation) in 5.9284ms
+2024-02-17 14:35:27.739 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:35:27.739 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2053 - - - 200 - application/json;+charset=utf-8 10.1847ms
+2024-02-17 14:35:29.976 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2052 - -
+2024-02-17 14:35:29.977 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:35:29.977 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:35:29.978 +07:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.ModulesDto.CategoryResponse]] GetCategory(System.String) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:35:29.979 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:35:29.981 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__request__category_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__request__category_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-02-17 14:35:29.983 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__p_0
+2024-02-17 14:35:29.984 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.ModulesDto.CategoryResponse'.
+2024-02-17 14:35:29.985 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetCategory (Presentation) in 6.0549ms
+2024-02-17 14:35:29.985 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:35:29.986 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2052 - - - 200 - application/json;+charset=utf-8 9.9968ms
+2024-02-17 14:40:24.509 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2057 - -
+2024-02-17 14:40:24.518 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:40:24.519 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:40:24.519 +07:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.ModulesDto.CategoryResponse]] GetCategory(System.String) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:40:24.522 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:40:24.600 +07:00 [INF] Executed DbCommand (8ms) [Parameters=[@__request__category_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__request__category_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-02-17 14:40:24.604 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__p_0
+2024-02-17 14:40:24.605 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.ModulesDto.CategoryResponse'.
+2024-02-17 14:40:24.606 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetCategory (Presentation) in 86.2715ms
+2024-02-17 14:40:24.607 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:40:24.608 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2057 - - - 200 - application/json;+charset=utf-8 98.5822ms
+2024-02-17 14:50:26.982 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:50:26.983 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:50:26.983 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:50:26.984 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:50:26.986 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:50:27.046 +07:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:50:27.048 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:50:27.050 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:50:27.051 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 65.7815ms
+2024-02-17 14:50:27.052 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:50:27.053 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 70.9598ms
+2024-02-17 14:50:28.174 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:50:28.176 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:50:28.176 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:50:28.178 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:50:28.180 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:50:28.183 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:50:28.185 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:50:28.187 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:50:28.188 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 8.4514ms
+2024-02-17 14:50:28.188 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:50:28.189 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 15.2338ms
+2024-02-17 14:51:15.109 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:51:15.109 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:51:15.110 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:51:15.111 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:51:15.112 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:51:15.115 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:51:15.117 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:51:15.118 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:51:15.119 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 7.5439ms
+2024-02-17 14:51:15.121 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:51:15.122 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 12.8881ms
+2024-02-17 14:51:16.741 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:51:16.741 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:51:16.742 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:51:16.742 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:51:16.744 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:51:16.746 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:51:16.747 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:51:16.749 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:51:16.749 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 5.7346ms
+2024-02-17 14:51:16.750 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:51:16.751 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 10.1446ms
+2024-02-17 14:51:17.256 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:51:17.257 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:51:17.258 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:51:17.259 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:51:17.261 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:51:17.264 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:51:17.267 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:51:17.269 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:51:17.270 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 9.8683ms
+2024-02-17 14:51:17.271 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:51:17.272 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 15.7897ms
+2024-02-17 14:51:18.086 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:51:18.087 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:51:18.087 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:51:18.088 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:51:18.091 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:51:18.093 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:51:18.096 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:51:18.098 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:51:18.099 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 8.996ms
+2024-02-17 14:51:18.100 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:51:18.100 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 14.6584ms
+2024-02-17 14:52:28.491 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:52:28.492 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:52:28.492 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:52:28.493 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:52:28.495 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:52:28.498 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:52:28.502 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:52:28.504 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:52:28.505 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 10.9664ms
+2024-02-17 14:52:28.506 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:52:28.507 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 16.2324ms
+2024-02-17 14:52:29.636 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:52:29.637 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:52:29.637 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:52:29.638 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:52:29.640 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:52:29.643 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:52:29.645 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:52:29.646 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:52:29.647 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 7.2772ms
+2024-02-17 14:52:29.648 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:52:29.649 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 12.5693ms
+2024-02-17 14:53:25.161 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:53:25.163 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:53:25.163 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:53:25.164 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:53:25.165 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:53:25.172 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:53:25.174 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:53:25.176 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:53:25.176 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 11.5851ms
+2024-02-17 14:53:25.177 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:53:25.178 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 16.5067ms
+2024-02-17 14:53:26.474 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:53:26.475 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:53:26.476 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:53:26.477 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:53:26.480 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:53:26.482 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:53:26.485 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:53:26.486 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:53:26.487 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 8.1146ms
+2024-02-17 14:53:26.489 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:53:26.490 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 15.8467ms
+2024-02-17 14:53:52.011 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:53:52.012 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:53:52.013 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:53:52.014 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:53:52.017 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:53:52.019 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:53:52.021 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:53:52.023 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:53:52.024 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 8.0277ms
+2024-02-17 14:53:52.024 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:53:52.025 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 13.7757ms
+2024-02-17 14:53:53.956 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:53:53.957 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:53:53.957 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:53:53.958 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:53:53.960 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:53:53.963 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:53:53.965 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:53:53.966 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:53:53.967 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 7.9373ms
+2024-02-17 14:53:53.968 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:53:53.970 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 13.3216ms
+2024-02-17 14:53:54.253 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:53:54.253 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:53:54.254 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:53:54.255 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:53:54.257 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:53:54.259 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:53:54.262 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:53:54.264 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:53:54.266 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 9.7273ms
+2024-02-17 14:53:54.268 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:53:54.269 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 16.0920ms
+2024-02-17 14:53:55.111 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:53:55.112 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:53:55.112 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:53:55.113 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:53:55.115 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:53:55.117 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:53:55.120 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:53:55.122 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:53:55.123 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 8.4596ms
+2024-02-17 14:53:55.124 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:53:55.124 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 13.3794ms
+2024-02-17 14:53:57.722 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Descending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:53:57.723 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:53:57.724 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:53:57.724 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:53:57.726 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:53:57.734 +07:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:53:57.736 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:53:57.738 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:53:57.739 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 13.5893ms
+2024-02-17 14:53:57.740 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:53:57.741 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Descending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 19.0452ms
+2024-02-17 14:53:59.775 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:53:59.776 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:53:59.776 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:53:59.777 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:53:59.778 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:53:59.781 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:53:59.783 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:53:59.785 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:53:59.786 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 7.7966ms
+2024-02-17 14:53:59.786 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:53:59.787 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 11.9878ms
+2024-02-17 14:54:01.839 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Descending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:54:01.839 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:54:01.840 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:54:01.841 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:54:01.842 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:54:01.846 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:54:01.849 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:54:01.851 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:54:01.852 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 9.7103ms
+2024-02-17 14:54:01.852 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:54:01.853 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Descending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 14.4521ms
+2024-02-17 14:54:08.237 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Descending&PageNumber=1&Search=16&PageSize=8 - -
+2024-02-17 14:54:08.237 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:54:08.238 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:54:08.239 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:54:08.240 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:54:08.265 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@__request__fetchDataCategoryRequest_Search_0='?' (Size = 500)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+WHERE (@__request__fetchDataCategoryRequest_Search_0 LIKE N'') OR (CHARINDEX(@__request__fetchDataCategoryRequest_Search_0, [c].[Name]) > 0)
+2024-02-17 14:54:08.273 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__request__fetchDataCategoryRequest_Search_0='?' (Size = 500), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE (@__request__fetchDataCategoryRequest_Search_0 LIKE N'') OR (CHARINDEX(@__request__fetchDataCategoryRequest_Search_0, [c].[Name]) > 0)
+ORDER BY [c].[Id]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2024-02-17 14:54:08.274 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:54:08.275 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 35.3974ms
+2024-02-17 14:54:08.276 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:54:08.276 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Descending&PageNumber=1&Search=16&PageSize=8 - - - 200 - application/json;+charset=utf-8 39.4909ms
+2024-02-17 14:54:10.904 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Descending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:54:10.905 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:54:10.906 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:54:10.906 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:54:10.908 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:54:10.911 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:54:10.913 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:54:10.914 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:54:10.915 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 7.5875ms
+2024-02-17 14:54:10.916 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:54:10.917 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Descending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 13.2390ms
+2024-02-17 14:54:13.066 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2051 - -
+2024-02-17 14:54:13.067 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:54:13.067 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:54:13.068 +07:00 [INF] Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.ModulesDto.CategoryResponse]] GetCategory(System.String) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:54:13.069 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:54:13.072 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__request__category_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__request__category_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-02-17 14:54:13.075 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__p_0
+2024-02-17 14:54:13.076 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.ModulesDto.CategoryResponse'.
+2024-02-17 14:54:13.077 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetCategory (Presentation) in 8.4092ms
+2024-02-17 14:54:13.078 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetCategory (Presentation)'
+2024-02-17 14:54:13.079 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2051 - - - 200 - application/json;+charset=utf-8 12.5217ms
+2024-02-17 14:54:18.003 +07:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2051 - -
+2024-02-17 14:54:18.004 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:54:18.004 +07:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2051 - - - 204 - - 1.3749ms
+2024-02-17 14:54:18.007 +07:00 [INF] Request starting HTTP/2 DELETE https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2051 - -
+2024-02-17 14:54:18.007 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:54:18.008 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.DeleteCategory (Presentation)'
+2024-02-17 14:54:18.009 +07:00 [INF] Route matched with {action = "DeleteCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.ModulesDto.CategoryResponse]] DeleteCategory(System.String) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:54:18.014 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:54:18.018 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__request__categoryId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__request__categoryId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-02-17 14:54:18.022 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__p_0
+2024-02-17 14:54:18.036 +07:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Categories]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2024-02-17 14:54:18.038 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.ModulesDto.CategoryResponse'.
+2024-02-17 14:54:18.039 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.DeleteCategory (Presentation) in 28.2038ms
+2024-02-17 14:54:18.041 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.DeleteCategory (Presentation)'
+2024-02-17 14:54:18.042 +07:00 [INF] Request finished HTTP/2 DELETE https://localhost:7148/api/Category/79640b64-94d3-4cb2-89c8-a5fefe3c2051 - - - 200 - application/json;+charset=utf-8 35.1914ms
+2024-02-17 14:54:18.554 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Descending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:54:18.555 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:54:18.555 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:54:18.556 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:54:18.558 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:54:18.559 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:54:18.561 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:54:18.562 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:54:18.563 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 5.7987ms
+2024-02-17 14:54:18.564 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:54:18.565 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Descending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 10.8445ms
+2024-02-17 14:54:19.581 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Descending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 14:54:19.582 +07:00 [INF] CORS policy execution successful.
+2024-02-17 14:54:19.582 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:54:19.583 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 14:54:19.584 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 14:54:19.586 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 14:54:19.589 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 14:54:19.590 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 14:54:19.591 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 7.2362ms
+2024-02-17 14:54:19.592 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 14:54:19.593 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Descending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 11.5839ms
+2024-02-17 15:06:41.866 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=2&Search=&PageSize=8 - -
+2024-02-17 15:06:41.867 +07:00 [INF] CORS policy execution successful.
+2024-02-17 15:06:41.867 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 15:06:41.868 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 15:06:41.869 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 15:06:41.917 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 15:06:41.919 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+2024-02-17 15:06:41.921 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 15:06:41.922 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 53.0627ms
+2024-02-17 15:06:41.923 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 15:06:41.924 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=2&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 57.6687ms
+2024-02-17 15:06:46.680 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 15:06:46.680 +07:00 [INF] CORS policy execution successful.
+2024-02-17 15:06:46.681 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 15:06:46.681 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 15:06:46.683 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 15:06:46.686 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 15:06:46.689 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 15:06:46.691 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 15:06:46.692 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 9.5261ms
+2024-02-17 15:06:46.693 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 15:06:46.694 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 14.0744ms
+2024-02-17 15:09:08.700 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 15:09:08.701 +07:00 [INF] CORS policy execution successful.
+2024-02-17 15:09:08.702 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 15:09:08.703 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 15:09:08.705 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 15:09:08.713 +07:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 15:09:08.717 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 15:09:08.719 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 15:09:08.721 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 16.6371ms
+2024-02-17 15:09:08.722 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 15:09:08.723 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 22.4255ms
+2024-02-17 15:09:09.839 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - -
+2024-02-17 15:09:09.839 +07:00 [INF] CORS policy execution successful.
+2024-02-17 15:09:09.840 +07:00 [INF] Executing endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 15:09:09.841 +07:00 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.CategoryResponse]]] GetAllCategory(DtoShared.FetchData.FetchDataCategoryRequest) on controller Presentation.Controllers.CategoryController (Presentation).
+2024-02-17 15:09:09.842 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 15:09:09.847 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Categories] AS [c]
+2024-02-17 15:09:09.850 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+ORDER BY [c].[Id] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-02-17 15:09:09.851 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.CategoryResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-17 15:09:09.852 +07:00 [INF] Executed action Presentation.Controllers.CategoryController.GetAllCategory (Presentation) in 10.6412ms
+2024-02-17 15:09:09.853 +07:00 [INF] Executed endpoint 'Presentation.Controllers.CategoryController.GetAllCategory (Presentation)'
+2024-02-17 15:09:09.854 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/FetchCategory?Sort=Ascending&PageNumber=1&Search=&PageSize=8 - - - 200 - application/json;+charset=utf-8 14.9943ms
+2024-02-17 15:09:54.980 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/index.html - -
+2024-02-17 15:09:55.014 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/index.html - - - 200 - text/html;charset=utf-8 33.8441ms
+2024-02-17 15:09:55.060 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - -
+2024-02-17 15:09:55.063 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - - - 200 13760 application/javascript;+charset=utf-8 2.7951ms
+2024-02-17 15:09:55.064 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_vs/browserLink - -
+2024-02-17 15:09:55.081 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.4774ms
+2024-02-17 15:09:56.139 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - -
+2024-02-17 15:09:56.164 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 25.2197ms
+2024-02-17 15:10:37.996 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/index.html - -
+2024-02-17 15:10:38.000 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/index.html - - - 200 - text/html;charset=utf-8 4.5545ms
+2024-02-17 15:10:38.056 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - -
+2024-02-17 15:10:38.057 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - - - 200 13760 application/javascript;+charset=utf-8 1.2211ms
+2024-02-17 15:10:38.074 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_vs/browserLink - -
+2024-02-17 15:10:38.093 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.7037ms
+2024-02-17 15:10:39.159 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - -
+2024-02-17 15:10:39.168 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.6690ms

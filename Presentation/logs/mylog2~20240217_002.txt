@@ -1,0 +1,55 @@
+2024-02-17 18:59:58.923 +07:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-02-17 18:59:59.082 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-02-17 18:59:59.121 +07:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-02-17 19:00:04.100 +07:00 [INF] Start installing Hangfire SQL objects...
+2024-02-17 19:00:05.037 +07:00 [INF] Hangfire SQL objects installed.
+2024-02-17 19:00:05.067 +07:00 [INF] User profile is available. Using 'C:\Users\VINH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-17 19:00:05.150 +07:00 [INF] Now listening on: https://localhost:7148
+2024-02-17 19:00:05.151 +07:00 [INF] Now listening on: http://localhost:5170
+2024-02-17 19:00:05.157 +07:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: LAPTOP-2S90T1IK\SQLEXPRESS@ApiShopHangFire'
+2024-02-17 19:00:05.158 +07:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-02-17 19:00:05.158 +07:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-02-17 19:00:05.167 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-17 19:00:05.168 +07:00 [INF] Hosting environment: Development
+2024-02-17 19:00:05.168 +07:00 [INF] Content root path: C:\Users\VINH\source\repos\ApiShop\Presentation\
+2024-02-17 19:00:05.281 +07:00 [INF] Server laptop-2s90t1ik:4160:7ec58bf8 successfully announced in 114,2032 ms
+2024-02-17 19:00:05.284 +07:00 [INF] Server laptop-2s90t1ik:4160:7ec58bf8 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-02-17 19:00:05.289 +07:00 [INF] Server laptop-2s90t1ik:4160:7ec58bf8 all the dispatchers started
+2024-02-17 19:00:05.486 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/index.html - -
+2024-02-17 19:00:05.711 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/index.html - - - 200 - text/html;charset=utf-8 225.5475ms
+2024-02-17 19:00:05.729 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_vs/browserLink - -
+2024-02-17 19:00:05.729 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - -
+2024-02-17 19:00:05.731 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - - - 200 13760 application/javascript;+charset=utf-8 2.5934ms
+2024-02-17 19:00:05.753 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.3951ms
+2024-02-17 19:00:06.663 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - -
+2024-02-17 19:00:06.768 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 105.2147ms
+2024-02-17 19:00:08.809 +07:00 [INF] Start installing Hangfire SQL objects...
+2024-02-17 19:00:09.126 +07:00 [INF] Hangfire SQL objects installed.
+2024-02-17 19:00:09.159 +07:00 [INF] User profile is available. Using 'C:\Users\VINH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-17 19:00:09.238 +07:00 [INF] Now listening on: https://localhost:7148
+2024-02-17 19:00:09.239 +07:00 [INF] Now listening on: http://localhost:5170
+2024-02-17 19:00:09.246 +07:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: LAPTOP-2S90T1IK\SQLEXPRESS@ApiShopHangFire'
+2024-02-17 19:00:09.247 +07:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-02-17 19:00:09.248 +07:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-02-17 19:00:09.259 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-17 19:00:09.260 +07:00 [INF] Hosting environment: Development
+2024-02-17 19:00:09.262 +07:00 [INF] Content root path: C:\Users\VINH\source\repos\ApiShop\Presentation\
+2024-02-17 19:00:09.394 +07:00 [INF] Server laptop-2s90t1ik:21160:4b696c72 successfully announced in 137,1347 ms
+2024-02-17 19:00:09.397 +07:00 [INF] Server laptop-2s90t1ik:21160:4b696c72 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-02-17 19:00:09.428 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/index.html - -
+2024-02-17 19:00:09.443 +07:00 [INF] Server laptop-2s90t1ik:21160:4b696c72 all the dispatchers started
+2024-02-17 19:00:09.693 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/index.html - - - 200 - text/html;charset=utf-8 265.4617ms
+2024-02-17 19:00:09.726 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_vs/browserLink - -
+2024-02-17 19:00:09.726 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - -
+2024-02-17 19:00:09.731 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - - - 200 13760 application/javascript;+charset=utf-8 5.2491ms
+2024-02-17 19:00:09.764 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.8284ms
+2024-02-17 19:00:11.045 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - -
+2024-02-17 19:00:11.170 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 125.0594ms

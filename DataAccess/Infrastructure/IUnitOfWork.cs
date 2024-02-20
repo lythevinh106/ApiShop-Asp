@@ -9,6 +9,8 @@ namespace DataAccess.Infrastructure
         ProductRepository ProductReponsitory { get; }
 
         CategoryRepository CategoryRepository { get; }
+        OrderRepository OrderRepository { get; }
+        ProductOrderRepository ProductOrderRepository { get; }
 
 
 
@@ -51,6 +53,35 @@ namespace DataAccess.Infrastructure
             }
 
         }
+
+
+        public OrderRepository orderRepository;
+
+        public OrderRepository OrderRepository
+        {
+            get
+            {
+                return orderRepository ?? new OrderRepository(_context);
+            }
+
+        }
+
+
+        public ProductOrderRepository productOrderRepository;
+
+        public ProductOrderRepository ProductOrderRepository
+        {
+            get
+            {
+                return ProductOrderRepository ?? new ProductOrderRepository(_context);
+            }
+
+        }
+
+
+
+
+
 
         public void SaveChanges()
         {

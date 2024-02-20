@@ -1,0 +1,76 @@
+﻿@inject IState<ErrorState> errorState
+@inject JsHelper jsHelper
+@implements IDisposable
+@inject IDispatcher dispatcher
+
+<div>
+
+   @childContent
+
+</div>
+
+@code {
+
+    [Inject] protected ToastService ToastService { get; set; } = default!;
+
+
+
+    [Parameter]
+    public RenderFragment? childContent { get; set; }
+
+    private bool disposed;
+
+    protected async override void OnInitialized()
+    {
+
+        base.OnInitializedAsync();
+        //   await loadingIndicator.Show();
+    }
+
+    protected async override Task OnParametersSetAsync()
+    {
+        base.OnParametersSetAsync();
+
+    }
+
+    protected async override void OnAfterRender(bool firstRender)
+    {
+
+        base.OnAfterRenderAsync(firstRender);
+
+        if (firstRender)
+        {
+            errorState.StateChanged += StateChanged;
+        }
+
+    }
+
+    ///phuong thuc dc goi sau kho state change dien ra lam cho no re-render lại
+    public void StateChanged(object sender, EventArgs args)
+    {
+        InvokeAsync(StateHasChanged);//tương tu StateHasChanged()
+        if (errorState.Value._isAtive)
+        {
+            if (errorState.Value._msg != null)
+            {
+                ToastService.Notify(new(ToastType.Danger,BlazorBootstrap.IconName.Bug, errorState.Value._msg, "Đã xảy ra lỗi"));
+            }
+
+        }
+
+    }
+    void IDisposable.Dispose()
+    {
+        // Hủy đăng ký sự kiện khi component bị hủy bỏ : sau khi roi component
+        if (!disposed)
+        {
+
+            dispatcher.Dispatch(new FluxorServices.Error.ActiveError(false, null));
+
+            errorState.StateChanged -= StateChanged;
+            disposed = true;
+
+        }
+    }
+
+}

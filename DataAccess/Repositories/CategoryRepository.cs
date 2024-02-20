@@ -8,5 +8,7 @@ namespace DataAccess.Repositories
         public CategoryRepository(DBApiContext context) : base(context)
         {
         }
+
+
     }
 }

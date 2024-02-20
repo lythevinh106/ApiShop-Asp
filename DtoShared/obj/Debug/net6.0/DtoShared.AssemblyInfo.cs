@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DtoShared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+513535986c58fadaea111f86ae20bf8afd61326b")]
 [assembly: System.Reflection.AssemblyProductAttribute("DtoShared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DtoShared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

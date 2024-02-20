@@ -31,10 +31,4 @@
 	</ItemGroup>
 
 
-
-	<ItemGroup>
-	  <Folder Include="Application\Product\Commands\" />
-	</ItemGroup>
-
-
 </Project>

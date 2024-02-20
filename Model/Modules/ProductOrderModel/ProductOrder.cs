@@ -15,6 +15,7 @@ namespace Model.Modules.ProductOrderModel
 
         public int Quantity { get; set; }
 
+        public DateTime Time { get; set; } = DateTime.Now;
         public virtual Product Product { get; set; }
 
         public virtual Order Order { get; set; }
