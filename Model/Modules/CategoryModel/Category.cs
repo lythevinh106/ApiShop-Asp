@@ -12,6 +12,7 @@ namespace Model.Modules.CategoryModel
         [StringLength(500)]
         public string Name { get; set; }
         public virtual List<Product> Products { get; set; }
+        public DateTime Time { get; set; } = DateTime.Now;
 
         public IList Seed()
         {

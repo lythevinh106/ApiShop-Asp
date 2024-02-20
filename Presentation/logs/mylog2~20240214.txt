@@ -1,0 +1,34 @@
+2024-02-14 14:33:46.141 +07:00 [INF] Start installing Hangfire SQL objects...
+2024-02-14 14:33:46.762 +07:00 [INF] Hangfire SQL objects installed.
+2024-02-14 14:33:46.816 +07:00 [INF] User profile is available. Using 'C:\Users\VINH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-14 14:33:46.979 +07:00 [INF] Now listening on: https://localhost:7148
+2024-02-14 14:33:46.983 +07:00 [INF] Now listening on: http://localhost:5170
+2024-02-14 14:33:46.993 +07:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: LAPTOP-2S90T1IK\SQLEXPRESS@ApiShopHangFire'
+2024-02-14 14:33:46.995 +07:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-02-14 14:33:46.995 +07:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-02-14 14:33:47.018 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-14 14:33:47.019 +07:00 [INF] Hosting environment: Development
+2024-02-14 14:33:47.019 +07:00 [INF] Content root path: C:\Users\VINH\source\repos\ApiShop\Presentation\
+2024-02-14 14:33:47.180 +07:00 [INF] Server laptop-2s90t1ik:14748:90fc4c8c successfully announced in 164,605 ms
+2024-02-14 14:33:47.183 +07:00 [INF] Server laptop-2s90t1ik:14748:90fc4c8c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-02-14 14:33:47.190 +07:00 [INF] 4 servers were removed due to timeout
+2024-02-14 14:33:47.202 +07:00 [INF] Server laptop-2s90t1ik:14748:90fc4c8c all the dispatchers started
+2024-02-14 14:33:47.559 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/index.html - -
+2024-02-14 14:33:47.856 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/index.html - - - 200 - text/html;charset=utf-8 297.7924ms
+2024-02-14 14:33:47.913 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_vs/browserLink - -
+2024-02-14 14:33:47.913 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - -
+2024-02-14 14:33:47.917 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - - - 200 13760 application/javascript;+charset=utf-8 3.7017ms
+2024-02-14 14:33:47.956 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.7322ms
+2024-02-14 14:33:49.168 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - -
+2024-02-14 14:33:49.342 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 174.3229ms
+2024-02-14 14:34:00.422 +07:00 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2024-02-14 14:34:00.423 +07:00 [INF] Server laptop-2s90t1ik:14748:90fc4c8c caught stopping signal...
+2024-02-14 14:34:00.425 +07:00 [INF] Server laptop-2s90t1ik:14748:90fc4c8c caught stopped signal...
+2024-02-14 14:34:00.426 +07:00 [WRN] Server laptop-2s90t1ik:14748:90fc4c8c caught shutdown signal...
+2024-02-14 14:34:00.427 +07:00 [WRN] Server laptop-2s90t1ik:14748:90fc4c8c stopped non-gracefully due to Worker. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2024-02-14 14:34:00.465 +07:00 [INF] Server laptop-2s90t1ik:14748:90fc4c8c successfully reported itself as stopped in 34,2348 ms
+2024-02-14 14:34:00.466 +07:00 [INF] Server laptop-2s90t1ik:14748:90fc4c8c has been stopped in total 40,4665 ms

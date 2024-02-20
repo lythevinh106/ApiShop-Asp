@@ -1,4 +1,5 @@
-﻿namespace Business
+﻿namespace Service
+
 {
     public class Class1
     {

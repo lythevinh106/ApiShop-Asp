@@ -165,6 +165,9 @@ namespace Model.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
+                    b.Property<DateTime>("Time")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
@@ -173,47 +176,56 @@ namespace Model.Migrations
                         new
                         {
                             Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2051",
-                            Name = "category name  38"
+                            Name = "category name  25",
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9486)
                         },
                         new
                         {
                             Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2052",
-                            Name = "category name  49"
+                            Name = "category name  9",
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9498)
                         },
                         new
                         {
                             Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2053",
-                            Name = "category name  47"
+                            Name = "category name  41",
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9501)
                         },
                         new
                         {
                             Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2054",
-                            Name = "category name  15"
+                            Name = "category name  29",
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9507)
                         },
                         new
                         {
                             Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2055",
-                            Name = "category name  47"
+                            Name = "category name  10",
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9510)
                         },
                         new
                         {
                             Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2056",
-                            Name = "category name  27"
+                            Name = "category name  46",
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9514)
                         },
                         new
                         {
                             Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2057",
-                            Name = "category name  38"
+                            Name = "category name  48",
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9517)
                         },
                         new
                         {
                             Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2058",
-                            Name = "category name  8"
+                            Name = "category name  18",
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9521)
                         },
                         new
                         {
                             Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2059",
-                            Name = "category name  11"
+                            Name = "category name  5",
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9524)
                         });
                 });
 
@@ -224,6 +236,9 @@ namespace Model.Migrations
 
                     b.Property<int>("Status")
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("Time")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("UserId")
                         .IsRequired()
@@ -240,54 +255,63 @@ namespace Model.Migrations
                         {
                             Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2051",
                             Status = 0,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9337),
                             UserId = "79640b64-94d3-4cb2-89c8-a5fefe3c2051"
                         },
                         new
                         {
                             Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2052",
                             Status = 0,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9339),
                             UserId = "79640b64-94d3-4cb2-89c8-a5fefe3c2052"
                         },
                         new
                         {
                             Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2053",
                             Status = 0,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9340),
                             UserId = "79640b64-94d3-4cb2-89c8-a5fefe3c2053"
                         },
                         new
                         {
                             Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2054",
                             Status = 0,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9341),
                             UserId = "79640b64-94d3-4cb2-89c8-a5fefe3c2054"
                         },
                         new
                         {
                             Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2055",
                             Status = 0,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9342),
                             UserId = "79640b64-94d3-4cb2-89c8-a5fefe3c2055"
                         },
                         new
                         {
                             Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2056",
                             Status = 0,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9343),
                             UserId = "79640b64-94d3-4cb2-89c8-a5fefe3c2056"
                         },
                         new
                         {
                             Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2057",
                             Status = 0,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9344),
                             UserId = "79640b64-94d3-4cb2-89c8-a5fefe3c2057"
                         },
                         new
                         {
                             Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2058",
                             Status = 0,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9345),
                             UserId = "79640b64-94d3-4cb2-89c8-a5fefe3c2058"
                         },
                         new
                         {
                             Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2059",
                             Status = 0,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9346),
                             UserId = "79640b64-94d3-4cb2-89c8-a5fefe3c2059"
                         });
                 });
@@ -317,6 +341,9 @@ namespace Model.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<DateTime>("Time")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
@@ -330,8 +357,9 @@ namespace Model.Migrations
                             CategoryId = "79640b64-94d3-4cb2-89c8-a5fefe3c2051",
                             Description = "Mô tả điện thoại",
                             Image = "https://blob3tier.blob.core.windows.net/azureblobwith3tier/samurai.png%2B6775e8b2-a9ab-4792-afcd-202adae206f8",
-                            Name = "ProductName 30",
-                            Price = 2563m
+                            Name = "ProductName 3",
+                            Price = 2559m,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9194)
                         },
                         new
                         {
@@ -339,8 +367,9 @@ namespace Model.Migrations
                             CategoryId = "79640b64-94d3-4cb2-89c8-a5fefe3c2052",
                             Description = "Mô tả điện thoại",
                             Image = "https://blob3tier.blob.core.windows.net/azureblobwith3tier/samurai.png%2B6775e8b2-a9ab-4792-afcd-202adae206f8",
-                            Name = "ProductName 17",
-                            Price = 2548m
+                            Name = "ProductName 14",
+                            Price = 2567m,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9212)
                         },
                         new
                         {
@@ -348,8 +377,9 @@ namespace Model.Migrations
                             CategoryId = "79640b64-94d3-4cb2-89c8-a5fefe3c2053",
                             Description = "Mô tả điện thoại",
                             Image = "https://blob3tier.blob.core.windows.net/azureblobwith3tier/samurai.png%2B6775e8b2-a9ab-4792-afcd-202adae206f8",
-                            Name = "ProductName 46",
-                            Price = 2559m
+                            Name = "ProductName 17",
+                            Price = 2571m,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9216)
                         },
                         new
                         {
@@ -357,8 +387,9 @@ namespace Model.Migrations
                             CategoryId = "79640b64-94d3-4cb2-89c8-a5fefe3c2054",
                             Description = "Mô tả điện thoại",
                             Image = "https://blob3tier.blob.core.windows.net/azureblobwith3tier/samurai.png%2B6775e8b2-a9ab-4792-afcd-202adae206f8",
-                            Name = "ProductName 29",
-                            Price = 2538m
+                            Name = "ProductName 47",
+                            Price = 2567m,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9222)
                         },
                         new
                         {
@@ -366,8 +397,9 @@ namespace Model.Migrations
                             CategoryId = "79640b64-94d3-4cb2-89c8-a5fefe3c2055",
                             Description = "Mô tả điện thoại",
                             Image = "https://blob3tier.blob.core.windows.net/azureblobwith3tier/samurai.png%2B6775e8b2-a9ab-4792-afcd-202adae206f8",
-                            Name = "ProductName 44",
-                            Price = 2559m
+                            Name = "ProductName 16",
+                            Price = 2566m,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9225)
                         },
                         new
                         {
@@ -375,8 +407,9 @@ namespace Model.Migrations
                             CategoryId = "79640b64-94d3-4cb2-89c8-a5fefe3c2056",
                             Description = "Mô tả điện thoại",
                             Image = "https://blob3tier.blob.core.windows.net/azureblobwith3tier/samurai.png%2B6775e8b2-a9ab-4792-afcd-202adae206f8",
-                            Name = "ProductName 18",
-                            Price = 2573m
+                            Name = "ProductName 30",
+                            Price = 2549m,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9232)
                         },
                         new
                         {
@@ -384,8 +417,9 @@ namespace Model.Migrations
                             CategoryId = "79640b64-94d3-4cb2-89c8-a5fefe3c2057",
                             Description = "Mô tả điện thoại",
                             Image = "https://blob3tier.blob.core.windows.net/azureblobwith3tier/samurai.png%2B6775e8b2-a9ab-4792-afcd-202adae206f8",
-                            Name = "ProductName 11",
-                            Price = 2547m
+                            Name = "ProductName 42",
+                            Price = 2551m,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9235)
                         },
                         new
                         {
@@ -393,8 +427,9 @@ namespace Model.Migrations
                             CategoryId = "79640b64-94d3-4cb2-89c8-a5fefe3c2058",
                             Description = "Mô tả điện thoại",
                             Image = "https://blob3tier.blob.core.windows.net/azureblobwith3tier/samurai.png%2B6775e8b2-a9ab-4792-afcd-202adae206f8",
-                            Name = "ProductName 2",
-                            Price = 2557m
+                            Name = "ProductName 30",
+                            Price = 2581m,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9240)
                         },
                         new
                         {
@@ -402,8 +437,9 @@ namespace Model.Migrations
                             CategoryId = "79640b64-94d3-4cb2-89c8-a5fefe3c2059",
                             Description = "Mô tả điện thoại",
                             Image = "https://blob3tier.blob.core.windows.net/azureblobwith3tier/samurai.png%2B6775e8b2-a9ab-4792-afcd-202adae206f8",
-                            Name = "ProductName 4",
-                            Price = 2569m
+                            Name = "ProductName 6",
+                            Price = 2567m,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9243)
                         });
                 });
 
@@ -418,6 +454,9 @@ namespace Model.Migrations
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("Time")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("ProductId", "OrderId");
 
                     b.HasIndex("OrderId");
@@ -429,55 +468,64 @@ namespace Model.Migrations
                         {
                             ProductId = "79640b64-94d3-4cb2-89c8-a5fefe3c2051",
                             OrderId = "79640b64-94d3-4cb2-89c8-a5fefe3c2051",
-                            Quantity = 16
+                            Quantity = 38,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9041)
                         },
                         new
                         {
                             ProductId = "79640b64-94d3-4cb2-89c8-a5fefe3c2052",
                             OrderId = "79640b64-94d3-4cb2-89c8-a5fefe3c2052",
-                            Quantity = 30
+                            Quantity = 31,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9047)
                         },
                         new
                         {
                             ProductId = "79640b64-94d3-4cb2-89c8-a5fefe3c2053",
                             OrderId = "79640b64-94d3-4cb2-89c8-a5fefe3c2053",
-                            Quantity = 38
+                            Quantity = 19,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9051)
                         },
                         new
                         {
                             ProductId = "79640b64-94d3-4cb2-89c8-a5fefe3c2054",
                             OrderId = "79640b64-94d3-4cb2-89c8-a5fefe3c2054",
-                            Quantity = 38
+                            Quantity = 41,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9052)
                         },
                         new
                         {
                             ProductId = "79640b64-94d3-4cb2-89c8-a5fefe3c2055",
                             OrderId = "79640b64-94d3-4cb2-89c8-a5fefe3c2055",
-                            Quantity = 38
+                            Quantity = 41,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9054)
                         },
                         new
                         {
                             ProductId = "79640b64-94d3-4cb2-89c8-a5fefe3c2056",
                             OrderId = "79640b64-94d3-4cb2-89c8-a5fefe3c2056",
-                            Quantity = 10
+                            Quantity = 15,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9056)
                         },
                         new
                         {
                             ProductId = "79640b64-94d3-4cb2-89c8-a5fefe3c2057",
                             OrderId = "79640b64-94d3-4cb2-89c8-a5fefe3c2057",
-                            Quantity = 44
+                            Quantity = 20,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9060)
                         },
                         new
                         {
                             ProductId = "79640b64-94d3-4cb2-89c8-a5fefe3c2058",
                             OrderId = "79640b64-94d3-4cb2-89c8-a5fefe3c2058",
-                            Quantity = 19
+                            Quantity = 28,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9061)
                         },
                         new
                         {
                             ProductId = "79640b64-94d3-4cb2-89c8-a5fefe3c2059",
                             OrderId = "79640b64-94d3-4cb2-89c8-a5fefe3c2059",
-                            Quantity = 45
+                            Quantity = 40,
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(9062)
                         });
                 });
 
@@ -488,6 +536,10 @@ namespace Model.Migrations
 
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
@@ -534,6 +586,9 @@ namespace Model.Migrations
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("Time")
+                        .HasColumnType("datetime2");
+
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
 
@@ -558,136 +613,163 @@ namespace Model.Migrations
                         {
                             Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2051",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "6ce9dd0e-de66-44b6-8ba3-00b7c9e07107",
-                            Email = "user13@gmail.com",
-                            EmailConfirmed = false,
-                            FirstName = "nguyen",
-                            LastName = "37",
-                            LockoutEnabled = false,
-                            PasswordHash = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "0580c64f-039d-4d3b-bab5-d77b1f33f8fc",
-                            TwoFactorEnabled = false
-                        },
-                        new
-                        {
-                            Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2052",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "b8e8bf51-a2b7-4f0e-aefb-7b14d3732b47",
-                            Email = "user25@gmail.com",
-                            EmailConfirmed = false,
-                            FirstName = "nguyen",
-                            LastName = "2",
-                            LockoutEnabled = false,
-                            PasswordHash = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "e739bacb-e89e-47e9-9cd9-a4090612944f",
-                            TwoFactorEnabled = false
-                        },
-                        new
-                        {
-                            Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2053",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "85ccd1e5-0365-41db-83b2-7973610f8c11",
-                            Email = "user34@gmail.com",
-                            EmailConfirmed = false,
-                            FirstName = "nguyen",
-                            LastName = "44",
-                            LockoutEnabled = false,
-                            PasswordHash = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "1e65c994-739b-4e09-8065-ef95bcaaae74",
-                            TwoFactorEnabled = false
-                        },
-                        new
-                        {
-                            Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2054",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "9c7ee594-f6a5-44fb-8ed4-16d2c2957c27",
-                            Email = "user41@gmail.com",
+                            Address = "Dia chi 21",
+                            ConcurrencyStamp = "6d8ab6e4-67cb-4c2b-9f28-15c7a60bc9b5",
+                            Email = "user40@gmail.com",
                             EmailConfirmed = false,
                             FirstName = "nguyen",
                             LastName = "26",
                             LockoutEnabled = false,
                             PasswordHash = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "2b6e31f1-82ba-44c0-8f53-f4e441d9acb0",
-                            TwoFactorEnabled = false
+                            SecurityStamp = "3bef880e-5bde-4e10-82af-68207e9dee79",
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(8500),
+                            TwoFactorEnabled = false,
+                            UserName = "nguyen8"
+                        },
+                        new
+                        {
+                            Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2052",
+                            AccessFailedCount = 0,
+                            Address = "Dia chi 10",
+                            ConcurrencyStamp = "cead261f-a889-44bf-8d91-7dc6b4112e1a",
+                            Email = "user27@gmail.com",
+                            EmailConfirmed = false,
+                            FirstName = "nguyen",
+                            LastName = "40",
+                            LockoutEnabled = false,
+                            PasswordHash = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "b680a803-fdb0-4781-9169-8dcd7d32c8af",
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(8602),
+                            TwoFactorEnabled = false,
+                            UserName = "nguyen43"
+                        },
+                        new
+                        {
+                            Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2053",
+                            AccessFailedCount = 0,
+                            Address = "Dia chi 7",
+                            ConcurrencyStamp = "b8ab4a8b-952b-4d86-8267-293f91ef6341",
+                            Email = "user18@gmail.com",
+                            EmailConfirmed = false,
+                            FirstName = "nguyen",
+                            LastName = "21",
+                            LockoutEnabled = false,
+                            PasswordHash = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "c01b08e6-486d-419e-9371-132b7ed720d2",
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(8618),
+                            TwoFactorEnabled = false,
+                            UserName = "nguyen2"
+                        },
+                        new
+                        {
+                            Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2054",
+                            AccessFailedCount = 0,
+                            Address = "Dia chi 38",
+                            ConcurrencyStamp = "b50a5723-cf79-4d02-856d-0a057555f520",
+                            Email = "user44@gmail.com",
+                            EmailConfirmed = false,
+                            FirstName = "nguyen",
+                            LastName = "20",
+                            LockoutEnabled = false,
+                            PasswordHash = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "9ec47c0c-1afb-4e39-b613-ccdafad6b6e0",
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(8631),
+                            TwoFactorEnabled = false,
+                            UserName = "nguyen47"
                         },
                         new
                         {
                             Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2055",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "8e254b2e-0853-42d2-831f-2bc979ea6591",
-                            Email = "user9@gmail.com",
+                            Address = "Dia chi 14",
+                            ConcurrencyStamp = "24df6539-336a-4655-b048-61a5d0d14da2",
+                            Email = "user4@gmail.com",
                             EmailConfirmed = false,
                             FirstName = "nguyen",
-                            LastName = "23",
+                            LastName = "39",
                             LockoutEnabled = false,
                             PasswordHash = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "2c2bc2f7-0297-410c-bc6a-c8421d79824e",
-                            TwoFactorEnabled = false
+                            SecurityStamp = "b8c2138d-7d63-4686-8305-6e435506d131",
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(8643),
+                            TwoFactorEnabled = false,
+                            UserName = "nguyen45"
                         },
                         new
                         {
                             Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2056",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "c9ded8a4-1261-4461-a39e-54967c2dd795",
-                            Email = "user2@gmail.com",
-                            EmailConfirmed = false,
-                            FirstName = "nguyen",
-                            LastName = "36",
-                            LockoutEnabled = false,
-                            PasswordHash = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "456bcdec-5bcb-43b1-93df-04bdec0a48fa",
-                            TwoFactorEnabled = false
-                        },
-                        new
-                        {
-                            Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2057",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "ce6853b7-a690-4111-82f2-0ea323e9afab",
-                            Email = "user33@gmail.com",
-                            EmailConfirmed = false,
-                            FirstName = "nguyen",
-                            LastName = "48",
-                            LockoutEnabled = false,
-                            PasswordHash = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "fefc0344-45f2-4dd5-8891-8b0b8a079924",
-                            TwoFactorEnabled = false
-                        },
-                        new
-                        {
-                            Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2058",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "769a96a5-5b7b-4041-97c4-3cbf25f522c4",
-                            Email = "user35@gmail.com",
-                            EmailConfirmed = false,
-                            FirstName = "nguyen",
-                            LastName = "36",
-                            LockoutEnabled = false,
-                            PasswordHash = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "71169b04-d6fe-4b8e-bee4-b2f56e2bbe53",
-                            TwoFactorEnabled = false
-                        },
-                        new
-                        {
-                            Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2059",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "4fb9c52f-f356-43f2-bc70-d356ef9bf8e4",
-                            Email = "user37@gmail.com",
+                            Address = "Dia chi 36",
+                            ConcurrencyStamp = "5b8bbd3c-73a4-4b42-a5d9-f5aa1c613666",
+                            Email = "user23@gmail.com",
                             EmailConfirmed = false,
                             FirstName = "nguyen",
                             LastName = "18",
                             LockoutEnabled = false,
                             PasswordHash = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "463cfe01-5c9f-4c92-bead-666bc52a9db7",
-                            TwoFactorEnabled = false
+                            SecurityStamp = "b151d980-1881-487d-9852-d099452c7e25",
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(8690),
+                            TwoFactorEnabled = false,
+                            UserName = "nguyen34"
+                        },
+                        new
+                        {
+                            Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2057",
+                            AccessFailedCount = 0,
+                            Address = "Dia chi 2",
+                            ConcurrencyStamp = "f34c0ce9-5569-4135-bc7a-a02b97f9a312",
+                            Email = "user49@gmail.com",
+                            EmailConfirmed = false,
+                            FirstName = "nguyen",
+                            LastName = "33",
+                            LockoutEnabled = false,
+                            PasswordHash = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "73384b3c-1ef0-410b-b05b-f9ba14d82b0e",
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(8715),
+                            TwoFactorEnabled = false,
+                            UserName = "nguyen11"
+                        },
+                        new
+                        {
+                            Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2058",
+                            AccessFailedCount = 0,
+                            Address = "Dia chi 21",
+                            ConcurrencyStamp = "55642932-873d-4c77-a46e-ac4d569f85dc",
+                            Email = "user33@gmail.com",
+                            EmailConfirmed = false,
+                            FirstName = "nguyen",
+                            LastName = "47",
+                            LockoutEnabled = false,
+                            PasswordHash = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "de176592-c6c2-4c9f-9caa-fe6606cb0784",
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(8727),
+                            TwoFactorEnabled = false,
+                            UserName = "nguyen39"
+                        },
+                        new
+                        {
+                            Id = "79640b64-94d3-4cb2-89c8-a5fefe3c2059",
+                            AccessFailedCount = 0,
+                            Address = "Dia chi 7",
+                            ConcurrencyStamp = "5d55def5-e3f7-4679-bda9-68bffffac6ee",
+                            Email = "user48@gmail.com",
+                            EmailConfirmed = false,
+                            FirstName = "nguyen",
+                            LastName = "42",
+                            LockoutEnabled = false,
+                            PasswordHash = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "5cd9b1f2-63f6-4325-89ba-057712f94cb5",
+                            Time = new DateTime(2024, 2, 17, 18, 59, 59, 106, DateTimeKind.Local).AddTicks(8740),
+                            TwoFactorEnabled = false,
+                            UserName = "nguyen30"
                         });
                 });
 

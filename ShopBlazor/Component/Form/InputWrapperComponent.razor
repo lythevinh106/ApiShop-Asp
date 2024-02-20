@@ -1,0 +1,33 @@
+﻿<div class="form-group mb-3 @classEl">
+
+    @if (labelTitle != null)
+    {
+        <label class="form-label mb-1">@labelTitle</label>
+    }
+
+    @ChildContent
+
+
+
+
+</div>
+
+@code {
+    
+
+    public ElementReference inputEL;
+
+
+
+
+    [Parameter]
+
+    public string? labelTitle { get; set; } = "";
+
+    [Parameter]
+    public string? classEl { get; set; }
+
+    [EditorRequired]
+    [Parameter] public RenderFragment ChildContent { get; set; }
+
+}

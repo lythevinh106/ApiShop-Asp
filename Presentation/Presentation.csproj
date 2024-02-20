@@ -45,9 +45,6 @@
 	  <ProjectReference Include="..\DtoShared\DtoShared.csproj" />
 	  <ProjectReference Include="..\Model\Model.csproj" />
 	</ItemGroup>
-	<ItemGroup>
-	  <Folder Include="Configurations\" />
-	</ItemGroup>
   
 
 </Project>

@@ -13,7 +13,7 @@ namespace DataAccess.Infrastructure
 
         T Update(T entity);
 
-        Task<T> Get(int id);
+        Task<T> Get(string id);
 
         T Delete(T entity);
         IQueryable<T> All();
@@ -23,12 +23,14 @@ namespace DataAccess.Infrastructure
 
         PagedList<T> FectchData(FetchDataRequest fetchDataRequest, IQueryable<T> query);
 
-        IQueryable<T> Filter(Expression<Func<T, bool>> predicate, IQueryable<T> query);
+
 
 
         IQueryable<T> Sort(Expression<Func<T, string>> field, IQueryable<T> query, bool ascending = true);
 
-        IQueryable<T> Search(Expression<Func<T, bool>> predicate, IQueryable<T> query);
+
+        //IQueryable<T> Filter(Expression<Func<T, bool>> predicate, IQueryable<T> query);
+        // IQueryable<T> Search(Expression<Func<T, bool>> predicate, IQueryable<T> query);
 
     }
 }

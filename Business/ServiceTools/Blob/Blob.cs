@@ -1,6 +1,7 @@
 ﻿using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
 using Microsoft.Extensions.Azure;
+using System.Web;
 
 namespace Service.ServiceTools.Blob
 {
@@ -31,31 +32,66 @@ namespace Service.ServiceTools.Blob
         public async Task<string> UploadBlobFile(Stream file, string fileName, string contentTypeFile)
         {
 
-
-
-            ///create blob instance
-            var blobClient = _clientWithName.GetBlobClient($"{fileName}+{Guid.NewGuid()}");
-
-            //option
-
-            BlobUploadOptions uploadOptions = new BlobUploadOptions
+            try
             {
-                HttpHeaders = new BlobHttpHeaders
+                ///create blob instance
+                var blobClient = _clientWithName.GetBlobClient($"{Guid.NewGuid()}{fileName}");
+
+                //option
+
+                BlobUploadOptions uploadOptions = new BlobUploadOptions
                 {
-                    ContentType = contentTypeFile
-                }
-            };
+                    HttpHeaders = new BlobHttpHeaders
+                    {
+                        ContentType = contentTypeFile
+                    }
+                };
 
 
-            var status = await blobClient.UploadAsync(file, uploadOptions);
+                var status = await blobClient.UploadAsync(file, uploadOptions);
 
-            return blobClient.Uri.AbsoluteUri;
+                return blobClient.Uri.AbsoluteUri;
+
+            }
+
+            catch (Exception ex)
+            {
+                throw new Exception("Upload Image Failed." + ex.ToString());
+            }
+
+
         }
+
+        public async Task<string> getBlobFileNameFromUrl(string url)
+        {
+
+            string blobUrl = HttpUtility.UrlDecode(url);
+            //blobUrl = url.Replace("%", "");
+
+
+            //     blobUrl = Uri.EscapeDataString(url);
+
+            string[] parts = blobUrl.Split('/');
+
+            string blobName = parts[^1];
+
+
+
+            return blobName;
+
+
+
+        }
+
         public async Task<bool> DeleteBlobAsync(string blobFileName)
         {
 
             bool result = false;
+
+
+            //79f76309-a511-43ee-a328-633f51aab5a3Screenshot 2024-02-05 191718.png
             BlobClient file = _clientWithName.GetBlobClient(blobFileName);
+
 
 
             if (await file.ExistsAsync())
@@ -64,8 +100,16 @@ namespace Service.ServiceTools.Blob
             }
             else
             {
-                throw new FileNotFoundException("File Không tồn tại trên hệ thống");
+                // Xử lý trường hợp blob không tồn tại
             }
+
+
+
+
+
+
+
+
 
             return result;
 

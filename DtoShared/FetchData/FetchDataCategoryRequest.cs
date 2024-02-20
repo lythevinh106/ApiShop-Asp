@@ -8,7 +8,7 @@
     public enum SortCategoryOption
     {
 
-        IdAscending,
-        IdDescending,
+        Ascending,
+        Descending,
     }
 }

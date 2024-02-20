@@ -15,6 +15,8 @@ namespace Model.Modules.OrderModel
 
         public string UserId { get; set; }
 
+        public DateTime Time { get; set; } = DateTime.Now;
+
         public virtual List<ProductOrder> ProductOrders { get; set; }
 
         public virtual User User { get; set; }

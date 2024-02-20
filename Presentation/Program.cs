@@ -1,8 +1,10 @@
 using DataAccess.Infrastructure;
+using DataAccess.Repositories;
 using Hangfire;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Azure;
 using Model;
+using Presentation.Congigruations;
 using Presentation.Middlewares;
 using Serilog;
 using Service.ServiceTools.Blob;
@@ -28,6 +30,20 @@ namespace Presentation
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
                 options.UseLazyLoadingProxies();
             });
+
+
+
+            //implement Identity
+            builder.Services.ConfigureIdentity();
+
+            //implement Authentication
+            builder.Services.ConfigureAuthentication(builder.Configuration);
+
+
+            builder.Services.AddScoped<IAccountRepository, UserRepository>();
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+            //builder.Services.AddSingleton<IUserIdProvider, EmailBaseUserIdProvider>();
+
 
             //cors
             builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
@@ -77,6 +93,8 @@ namespace Presentation
             builder.Services.AddScoped<MailKit.Net.Smtp.SmtpClient>();
 
             builder.Services.AddScoped<IMail, MailService>();
+
+
 
 
 

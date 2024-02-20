@@ -1,0 +1,1193 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\obj\\Debug\\net6.0\\compressed\\u2a7kl2qds.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\obj\\Debug\\net6.0\\scopedcss\\bundle\\ShopBlazor.styles.css",
+      "PackagePath": "staticwebassets\\ShopBlazor.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\css\\nucleo-icons.css",
+      "PackagePath": "staticwebassets\\template\\css\\nucleo-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\css\\nucleo-svg.css",
+      "PackagePath": "staticwebassets\\template\\css\\nucleo-svg.css"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\css\\soft-ui-dashboard.css",
+      "PackagePath": "staticwebassets\\template\\css\\soft-ui-dashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\css\\soft-ui-dashboard.css.map",
+      "PackagePath": "staticwebassets\\template\\css\\soft-ui-dashboard.css.map"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\css\\soft-ui-dashboard.min.css",
+      "PackagePath": "staticwebassets\\template\\css\\soft-ui-dashboard.min.css"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\fonts\\nucleo-icons.eot",
+      "PackagePath": "staticwebassets\\template\\fonts\\nucleo-icons.eot"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\fonts\\nucleo-icons.svg",
+      "PackagePath": "staticwebassets\\template\\fonts\\nucleo-icons.svg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\fonts\\nucleo-icons.ttf",
+      "PackagePath": "staticwebassets\\template\\fonts\\nucleo-icons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\fonts\\nucleo-icons.woff",
+      "PackagePath": "staticwebassets\\template\\fonts\\nucleo-icons.woff"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\fonts\\nucleo-icons.woff2",
+      "PackagePath": "staticwebassets\\template\\fonts\\nucleo-icons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\fonts\\nucleo.eot",
+      "PackagePath": "staticwebassets\\template\\fonts\\nucleo.eot"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\fonts\\nucleo.ttf",
+      "PackagePath": "staticwebassets\\template\\fonts\\nucleo.ttf"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\fonts\\nucleo.woff",
+      "PackagePath": "staticwebassets\\template\\fonts\\nucleo.woff"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\fonts\\nucleo.woff2",
+      "PackagePath": "staticwebassets\\template\\fonts\\nucleo.woff2"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\apple-icon.png",
+      "PackagePath": "staticwebassets\\template\\img\\apple-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\bg1.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\bg1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\bruce-mars.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\bruce-mars.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved-10.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved-11.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved-6.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved-8.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved0.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved1.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved10.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved11-small.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved11-small.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved11.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved12.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved13.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved14.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved19.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved19.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved2.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved21.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved21.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved3.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved4.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved5-small.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved5-small.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved5.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved6-small.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved6-small.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved6.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved7.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved8.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\curved9.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\curved9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\curved-images\\white-curved.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\curved-images\\white-curved.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\down-arrow-dark.svg",
+      "PackagePath": "staticwebassets\\template\\img\\down-arrow-dark.svg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\down-arrow-white.svg",
+      "PackagePath": "staticwebassets\\template\\img\\down-arrow-white.svg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\down-arrow.svg",
+      "PackagePath": "staticwebassets\\template\\img\\down-arrow.svg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\template\\img\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\home-decor-1.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\home-decor-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\home-decor-2.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\home-decor-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\home-decor-3.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\home-decor-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\illustrations\\rocket-dark.png",
+      "PackagePath": "staticwebassets\\template\\img\\illustrations\\rocket-dark.png"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\illustrations\\rocket-white.png",
+      "PackagePath": "staticwebassets\\template\\img\\illustrations\\rocket-white.png"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\ivana-square.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\ivana-square.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\ivancik.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\ivancik.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\kal-visuals-square.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\kal-visuals-square.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\logo-ct-dark.png",
+      "PackagePath": "staticwebassets\\template\\img\\logo-ct-dark.png"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\logo-ct.png",
+      "PackagePath": "staticwebassets\\template\\img\\logo-ct.png"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\logos\\mastercard.png",
+      "PackagePath": "staticwebassets\\template\\img\\logos\\mastercard.png"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\logos\\visa.png",
+      "PackagePath": "staticwebassets\\template\\img\\logos\\visa.png"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\marie.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\marie.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\shapes\\pattern-lines.svg",
+      "PackagePath": "staticwebassets\\template\\img\\shapes\\pattern-lines.svg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\shapes\\shape-1.svg",
+      "PackagePath": "staticwebassets\\template\\img\\shapes\\shape-1.svg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\shapes\\shape-2.svg",
+      "PackagePath": "staticwebassets\\template\\img\\shapes\\shape-2.svg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\shapes\\shape-3.svg",
+      "PackagePath": "staticwebassets\\template\\img\\shapes\\shape-3.svg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\shapes\\wave-down.svg",
+      "PackagePath": "staticwebassets\\template\\img\\shapes\\wave-down.svg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\shapes\\wave-up.svg",
+      "PackagePath": "staticwebassets\\template\\img\\shapes\\wave-up.svg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\shapes\\waves-gray.svg",
+      "PackagePath": "staticwebassets\\template\\img\\shapes\\waves-gray.svg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\shapes\\waves-white.svg",
+      "PackagePath": "staticwebassets\\template\\img\\shapes\\waves-white.svg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\small-logos\\icon-sun-cloud.png",
+      "PackagePath": "staticwebassets\\template\\img\\small-logos\\icon-sun-cloud.png"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\small-logos\\logo-atlassian.svg",
+      "PackagePath": "staticwebassets\\template\\img\\small-logos\\logo-atlassian.svg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\small-logos\\logo-invision.svg",
+      "PackagePath": "staticwebassets\\template\\img\\small-logos\\logo-invision.svg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\small-logos\\logo-jira.svg",
+      "PackagePath": "staticwebassets\\template\\img\\small-logos\\logo-jira.svg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\small-logos\\logo-slack.svg",
+      "PackagePath": "staticwebassets\\template\\img\\small-logos\\logo-slack.svg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\small-logos\\logo-spotify.svg",
+      "PackagePath": "staticwebassets\\template\\img\\small-logos\\logo-spotify.svg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\small-logos\\logo-webdev.svg",
+      "PackagePath": "staticwebassets\\template\\img\\small-logos\\logo-webdev.svg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\small-logos\\logo-xd.svg",
+      "PackagePath": "staticwebassets\\template\\img\\small-logos\\logo-xd.svg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\team-1.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\team-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\team-2.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\team-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\team-3.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\team-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\team-4.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\team-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\theme\\angular.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\theme\\angular.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\theme\\bootstrap.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\theme\\bootstrap.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\theme\\dribbble.png",
+      "PackagePath": "staticwebassets\\template\\img\\theme\\dribbble.png"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\theme\\dropbox.png",
+      "PackagePath": "staticwebassets\\template\\img\\theme\\dropbox.png"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\theme\\mastercard.png",
+      "PackagePath": "staticwebassets\\template\\img\\theme\\mastercard.png"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\theme\\paypal.png",
+      "PackagePath": "staticwebassets\\template\\img\\theme\\paypal.png"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\theme\\react.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\theme\\react.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\theme\\sketch.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\theme\\sketch.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\theme\\slack.png",
+      "PackagePath": "staticwebassets\\template\\img\\theme\\slack.png"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\theme\\spotify.jpeg",
+      "PackagePath": "staticwebassets\\template\\img\\theme\\spotify.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\theme\\tim.png",
+      "PackagePath": "staticwebassets\\template\\img\\theme\\tim.png"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\theme\\unass.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\theme\\unass.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\theme\\visa.png",
+      "PackagePath": "staticwebassets\\template\\img\\theme\\visa.png"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\theme\\vue.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\theme\\vue.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\img\\vr-bg.jpg",
+      "PackagePath": "staticwebassets\\template\\img\\vr-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\js\\core\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\core\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\js\\core\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\core\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\js\\core\\popper.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\core\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\js\\plugins\\Chart.extension.js",
+      "PackagePath": "staticwebassets\\template\\js\\plugins\\Chart.extension.js"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\js\\plugins\\bootstrap-notify.js",
+      "PackagePath": "staticwebassets\\template\\js\\plugins\\bootstrap-notify.js"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\js\\plugins\\chartjs.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\plugins\\chartjs.min.js"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\js\\plugins\\perfect-scrollbar.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\plugins\\perfect-scrollbar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\js\\plugins\\smooth-scrollbar.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\plugins\\smooth-scrollbar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\js\\soft-ui-dashboard.js",
+      "PackagePath": "staticwebassets\\template\\js\\soft-ui-dashboard.js"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\js\\soft-ui-dashboard.js.map",
+      "PackagePath": "staticwebassets\\template\\js\\soft-ui-dashboard.js.map"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\js\\soft-ui-dashboard.min.js",
+      "PackagePath": "staticwebassets\\template\\js\\soft-ui-dashboard.min.js"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_alert.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_avatars.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_avatars.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_badge.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_breadcrumbs.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_breadcrumbs.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_buttons.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_cards.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_cards.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_dark-version.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_dark-version.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_dropup.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_dropup.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_fixed-plugin.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_fixed-plugin.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_footer.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_forms.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_gradients.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_gradients.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_header.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_header.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_info-areas.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_info-areas.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_misc.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_misc.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_nav.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_nav.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_navbar-vertical.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_navbar-vertical.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_navbar.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_pagination.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_popovers.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_popovers.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_progress.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_rtl.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_rtl.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_social-buttons.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_social-buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_tables.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_tilt.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_tilt.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_timeline.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_timeline.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_tooltips.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_tooltips.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_typography.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_typography.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_utilities-extend.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_utilities-extend.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_utilities.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\_variables.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_accordion.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_accordion.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_alert.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_badge.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_button-group.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_button-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_buttons.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_card.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_card.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_carousel.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_carousel.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_close.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_close.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_containers.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_containers.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_forms.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_functions.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_functions.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_grid.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_helpers.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_helpers.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_images.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_images.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_list-group.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_maps.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_maps.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_mixins.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_modal.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_nav.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_nav.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_navbar.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_offcanvas.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_offcanvas.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_pagination.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_placeholders.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_placeholders.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_popover.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_popover.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_progress.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_reboot.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_root.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_root.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_spinners.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_spinners.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_tables.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_toasts.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_toasts.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_tooltip.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_transitions.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_transitions.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_type.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_type.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_utilities.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\_variables.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\bootstrap-utilities.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\bootstrap-utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\forms\\_floating-labels.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\forms\\_floating-labels.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\forms\\_form-check.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\forms\\_form-check.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\forms\\_form-control.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\forms\\_form-control.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\forms\\_form-range.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\forms\\_form-range.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\forms\\_form-select.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\forms\\_form-select.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\forms\\_form-text.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\forms\\_form-text.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\forms\\_input-group.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\forms\\_input-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\forms\\_labels.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\forms\\_labels.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\forms\\_validation.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\forms\\_validation.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\helpers\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\helpers\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\helpers\\_color-bg.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\helpers\\_color-bg.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\helpers\\_colored-links.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\helpers\\_colored-links.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\helpers\\_position.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\helpers\\_position.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\helpers\\_ratio.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\helpers\\_ratio.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\helpers\\_stacks.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\helpers\\_stacks.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\helpers\\_stretched-link.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\helpers\\_stretched-link.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\helpers\\_text-truncation.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\helpers\\_text-truncation.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\helpers\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\helpers\\_visually-hidden.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\helpers\\_vr.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\helpers\\_vr.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_backdrop.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_backdrop.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_banner.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_banner.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_color-scheme.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_color-scheme.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_container.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_container.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_deprecate.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_deprecate.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_image.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_table-variants.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_table-variants.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_utilities.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\mixins\\_visually-hidden.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\utilities\\_api.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\utilities\\_api.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\bootstrap\\vendor\\_rfs.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\bootstrap\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\cards\\card-background.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\cards\\card-background.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\custom\\_styles.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\custom\\_styles.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\custom\\_variables.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\custom\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\forms\\_form-check.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\forms\\_form-check.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\forms\\_form-select.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\forms\\_form-select.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\forms\\_form-switch.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\forms\\_form-switch.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\forms\\_forms.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\forms\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\forms\\_input-group.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\forms\\_input-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\forms\\_inputs.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\forms\\_inputs.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\forms\\_labels.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\forms\\_labels.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\mixins\\_badge.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\mixins\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\mixins\\_colored-shadows.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\mixins\\_colored-shadows.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\mixins\\_container.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\mixins\\_container.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\mixins\\_hover.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\mixins\\_hover.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\mixins\\_social-buttons.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\mixins\\_social-buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\mixins\\mixins.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\mixins\\mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\plugins\\free\\_flatpickr.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\plugins\\free\\_flatpickr.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\plugins\\free\\_nouislider.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\plugins\\free\\_nouislider.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\plugins\\free\\_perfect-scrollbar.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\plugins\\free\\_perfect-scrollbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\plugins\\free\\_prism.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\plugins\\free\\_prism.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\plugins\\free\\plugins.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\plugins\\free\\plugins.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\theme.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\theme.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_animations.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_animations.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_avatars.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_avatars.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_badge.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_cards-extend.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_cards-extend.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_cards.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_cards.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_choices.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_choices.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_dark-version.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_dark-version.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_dropdowns.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_dropdowns.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_fixed-plugin.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_fixed-plugin.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_form-switch.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_form-switch.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_full-calendar.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_full-calendar.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_header.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_header.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_info-areas.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_info-areas.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_misc-extend.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_misc-extend.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_misc.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_misc.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_navbar-vertical.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_navbar-vertical.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_navbar.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_pagination.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_rtl.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_rtl.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_social-buttons.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_social-buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_table.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_table.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_timeline.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_timeline.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_utilities-extend.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_utilities-extend.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_utilities.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\template\\scss\\soft-ui-dashboard\\variables\\_virtual-reality.scss",
+      "PackagePath": "staticwebassets\\template\\scss\\soft-ui-dashboard\\variables\\_virtual-reality.scss"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ShopBlazor.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ShopBlazor.props",
+      "PackagePath": "build\\ShopBlazor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ShopBlazor.props",
+      "PackagePath": "buildMultiTargeting\\ShopBlazor.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ShopBlazor.props",
+      "PackagePath": "buildTransitive\\ShopBlazor.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

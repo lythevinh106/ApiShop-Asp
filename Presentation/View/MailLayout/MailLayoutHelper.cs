@@ -1,16 +1,16 @@
-﻿namespace MydemoFirst.View.MailLayout
+﻿namespace Presentation.View.MailLayout
 {
     public class MailLayoutHelper
     {
 
-        public static string GetMailLayout1(string name)
+        public static string GetMailLayoutRegister(string linkVerify)
         {
             var contentsPath = Directory.GetCurrentDirectory() + $"/View/MailLayout/MailLayout1.html";
 
 
             string fileContent = ReadAllTextMethod(contentsPath);
 
-            fileContent = fileContent.Replace("{{$name}}", name);
+            fileContent = fileContent.Replace("{{@linkRegister}}", linkVerify);
 
             return fileContent;
 

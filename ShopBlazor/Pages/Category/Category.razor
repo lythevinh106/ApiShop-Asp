@@ -1,0 +1,427 @@
+﻿@page "/category"
+@using DtoShared.Pagging
+@using DtoShared.ModulesDto
+@using DtoShared.FetchData
+@using ShopBlazor.Services.Category
+@using ShopBlazor.Component;
+@inject IDispatcher _dispatcher
+@using ShopBlazor.Component.Form
+
+<style>
+
+    .custom-filter .dropdown-menu {
+        display: none !important;
+    }
+
+    .custom-filter button {
+        display: none !important;
+    }
+
+    .custom-filter input {
+        padding: 6px 8px !important;
+        position: relative;
+        width: 100% !important;
+    }
+
+    .custom-filter th {
+        padding: 6px 6px !important;
+    }
+
+    /*
+        td {
+            display:flex;
+            text-align:center;
+        }*/
+</style>
+
+@if (@allCatetory == null)
+{
+
+}
+else
+{
+
+    <div class="row">
+
+        <div class="col-12  ">
+
+            <div class="card mb-4 pb-4 bg-gray-100 ">
+
+                <div class="rounded-2 background-module p-0  align-items-center mt-0  d-flex position-relative
+
+                     " style="background-image: url(template/img/curved-images/curved0.jpg);
+                   background-position-y: 50%;background-size:cover ; min-height:200px;">
+
+
+                    <span class="mask bg-gradient-primary opacity-50 top-0 start-0 w-100 h-100 position-absolute "
+                          style=" background-image:
+                      linear-gradient(310deg, #7928CA 0%, #FF0080 100%);background-position:center center ;background-size:cover"></span>
+
+                    <div class=" rounded-4 card-header  py-4  shadow-blur blur d-flex justify-content-between align-items-center   position-absolute start-50 translate-middle-x" 
+                         style="bottom: -15%; width: 92%; -webkit-backdrop-filter: saturate(200%) blur(30px);" >
+
+                        <div class="fw-normal d-flex align-items-center  ">
+
+                            <ButtonComponent ClassEl="mx-1 ms-3" isDisable="true" size="Size.Large" color="ButtonColor.Primary"
+                                             >
+                                <Icon Name="IconName.BookmarkXFill" Color="IconColor.White"> </Icon>
+                            </ButtonComponent>
+                            <span class="h5 ms-2">
+                                Danh Mục Sản Phẩm
+                            </span>
+
+                        </div>
+
+                        <ButtonComponent ClassEl="mx-1 ms-3" color="ButtonColor.Primary"
+                                         OnButtonClick="HandleShowCanvas2">
+                            <span class="me-2 fw-bolder fs-6">Tạo</span> <Icon Name="IconName.PlusCircleFill" Color="IconColor.White"> </Icon>
+                        </ButtonComponent>
+                    </div>
+
+                </div>
+
+
+
+
+               
+
+                <div class="card-body px-0 pt-0 pb-2 mt-5">
+                    <div class="table-responsive p-0 position-relative " style="min-height:50vh">
+                        
+
+
+
+                        <Grid ItemsPerPageText=""
+                              @ref="grid"
+                              PageSizeSelectorItems="Enumerable.Range(1, 3).ToArray()"
+                              PaginationItemsTextFormat=""
+                              DataProvider="CategoryDataProvider"
+                              Class="table table-hover table-bordered table-striped"
+                              TItem="CategoryResponse"
+                              Responsive="true"
+                              PageSize="@pageSize"
+                              AllowSorting="true"
+                              AllowPaging="true"
+                              AllowFiltering="true"
+                              FiltersRowCssClass="custom-filter"
+                              HeaderRowCssClass="text-uppercase text-secondary text-sm font-weight-bolder opacity-7  text-center">
+
+                            <GridColumn TItem="CategoryResponse" HeaderText="Id"
+                                        Class=""
+                                        Filterable="false"
+                                        PropertyName="Id"
+                                        SortString="Id"
+                                        SortKeySelector="c=>c.Id"
+                                        FilterTextboxWidth="100"
+                                        IsDefaultSortColumn="true"
+                                        SortDirection="SortDirection.Descending">
+
+                                <div style="box-sizing: border-box; margin-top: 12px" class=" text-secondary text-xs font-weight-bold  text-center align-items-center ">  @context.Id</div>
+                            </GridColumn>
+
+                            <GridColumn Sortable="false"
+                                        TItem="CategoryResponse"
+                                        Filterable="true"
+                                        FilterOperator="FilterOperator.None"
+                                        HeaderText="Name" PropertyName="Name" FilterTextboxWidth="100">
+
+                                <div style="box-sizing: border-box; margin-top: 12px" class=" text-secondary text-xs font-weight-bold  text-center align-items-center ">  @context.Name</div>
+                            </GridColumn>
+
+                            <GridColumn Sortable="false"
+                                        TItem="CategoryResponse"
+                                        Filterable="false"
+                                        HeaderText="Name">
+
+                                <div class="d-flex justify-content-center  text-center d-flex">
+
+                                    <ButtonComponent ClassEl="mx-1" OnButtonClick="() => HandleShowCanvas(context.Id)">
+                                        <Icon Name="IconName.Gear" Color="IconColor.White"> </Icon>
+                                    </ButtonComponent>
+
+                                    <ButtonComponent ClassEl="mx-1" color="ButtonColor.Danger" OnButtonClick="() => HandleDelete(context.Id)">
+                                        <Icon Name="IconName.XLg" Color="IconColor.White"> </Icon>
+                                    </ButtonComponent>
+                                </div>
+                            </GridColumn>
+                        </Grid>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <OffCanvasComponent @ref="OffcanvasEl"
+                        title="Chỉnh Sửa Danh Mục">
+
+        <FormComponent @ref="@formEl"
+                       model=@categoryUpdateRequest
+                       OnSubmitForm="@HandleOnSubmitForm">
+
+            <DataAnnotationsValidator />
+
+            @if (categoryUpdateRequest != null && allCatetory != null)
+            {
+
+                <InputWrapperComponent labelTitle="Name">
+
+                    <InputText class="form-control"
+                               @bind-Value="@categoryUpdateRequest.Name"></InputText>
+
+                    <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
+
+                        <ValidationMessage For="()=>categoryUpdateRequest.Name">
+                        </ValidationMessage>
+                    </div>
+                </InputWrapperComponent>
+
+            }
+
+            <ButtonComponent type=ButtonType.Submit> Submit</ButtonComponent>
+        </FormComponent>
+    </OffCanvasComponent>
+
+    <OffCanvasComponent @ref="OffcanvasEl2"
+                        title="Tạo Danh Mục">
+
+        <FormComponent @ref="@formEl2"
+                       model=@categoryCreateRequest
+                       OnSubmitForm="@HandleOnSubmitForm2">
+            <DataAnnotationsValidator />
+
+            <InputWrapperComponent labelTitle="Name">
+
+                <InputText class="form-control"
+                           @bind-Value="@categoryCreateRequest.Name"></InputText>
+
+                <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
+
+                    <ValidationMessage For="()=>categoryCreateRequest.Name">
+                    </ValidationMessage>
+                </div>
+            </InputWrapperComponent>
+
+            <ButtonComponent type=ButtonType.Submit> Submit</ButtonComponent>
+        </FormComponent>
+    </OffCanvasComponent>
+
+    <ConfirmComponent @ref="confirmComponent"></ConfirmComponent>
+
+}
+
+@code {
+
+    [Inject] private ICategoryApi categoryApi { get; set; }
+    [Inject] protected ToastService ToastService { get; set; } = default!;
+
+    [Inject] private JsHelper jsHelper { get; set; }
+
+    public PaggingResponse<CategoryResponse> allCatetory;
+    private DtoShared.FetchData.FetchDataCategoryRequest request;
+
+    private int pageNumber = 0;
+    private int pageSize = 8;
+    private string Search = "";
+    private SortCategoryOption Sort = SortCategoryOption.Descending;
+
+    private Grid<CategoryResponse> grid;
+
+    //component
+
+    public OffCanvasComponent OffcanvasEl = default!;
+    public OffCanvasComponent OffcanvasEl2 = default!;
+    public ConfirmComponent confirmComponent = default!;
+    public ShopBlazor.Component.Form.FormComponent formEl = default!;
+    public ShopBlazor.Component.Form.FormComponent formEl2 = default!;
+    public ShopBlazor.Component.Form.InputWrapperComponent? nameInput;
+
+    public CategoryResponse? categoryUpdateResponse { get; set; } = new CategoryResponse();
+    public CategoryRequest? categoryUpdateRequest { get; set; } = new CategoryRequest();
+    public CategoryRequest? categoryCreateRequest { get; set; } = new CategoryRequest();
+
+    public bool IsCategoryCreateRequest { get; set; } = false;
+
+    private string dynamicTitle = "";
+
+    protected async override Task OnInitializedAsync()
+    {
+        //Catetory = await categoryClient.GetCategoryByID(10);
+        //JsHelper.LogObject(Catetory);
+
+        await callData();
+
+    }
+
+    protected async override Task OnParametersSetAsync()
+    {
+
+        await base.OnParametersSetAsync();
+    }
+
+    private async Task callData()
+    {
+        request = new FetchDataCategoryRequest
+        {
+            PageNumber = pageNumber != 0 ? pageNumber : 1,
+            Sort = Sort,
+            PageSize = pageSize,
+            Search = Search
+        };
+
+        allCatetory = await categoryApi.FetchCategory(request);
+
+        jsHelper.LogObject(allCatetory);
+
+        await InvokeAsync(StateHasChanged);
+        await grid.RefreshDataAsync();
+
+    }
+
+    public async Task<GridDataProviderResult<CategoryResponse>> CategoryDataProvider(GridDataProviderRequest<CategoryResponse> request)
+    {
+
+        pageNumber = request.PageNumber;
+
+        string sortString = "";
+
+        if (request.Sorting is not null && request.Sorting.Any())
+        {
+            if (request.Sorting.FirstOrDefault()!.SortString == "Id")
+            {
+
+                Sort = request.Sorting.FirstOrDefault().SortDirection == SortDirection.Ascending ? SortCategoryOption.Ascending : SortCategoryOption.Descending;
+
+            }
+
+        }
+
+        //Search = "";
+
+        if (request.Filters is not null && request.Filters.Any())
+        {
+
+            foreach (var filter in request.Filters)
+            {
+                string propertyName = filter.PropertyName;
+                string filterValue = filter.Value;
+
+                if (propertyName == "Name")
+                {
+
+                    Search = filterValue;
+
+                    Console.WriteLine(filterValue);
+
+                }
+
+            }
+
+        }
+        else
+        {
+            Search = "";
+        }
+
+        await callData();
+
+        return await Task.FromResult(new GridDataProviderResult<CategoryResponse> { Data = allCatetory.Data, TotalCount = (allCatetory.TotalPage * pageSize) });
+
+    }
+
+    protected async Task HandleShowCanvas(string categoryId)
+    {
+
+        OffcanvasEl.offcanvas.ShowAsync();
+
+        categoryUpdateResponse = await categoryApi.GetCategoryByID(categoryId);
+
+        categoryUpdateRequest = new CategoryRequest()
+        {
+            Name = categoryUpdateResponse.Name,
+
+        };
+
+    }
+
+    protected async Task HandleDelete(string categoryId)
+    {
+
+        var confirmation = await confirmComponent.dialog.ShowAsync(
+
+           title: "Bạn Có Chắc Là Muốn Xóa ?",
+           message1: "Nếu Xóa Thì Không Thể Quay Lại"
+
+           )
+
+            ;
+
+        if (confirmation)
+        {
+
+            CategoryResponse result =
+
+             await categoryApi.DeleteCategoryById(
+             categoryId);
+
+            if (result != null)
+            {
+                await callData();
+                ToastService.Notify(new(ToastType.Success, $"Thong bao", "Xóa Thành Công"));
+            }
+
+        }
+        else
+        {
+            // do something
+        }
+
+    }
+
+    protected async Task HandleShowCanvas2()
+    {
+
+        OffcanvasEl2.offcanvas.ShowAsync();
+
+    }
+
+    async void HandleOnSubmitForm(EditContext editContext)
+    {
+
+        jsHelper.LogObject(categoryUpdateRequest);
+
+        var result =
+
+          await categoryApi.UpdateCategory(
+          categoryUpdateResponse.Id,
+          categoryUpdateRequest
+          );
+
+        if (result != null)
+        {
+
+            await callData();
+            ToastService.Notify(new(ToastType.Success, $"Thong bao", "Update thành công"));
+
+        }
+
+    }
+
+    async Task HandleOnSubmitForm2(EditContext editContext)
+    {
+
+        var result =
+
+   await categoryApi.CreateCategory(
+   categoryCreateRequest
+   );
+        if (result != null)
+        {
+
+            await callData();
+            ToastService.Notify(new(ToastType.Success, $"Thong bao", "Tạo  thành công"));
+
+        }
+
+    }
+
+}

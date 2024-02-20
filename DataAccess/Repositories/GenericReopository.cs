@@ -24,15 +24,17 @@ namespace DataAccess.Repositories
 
         public virtual IEnumerable<T> Find(Expression<Func<T, bool>> predicate)
         {
-            return _context.Set<T>().AsQueryable().Where(predicate).ToList();
+            return _context.Set<T>().AsNoTracking().Where(predicate).ToList();
         }
+
+
 
         public virtual IQueryable<T> All()
         {
             return _context.Set<T>();
         }
 
-        public virtual async Task<T> Get(int id)
+        public virtual async Task<T> Get(string id)
         {
             return await _context.FindAsync<T>(id);
         }
@@ -53,24 +55,25 @@ namespace DataAccess.Repositories
 
 
 
-        public IQueryable<T> Filter(Expression<Func<T, bool>> predicate, IQueryable<T> query)
-        {
-            return query.Where(predicate);
-        }
+        //public IQueryable<T> Filter(Expression<Func<T, bool>> predicate, IQueryable<T> query)
+        //{
+        //    return query.Where(predicate);
+        //}
 
         public IQueryable<T> Sort(Expression<Func<T, string>> field, IQueryable<T> query, bool ascending = true)
         {
-            if (ascending) return query.OrderBy(field);
+            if (ascending) return query.OrderByDescending(field);
 
-            return query.OrderByDescending(field);
+
+            return query.OrderBy(field);
         }
 
-        public IQueryable<T> Search(Expression<Func<T, bool>> predicate, IQueryable<T> query)
-        {
+        //public IQueryable<T> Search(Expression<Func<T, bool>> predicate, IQueryable<T> query)
+        //{
 
 
-            return query.Where(predicate);
-        }
+        //    return query.Where(predicate);
+        //}
 
 
         public async Task<bool> CheckExist(Expression<Func<T, bool>> predicate)

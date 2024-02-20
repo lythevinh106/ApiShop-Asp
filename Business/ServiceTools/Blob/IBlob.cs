@@ -7,5 +7,7 @@
         public Task<List<string>> ListBlob();
         public Task<Stream> DownLoadBlobAsync(string blobFileName);
         public Task<bool> DeleteBlobAsync(string blobFileName);
+
+        public Task<string> getBlobFileNameFromUrl(string url);
     }
 }
