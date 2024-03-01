@@ -2,7 +2,7 @@
 using DataAccess.Infrastructure;
 using DtoShared.ModulesDto;
 using MediatR;
-using System.ComponentModel.DataAnnotations;
+using Service.Errors;
 using System.Transactions;
 
 namespace Service.Application.User.Commands
@@ -36,7 +36,7 @@ namespace Service.Application.User.Commands
 
                 if (!await _userRepository.CheckExist(p => p.Id == request._userId))
                 {
-                    throw new ValidationException("User does not exist.");
+                    throw new ConflicDataException("User Không tồn tại trong hệ thống ");
                 }
 
                 //var user = _mapper.Map<Model.Modules.UserModel.User>(request._userRequest);

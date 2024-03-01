@@ -26,7 +26,8 @@ namespace DataAccess.Infrastructure
 
 
 
-        IQueryable<T> Sort(Expression<Func<T, string>> field, IQueryable<T> query, bool ascending = true);
+        IOrderedQueryable<T> Sort<Tkey>(Expression<Func<T, Tkey>> field, IQueryable<T> query, bool ascending = true);
+        IOrderedQueryable<T> SortThenBy<Tkey>(Expression<Func<T, Tkey>> field, IOrderedQueryable<T> query, bool ascending = true);
 
 
         //IQueryable<T> Filter(Expression<Func<T, bool>> predicate, IQueryable<T> query);

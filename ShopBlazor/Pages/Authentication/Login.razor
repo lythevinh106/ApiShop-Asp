@@ -1,0 +1,109 @@
+﻿@layout LayoutLogin
+@page "/Login"
+
+
+
+
+
+
+
+<div class="formbg-inner padding-horizontal--48">
+    <div class="padding-bottom--15 text-center text-primary fs-3 fw-bold" >Đăng Nhập </div>
+
+    <ShopBlazor.Component.Form.FormComponent @ref="@formEl1"
+                                             model=@signInUser
+                                             OnSubmitForm="@HandleOnSubmitForm">
+
+
+        <DataAnnotationsValidator />
+
+
+        <div class="field padding-bottom--24">
+            <label for="email">Email</label>
+            <InputText class="form-control"
+                       @bind-Value="@signInUser.Email"></InputText>
+
+            <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
+
+                <ValidationMessage style="color:red;margin-top:3px" For="()=>signInUser.Email">
+                </ValidationMessage>
+            </div>
+        </div>
+
+        <div class="field padding-bottom--24">
+            <label for="email">Password</label>
+            <InputText type="password" class="form-control"
+                       @bind-Value="@signInUser.Password"></InputText>
+
+            <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
+
+               
+                    <ValidationMessage style="color:red;margin-top:3px" For="()=>signInUser.Password">
+                    </ValidationMessage>
+                
+               
+            </div>
+        </div>
+
+        
+        <div class="field padding-bottom--24 justify-content-center d-flex">
+            <ShopBlazor.Component.ButtonComponent type=ButtonType.Submit> Đăng nhập</ShopBlazor.Component.ButtonComponent>
+        </div>
+        <div class="field text-center"  >
+            <NavLink href="/register">Đã Có Tài Khoản Đăng Ký Tại Đây </NavLink> 
+        </div>
+
+
+    </ShopBlazor.Component.Form.FormComponent>
+</div>
+
+
+
+
+@code {
+    public ShopBlazor.Component.Form.FormComponent formEl1 = default!;
+
+    [Inject] protected ShopBlazor.Services.User.UserApi userApi { get; set; }
+    [Inject] protected NavigationManager navigationManager { get; set; }
+    [Inject] protected ILocalStorageService localStorageService { get; set; }
+
+    [Inject] protected AuthenticationStateProvider authenticationStateProvider { get; set; }
+    [Inject] protected ToastService ToastService { get; set; } = default!;
+
+    public DtoShared.ModulesDto.SingInUser signInUser { get; set; } = new DtoShared.ModulesDto.SingInUser();
+
+    async void HandleOnSubmitForm(EditContext editContext)
+    {
+
+        //jsHelper.LogObject(categoryUpdateRequest);
+
+        //var result =
+
+        DtoShared.ModulesDto.SingInResponse result = await userApi.Login(
+                signInUser
+       );
+
+        localStorageService.SetItemAsStringAsync("token", "");
+
+
+
+        if (result != null)
+        {
+
+
+            await  localStorageService.SetItemAsStringAsync("token", result.jwtToken);
+            await   authenticationStateProvider.GetAuthenticationStateAsync();
+
+             navigationManager.NavigateTo("/");
+
+
+        }
+        else
+        {
+
+            ToastService.Notify(new(ToastType.Warning, $"Thông Báo", "Sai Tên Tài Khoản Hoặc Mật Khẩu"));
+        }
+
+    }
+
+}

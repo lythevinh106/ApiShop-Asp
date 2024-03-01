@@ -1,12 +1,14 @@
 ﻿using ApiShop.Presentation.Controllers;
 using AutoMapper;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ProductOrderController : GenericBaseController
     {
         public ProductOrderController(IMediator mediator, IMapper mapper) : base(mediator, mapper)

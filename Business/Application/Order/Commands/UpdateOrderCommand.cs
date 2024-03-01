@@ -2,7 +2,8 @@
 using DataAccess.Infrastructure;
 using DtoShared.ModulesDto;
 using MediatR;
-using System.ComponentModel.DataAnnotations;
+using Model.Modules.ProductOrderModel;
+using Service.Errors;
 
 namespace Service.Application.Order.Commands
 {
@@ -32,22 +33,37 @@ namespace Service.Application.Order.Commands
             {
                 if (!await _unitOfWork.OrderRepository.CheckExist(p => p.Id == request._orderId))
                 {
-                    throw new ValidationException("Order không tồn tại.");
+                    throw new ConflicDataException("Đơn Hàng Không tồn tại trong hệ thống ");
                 }
 
-
+                if (!await _unitOfWork.ProductOrderRepository.CheckExist(p => p.ProductId == request._orderUpdate.ProductId))
+                {
+                    throw new ConflicDataException("Sản Phẩm Không tồn tại trong hệ thống ");
+                }
 
                 var oldOrder = _unitOfWork.OrderRepository.Find(p => p.Id == request._orderId).ToList()[0];
 
-                //var newOrder = _mapper.Map<Model.Modules.OrderModel.Order>(request._orderUpdate);
-
                 oldOrder.Status = request._orderUpdate.Status;
-
-
                 Model.Modules.OrderModel.Order order = _unitOfWork.OrderRepository.Update(oldOrder);
+
+                var oldProductOrder = _unitOfWork.ProductOrderRepository.Find(p => p.ProductId == request._orderUpdate.ProductId).ToList()[0];
+
+                if (request._orderUpdate.quantity.HasValue)
+                {
+                    oldProductOrder.Quantity = request._orderUpdate.quantity.Value;
+                    ProductOrder productOrder = _unitOfWork.ProductOrderRepository.Update(oldProductOrder);
+                }
+
                 _unitOfWork.SaveChanges();
 
-                return _mapper.Map<OrderResponse>(order);
+                return new OrderResponse()
+                {
+                    UserId = order.UserId,
+                    ProductId = request._orderUpdate.ProductId,
+                    Status = order.Status,
+                    quantity = oldProductOrder.Quantity,
+                    Time = order.Time
+                };
             }
         }
     }

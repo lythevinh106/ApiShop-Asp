@@ -18,11 +18,13 @@ namespace ShopBlazor.Services.Product
 
         private readonly HttpClient _httpClient;
         private readonly IDispatcher _dispatcher;
+        private readonly StringHelper _stringHelper;
 
-        public ProductApi(HttpClient httpClient, IDispatcher dispatcher)
+        public ProductApi(HttpClient httpClient, IDispatcher dispatcher, StringHelper stringHelper)
         {
             _httpClient = httpClient;
             _dispatcher = dispatcher;
+            _stringHelper = stringHelper;
         }
 
 
@@ -48,6 +50,12 @@ namespace ShopBlazor.Services.Product
                 multipartContent.Add(new StringContent(productCreateRequestClient.Description), "Description");
                 multipartContent.Add(new StringContent(productCreateRequestClient.Price.ToString()), "Price");
                 multipartContent.Add(new StringContent(productCreateRequestClient.CategoryId), "CategoryId");
+
+                if (!string.IsNullOrEmpty(productCreateRequestClient.PromotionId))
+                {
+                    multipartContent.Add(new StringContent(productCreateRequestClient.PromotionId), "PromotionId");
+
+                }
 
                 if (productCreateRequestClient?.ImageFile != null)
                 {
@@ -96,7 +104,7 @@ namespace ShopBlazor.Services.Product
                 if (response.IsSuccessStatusCode)
                 {
                     ProductResponse parsedResponse = await response.Content.ReadFromJsonAsync<ProductResponse>();
-                    await Task.Delay(500);
+                    //await Task.Delay(500);
 
                     _dispatcher.Dispatch(new LoadingAction(false));
                     return parsedResponse;
@@ -120,13 +128,13 @@ namespace ShopBlazor.Services.Product
             {
                 _dispatcher.Dispatch(new LoadingAction(true));
 
-                string query = StringHelper.ConvertObjectToSearchParam(fetchDataProductRequest);
+                string query = _stringHelper.ConvertObjectToSearchParam(fetchDataProductRequest);
                 Console.WriteLine("query-------" + query);
 
                 PaggingResponse<ProductResponse> response =
                     await _httpClient.GetFromJsonAsync<PaggingResponse<ProductResponse>>($"/api/Product/FetchProduct?{query}&PageSize={fetchDataProductRequest.PageSize} ");
 
-                await Task.Delay(500);
+                //await Task.Delay(500);
 
                 _dispatcher.Dispatch(new LoadingAction(false));
                 return response;
@@ -149,7 +157,7 @@ namespace ShopBlazor.Services.Product
 
 
                 ProductResponse response = await _httpClient.GetFromJsonAsync<ProductResponse>($"/api/Product/{id}");
-                await Task.Delay(500);
+                //await Task.Delay(500);
                 ;
                 _dispatcher.Dispatch(new LoadingAction(false));
                 return response;
@@ -176,6 +184,12 @@ namespace ShopBlazor.Services.Product
                 multipartContent.Add(new StringContent(productUpdateRequestClient.Description), "Description");
                 multipartContent.Add(new StringContent(productUpdateRequestClient.Price.ToString()), "Price");
                 multipartContent.Add(new StringContent(productUpdateRequestClient.CategoryId), "CategoryId");
+
+                if (!string.IsNullOrEmpty(productUpdateRequestClient.PromotionId))
+                {
+                    multipartContent.Add(new StringContent(productUpdateRequestClient.PromotionId), "PromotionId");
+
+                }
 
                 if (productUpdateRequestClient?.ImageFile != null)
                 {

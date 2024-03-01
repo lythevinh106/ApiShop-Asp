@@ -30,6 +30,10 @@ namespace DtoShared.ModulesDto
 
         [Required(ErrorMessage = "  {0} là bắt buộc ")]
         public string CategoryId { get; set; }
+
+
+
+        public string? PromotionId { get; set; }
     }
 
 
@@ -58,6 +62,8 @@ namespace DtoShared.ModulesDto
         [Required(ErrorMessage = "  {0} là bắt buộc ")]
         public string CategoryId { get; set; }
 
+        public string? PromotionId { get; set; }
+
     }
 
 
@@ -74,7 +80,7 @@ namespace DtoShared.ModulesDto
         public string Image { get; set; }
         public string Description { get; set; }
         public string CategoryId { get; set; }
-
+        public string? PromotionId { get; set; }
         public string Time { get; set; }
     }
 }

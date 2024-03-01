@@ -2,7 +2,7 @@
 using DataAccess.Infrastructure;
 using DtoShared.ModulesDto;
 using MediatR;
-using System.ComponentModel.DataAnnotations;
+using Service.Errors;
 using System.Transactions;
 
 namespace Service.Application.User.Commands
@@ -50,7 +50,7 @@ namespace Service.Application.User.Commands
                     {
                         if (!await _userRepository.CheckExist(c => c.Id == request._userId))
                         {
-                            throw new ValidationException("Cateogry does not exist.");
+                            throw new ConflicDataException("User Không tồn tại trong hệ thống ");
                         }
 
                         Model.Modules.UserModel.User user = await _userRepository.Get(request._userId);

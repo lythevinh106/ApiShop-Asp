@@ -60,13 +60,23 @@ namespace DataAccess.Repositories
         //    return query.Where(predicate);
         //}
 
-        public IQueryable<T> Sort(Expression<Func<T, string>> field, IQueryable<T> query, bool ascending = true)
+        public IOrderedQueryable<T> Sort<Tkey>(Expression<Func<T, Tkey>> field, IQueryable<T> query, bool ascending = true)
         {
             if (ascending) return query.OrderByDescending(field);
 
 
             return query.OrderBy(field);
         }
+
+        public IOrderedQueryable<T> SortThenBy<Tkey>(Expression<Func<T, Tkey>> field, IOrderedQueryable<T> query, bool ascending = true)
+        {
+            if (ascending) return query.ThenByDescending(field);
+
+
+            return query.ThenBy(field);
+        }
+
+
 
         //public IQueryable<T> Search(Expression<Func<T, bool>> predicate, IQueryable<T> query)
         //{

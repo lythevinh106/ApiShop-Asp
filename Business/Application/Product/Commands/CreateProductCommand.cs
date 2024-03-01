@@ -1,9 +1,10 @@
 ﻿using AutoMapper;
+using Castle.Core.Internal;
 using DataAccess.Infrastructure;
 using DtoShared.ModulesDto;
 using MediatR;
+using Service.Errors;
 using Service.ServiceTools.Blob;
-using System.ComponentModel.DataAnnotations;
 
 namespace Service.Application.Product.Commands
 {
@@ -32,9 +33,18 @@ namespace Service.Application.Product.Commands
 
             public async Task<ProductResponse> Handle(CreateProductCommand request, CancellationToken cancellationToken)
             {
+
                 if (!await _unitOfWork.CategoryRepository.CheckExist(c => c.Id == request._productRequest.CategoryId))
                 {
-                    throw new ValidationException("Category does not exist.");
+                    throw new ConflicDataException("Danh Mục Không tồn tại trong hệ thống ");
+                }
+
+                if (!request._productRequest.PromotionId.IsNullOrEmpty())
+                {
+                    if (!await _unitOfWork.PromotionRepository.CheckExist(c => c.Id == request._productRequest.PromotionId))
+                    {
+                        throw new ConflicDataException("Danh Mục Không tồn tại trong hệ thống ");
+                    }
                 }
 
 

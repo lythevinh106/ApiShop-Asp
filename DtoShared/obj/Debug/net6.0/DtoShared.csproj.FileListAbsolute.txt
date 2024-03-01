@@ -6,8 +6,8 @@ C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Debug\net6.0\DtoShared.Generate
 C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Debug\net6.0\DtoShared.AssemblyInfoInputs.cache
 C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Debug\net6.0\DtoShared.AssemblyInfo.cs
 C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Debug\net6.0\DtoShared.csproj.CoreCompileInputs.cache
+C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Debug\net6.0\DtoShared.sourcelink.json
 C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Debug\net6.0\DtoShared.dll
 C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Debug\net6.0\refint\DtoShared.dll
 C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Debug\net6.0\DtoShared.pdb
 C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Debug\net6.0\ref\DtoShared.dll
-C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Debug\net6.0\DtoShared.sourcelink.json

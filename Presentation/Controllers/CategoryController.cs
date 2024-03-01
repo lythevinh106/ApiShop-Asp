@@ -4,6 +4,7 @@ using DtoShared.FetchData;
 using DtoShared.ModulesDto;
 using DtoShared.Pagging;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Service.Application.Category.Commands;
 using Service.Application.Category.Queries;
@@ -14,7 +15,7 @@ namespace Presentation.Controllers
     [Route("api/[controller]")]
     [ApiController]
 
-
+    [Authorize]
     public class CategoryController : GenericBaseController
     {
         public CategoryController(IMediator mediator, IMapper mapper) : base(mediator, mapper)

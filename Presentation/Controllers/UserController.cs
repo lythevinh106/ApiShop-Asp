@@ -38,6 +38,14 @@ namespace Presentation.Controllers
             return Ok(results);
         }
 
+        [HttpGet("AllUser")]
+        public async Task<ActionResult<List<UserResponse>>> AllUser()
+        {
+            List<UserResponse> results = await _imediator.Send(new GetAllUserQuery());
+            return Ok(results);
+        }
+
+
 
 
 
@@ -53,7 +61,7 @@ namespace Presentation.Controllers
 
         [HttpPost]
 
-        public async Task<ActionResult> CreateUser(RegisterUser registerUser)
+        public async Task<ActionResult<bool>> CreateUser(RegisterUser registerUser)
         {
             UserResponse newUser = await _imediator.Send(new CreateUserCommand(registerUser));
 
@@ -66,9 +74,13 @@ namespace Presentation.Controllers
 
                 _imediator.Publish(new SendMailNotificaltion("Xác Thực Tài Khoản", fileContentRegister, newUser.Email));
 
-                return Ok("Tạo Thành Công Vui Lòng CheckEmail để xác thực tài khoản");
-            }
 
+
+
+
+                return Ok(true);
+            }
+            return false;
             return BadRequest("Lỗi Khi Tạo Tài Khoản");
 
         }
@@ -94,7 +106,8 @@ namespace Presentation.Controllers
         public async Task<ActionResult> SingIn(SingInUser singInUser)
         {
             SingInResponse singInResponse = await _imediator.Send(new LoginUserQuery(singInUser));
-            return BadRequest(singInResponse);
+
+            return Ok(singInResponse);
 
         }
 

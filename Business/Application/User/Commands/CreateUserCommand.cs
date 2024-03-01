@@ -2,7 +2,8 @@
 using DataAccess.Infrastructure;
 using DtoShared.ModulesDto;
 using MediatR;
-using System.ComponentModel.DataAnnotations;
+using Service.Errors;
+
 
 namespace Service.Application.User.Commands
 {
@@ -34,7 +35,7 @@ namespace Service.Application.User.Commands
 
                 if (await _userRepository.CheckExist(c => c.Email == request._registerUser.Email))
                 {
-                    throw new ValidationException("Email  is existed.");
+                    throw new ConflicDataException("email đã tồn tại trong hệ thống");
                 }
 
 

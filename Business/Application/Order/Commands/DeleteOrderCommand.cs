@@ -2,11 +2,11 @@
 using DataAccess.Infrastructure;
 using DtoShared.ModulesDto;
 using MediatR;
-using System.ComponentModel.DataAnnotations;
+using Service.Errors;
 
 namespace Service.Application.Order.Commands
 {
-    public class DeleteOrderCommand : IRequest<OrderResponse>
+    public class DeleteOrderCommand : IRequest<OrderDeleteResponse>
     {
         private readonly string _orderId;
 
@@ -15,17 +15,17 @@ namespace Service.Application.Order.Commands
             _orderId = orderId;
         }
 
-        public class Handler : BaseHandler, IRequestHandler<DeleteOrderCommand, OrderResponse>
+        public class Handler : BaseHandler, IRequestHandler<DeleteOrderCommand, OrderDeleteResponse>
         {
             public Handler(IUnitOfWork unitOfWork, IMapper mapper) : base(unitOfWork, mapper)
             {
             }
 
-            public async Task<OrderResponse> Handle(DeleteOrderCommand request, CancellationToken cancellationToken)
+            public async Task<OrderDeleteResponse> Handle(DeleteOrderCommand request, CancellationToken cancellationToken)
             {
                 if (!await _unitOfWork.OrderRepository.CheckExist(c => c.Id == request._orderId))
                 {
-                    throw new ValidationException("Order does not exist.");
+                    throw new ConflicDataException("Đơn Hàng Không tồn tại trong hệ thống ");
                 }
 
                 Model.Modules.OrderModel.Order order = await _unitOfWork.OrderRepository.Get(request._orderId);
@@ -33,7 +33,7 @@ namespace Service.Application.Order.Commands
                 Model.Modules.OrderModel.Order orderRemove = _unitOfWork.OrderRepository.Delete(order);
 
                 _unitOfWork.SaveChanges();
-                return _mapper.Map<OrderResponse>(orderRemove);
+                return _mapper.Map<OrderDeleteResponse>(orderRemove);
             }
         }
     }

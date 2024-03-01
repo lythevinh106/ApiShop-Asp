@@ -12,7 +12,7 @@ namespace ShopBlazor.Pages.Product
 
         [Display(Name = "Giá Sản Phẩm")]
         [Required(ErrorMessage = "  {0} là bắt buộc ")]
-        [Range(0, 100000000, ErrorMessage = "{0} không được vượt quá 100,000,000")]
+        [Range(0, (double)100000000, ErrorMessage = "{0} không được vượt quá 100,000,000")]
         public decimal Price { get; set; }
 
         [Display(Name = "Hình Ảnh")]
@@ -30,6 +30,7 @@ namespace ShopBlazor.Pages.Product
         [Display(Name = " Danh Mục Sản Phẩm")]
         [Required(ErrorMessage = "  {0} là bắt buộc ")]
         public string CategoryId { get; set; }
+        public string? PromotionId { get; set; }
     }
 
     public class ProductCreateRequestClient
@@ -41,7 +42,7 @@ namespace ShopBlazor.Pages.Product
 
         [Display(Name = "Giá Sản Phẩm")]
         [Required(ErrorMessage = "  {0} là bắt buộc ")]
-        [Range(0, 100000000, ErrorMessage = "{0} không được vượt quá 100,000,000")]
+        [Range(0, (double)100000000, ErrorMessage = "{0} không được vượt quá 100,000,000")]
         public decimal Price { get; set; }
 
         [Display(Name = "Hình Ảnh")]
@@ -64,5 +65,6 @@ namespace ShopBlazor.Pages.Product
         [Display(Name = " Danh Mục Sản Phẩm")]
         [Required(ErrorMessage = "  {0} là bắt buộc ")]
         public string CategoryId { get; set; }
+        public string? PromotionId { get; set; }
     }
 }
