@@ -22,7 +22,7 @@ namespace ShopBlazor
             builder.RootComponents.Add<App>("#app");
             builder.RootComponents.Add<HeadOutlet>("head::after");
 
-            builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:7148") });
+            builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.Configuration["ServerIP"]) });
             builder.Services.AddScoped<JsHelper>();
             builder.Services.AddScoped<StringHelper>();
 

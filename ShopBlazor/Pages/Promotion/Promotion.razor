@@ -139,7 +139,7 @@ else
 
                             <GridColumn Sortable="false"
                                         TItem="PromotionResponse"
-                                        Filterable="true"
+                                        Filterable="false"
                                         FilterOperator="FilterOperator.None"
                                         HeaderText="Trạng Thái " PropertyName="Status" FilterTextboxWidth="100">
 
@@ -572,6 +572,7 @@ else
         {
 
             await callData();
+            PromotionCreateRequest = new PromotionRequest();
             ToastService.Notify(new(ToastType.Success, $"Thong bao", "Tạo  thành công"));
 
         }

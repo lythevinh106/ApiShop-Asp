@@ -1,7 +1,7 @@
 {
   "entryAssembly": "ShopBlazor",
   "resources": {
-    "hash": "sha256-BULFcWCKXGHpYrEO3kGsdRDRRTUHgGNWAs5aiuMhIfY=",
+    "hash": "sha256-kQ+ES0FZvwV9gsPfvaBYT4RR5hy11cgl/yAqwMzHOOc=",
     "runtime": {
       "dotnet.6.0.25.qqgezcgs2j.js": "sha256-1jUGCCSGH9JWhkqbHdQk8JBjBI8K/VC63En5zlypVps=",
       "dotnet.timezones.blat": "sha256-KsGUR9nqtXb3Hy6IrNlnc1HoSS+AFlsXTX9rq4oChtA=",
@@ -222,11 +222,11 @@
       "netstandard.dll": "sha256-O9JhHo5KqxkmwmapuxuhG/iMRV7RHcrCDO9z+yv+8yI=",
       "System.Private.CoreLib.dll": "sha256-6rKu8tPdUGsvbSpesoNMVzbx7bNqPRMPV34eI7vSYaQ=",
       "DtoShared.dll": "sha256-cGUfQlRtW4XCpybaeIYIUlFiRwb2k7aTQya5G8DjYqY=",
-      "ShopBlazor.dll": "sha256-ccPXPPEPC0MtlnNnPXVCcw/fW4mo9Zz9GCc1URdhX2Q="
+      "ShopBlazor.dll": "sha256-wy5BJOyhsAuVflKRCjHybAlJB6Y4xng0oXMxKDVNmqM="
     },
     "pdb": {
       "DtoShared.pdb": "sha256-jiZQW06xytPTuupVs9R8YVXAJrSHlIRmtGZXC7OfXhE=",
-      "ShopBlazor.pdb": "sha256-uHkCULEBumf1RV+vsvM6FuvsEZPGm9nLcLh/vNq6xbw="
+      "ShopBlazor.pdb": "sha256-2wi5O7kQIWNjfk5FPnY0TugEIk5stz2n5uc0Ae/qul4="
     },
     "runtimeAssets": {
       "dotnet.wasm": {
@@ -239,7 +239,9 @@
   "debugBuild": true,
   "debugLevel": 0,
   "linkerEnabled": false,
-  "config": [],
+  "config": [
+    "appsettings.json"
+  ],
   "icuDataMode": 0,
   "extensions": {
     "blazor": {}
