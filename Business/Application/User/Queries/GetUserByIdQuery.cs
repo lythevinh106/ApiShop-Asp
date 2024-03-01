@@ -2,7 +2,7 @@
 using DataAccess.Infrastructure;
 using DtoShared.ModulesDto;
 using MediatR;
-using System.ComponentModel.DataAnnotations;
+using Service.Errors;
 
 namespace Service.Application.User.Queries
 {
@@ -30,7 +30,7 @@ namespace Service.Application.User.Queries
             {
                 if (!await _userRepository.CheckExist(c => c.Id == request._user))
                 {
-                    throw new ValidationException("User does not exist.");
+                    throw new ConflicDataException("User Không tồn tại trong hệ thống ");
                 }
 
                 Model.Modules.UserModel.User user = await _userRepository.Get(request._user);

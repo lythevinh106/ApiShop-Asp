@@ -3,7 +3,7 @@ using Castle.Core.Internal;
 using DataAccess.Infrastructure;
 using DtoShared.ModulesDto;
 using MediatR;
-using System.ComponentModel.DataAnnotations;
+using Service.Errors;
 
 namespace Service.Application.User.Queries
 {
@@ -33,7 +33,7 @@ namespace Service.Application.User.Queries
             {
                 if (!await _userRepository.CheckExist(c => c.Email == request._singInUser.Email))
                 {
-                    throw new ValidationException("User Không Tồn Tại Trong Hệ Thống.");
+                    throw new ConflicDataException("User Không tồn tại trong hệ thống ");
                 }
 
                 var result = await _accountRepository.SignInAsync(request._singInUser);

@@ -42,19 +42,74 @@ namespace Service.Application.Product.Queries
                     quertListProduct = quertListProduct
                     .Where(p => p.Name.Contains(request._fetchDataProductRequest.Search));
                 }
+
+
+
+
+
+                if (request._fetchDataProductRequest.SortTime.HasValue
+
+                  )
+                {
+                    IOrderedQueryable<Model.Modules.ProductModel.Product> OrderQuerytListProduct = null;
+
+
+                    if (request._fetchDataProductRequest.SortTime.Value.ToString() == SortProductOption.Ascending.ToString())
+                    {
+                        OrderQuerytListProduct = productRepo.Sort(p => (p.Time), quertListProduct, false);
+                    }
+                    if (request._fetchDataProductRequest.SortTime.Value.ToString() == SortProductOption.Descending.ToString())
+                    {
+                        OrderQuerytListProduct = productRepo.Sort(p => (p.Time), quertListProduct, true);
+                    }
+
+                    //if (OrderQuerytListProduct != null)
+                    //{
+
+                    //    if (request._fetchDataProductRequest.Sort.HasValue
+
+                    //     )
+                    //    {
+                    //        if (request._fetchDataProductRequest.Sort.Value.ToString() == SortProductOption.Ascending.ToString())
+                    //        {
+                    //            OrderQuerytListProduct = productRepo.SortThenBy(p => (p.Price), OrderQuerytListProduct, false);
+                    //        }
+                    //        if (request._fetchDataProductRequest.Sort.Value.ToString() == SortProductOption.Descending.ToString())
+                    //        {
+                    //            OrderQuerytListProduct = productRepo.SortThenBy(p => (p.Price), OrderQuerytListProduct, true);
+                    //        }
+                    //    }
+                    //}
+
+
+                    quertListProduct = OrderQuerytListProduct;
+
+
+                }
+
+
                 if (request._fetchDataProductRequest.Sort.HasValue
 
-                    )
+                 )
                 {
+
                     if (request._fetchDataProductRequest.Sort.Value.ToString() == SortProductOption.Ascending.ToString())
                     {
-                        quertListProduct = productRepo.Sort(p => (p.Price).ToString(), quertListProduct, false);
+                        quertListProduct = productRepo.Sort(p => (p.Price), quertListProduct, false);
                     }
                     if (request._fetchDataProductRequest.Sort.Value.ToString() == SortProductOption.Descending.ToString())
                     {
-                        quertListProduct = productRepo.Sort(p => (p.Price).ToString(), quertListProduct, true);
+                        quertListProduct = productRepo.Sort(p => (p.Price), quertListProduct, true);
                     }
+
                 }
+
+
+
+
+
+
+
 
                 FetchDataRequest fetchDataRequest = _mapper.Map<FetchDataRequest>(request._fetchDataProductRequest);
 

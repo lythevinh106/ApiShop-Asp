@@ -10,6 +10,7 @@
 
         //private SortProductOption? _sort;
         public SortProductOption? Sort { get; set; } = null;
+        public SortProductOption? SortTime { get; set; } = null;
 
 
 

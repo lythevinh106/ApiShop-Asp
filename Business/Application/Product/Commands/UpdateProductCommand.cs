@@ -2,8 +2,8 @@
 using DataAccess.Infrastructure;
 using DtoShared.ModulesDto;
 using MediatR;
+using Service.Errors;
 using Service.ServiceTools.Blob;
-using System.ComponentModel.DataAnnotations;
 
 namespace Service.Application.Product.Commands
 {
@@ -38,12 +38,12 @@ namespace Service.Application.Product.Commands
 
                 if (!await _unitOfWork.CategoryRepository.CheckExist(c => c.Id == request._productRequest.CategoryId))
                 {
-                    throw new ValidationException("Category does not exist.");
+                    throw new ConflicDataException("Danh Mục Không tồn tại trong hệ thống ");
                 }
 
                 if (!await _unitOfWork.ProductReponsitory.CheckExist(p => p.Id == request._productId))
                 {
-                    throw new ValidationException("Product does not exist.");
+                    throw new ConflicDataException("Sản Phẩm Không tồn tại trong hệ thống ");
                 }
 
                 var oldProduct = _unitOfWork.ProductReponsitory.Find(p => p.Id == request._productId).ToList()[0];
@@ -53,6 +53,7 @@ namespace Service.Application.Product.Commands
                 var newProduct = _mapper.Map<Model.Modules.ProductModel.Product>(request._productRequest);
 
                 newProduct.Id = request._productId;
+                newProduct.Time = oldProduct.Time;
 
 
 

@@ -2,8 +2,8 @@
 using DataAccess.Infrastructure;
 using DtoShared.ModulesDto;
 using MediatR;
+using Service.Errors;
 using Service.ServiceTools.Blob;
-using System.ComponentModel.DataAnnotations;
 
 namespace Service.Application.Category.Commands
 {
@@ -29,7 +29,7 @@ namespace Service.Application.Category.Commands
             {
                 if (!await _unitOfWork.CategoryRepository.CheckExist(c => c.Id == request._categoryId))
                 {
-                    throw new ValidationException("Cateogry does not exist.");
+                    throw new ConflicDataException("Danh Mục Không tồn tại trong hệ thống ");
                 }
 
                 Model.Modules.CategoryModel.Category category = await _unitOfWork.CategoryRepository.Get(request._categoryId);

@@ -2,7 +2,7 @@
 using DataAccess.Infrastructure;
 using DtoShared.ModulesDto;
 using MediatR;
-using System.ComponentModel.DataAnnotations;
+using Service.Errors;
 
 namespace Service.Application.Product.Queries
 {
@@ -25,7 +25,7 @@ namespace Service.Application.Product.Queries
             {
                 if (!await _unitOfWork.ProductReponsitory.CheckExist(c => c.Id == request._productId))
                 {
-                    throw new ValidationException("Product does not exist.");
+                    throw new ConflicDataException("Sản Phẩm Không tồn tại trong hệ thống ");
                 }
 
                 Model.Modules.ProductModel.Product product = await _unitOfWork.ProductReponsitory.Get(request._productId);

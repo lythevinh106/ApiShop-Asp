@@ -5,6 +5,7 @@ using Model.Modules.CategoryModel;
 using Model.Modules.OrderModel;
 using Model.Modules.ProductModel;
 using Model.Modules.ProductOrderModel;
+using Model.Modules.PromotionModel;
 using Model.Modules.UserModel;
 
 namespace Model
@@ -24,6 +25,7 @@ namespace Model
 
         public DbSet<Order> Orders { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Promotion> Promotions { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -74,6 +76,20 @@ namespace Model
                 //relative product order
                 entity.HasMany(o => o.ProductOrders)
                 .WithOne(po => po.Order);
+            });
+
+
+
+
+            modelBuilder.Entity<Promotion>(entity =>
+            {
+                entity.HasKey(pr => pr.Id);
+
+
+                entity.HasMany(pr => pr.Products).WithOne(p => p.Promotion)
+                .HasForeignKey(p => p.PromotionId);
+
+
             });
 
 

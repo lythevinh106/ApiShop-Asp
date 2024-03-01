@@ -1,6 +1,7 @@
 ﻿using Model.Contracts;
 using Model.Modules.CategoryModel;
 using Model.Modules.ProductOrderModel;
+using Model.Modules.PromotionModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace Model.Modules.ProductModel
@@ -30,6 +31,10 @@ namespace Model.Modules.ProductModel
 
 
         public virtual List<ProductOrder> ProductOrders { get; set; }
+
+        public string? PromotionId { get; set; }
+        public virtual Promotion? Promotion { get; set; }
+
         System.Collections.IList ISeedable.Seed()
         {
             var products = new List<Product>(

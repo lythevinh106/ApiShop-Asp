@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "t1vAud6FriD8B3zg0dIH8x0YMhQBvFeM29S33e2auFsXpM/RzSCBvWUiJl5PnKJTyUhdeAXjoX2rh6jMxYKweQ==",
+  "dgSpecHash": "cDk6v8i4Ab1LQ+ZBOZpyDAKRiOb8yi6vGtZDR5SuXH0xs7evKOuPk8FiM/Lthx233aJYbDHpxkeSLUy03HakUA==",
   "success": true,
   "projectFilePath": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\ShopBlazor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VINH\\.nuget\\packages\\blazor.bootstrap\\1.11.1\\blazor.bootstrap.1.11.1.nupkg.sha512",
+    "C:\\Users\\VINH\\.nuget\\packages\\blazored.localstorage\\4.5.0\\blazored.localstorage.4.5.0.nupkg.sha512",
+    "C:\\Users\\VINH\\.nuget\\packages\\blazored.sessionstorage\\2.4.0\\blazored.sessionstorage.2.4.0.nupkg.sha512",
     "C:\\Users\\VINH\\.nuget\\packages\\bootstrapblazor\\8.2.1\\bootstrapblazor.8.2.1.nupkg.sha512",
     "C:\\Users\\VINH\\.nuget\\packages\\fluxor\\5.9.1\\fluxor.5.9.1.nupkg.sha512",
     "C:\\Users\\VINH\\.nuget\\packages\\fluxor.blazor.web\\5.9.1\\fluxor.blazor.web.5.9.1.nupkg.sha512",

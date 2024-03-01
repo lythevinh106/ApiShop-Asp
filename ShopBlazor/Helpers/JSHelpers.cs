@@ -23,5 +23,7 @@ namespace ShopBlazor.Helpers
         {
             await _jsRuntime.InvokeVoidAsync("console.log", message);
         }
+
+
     }
 }

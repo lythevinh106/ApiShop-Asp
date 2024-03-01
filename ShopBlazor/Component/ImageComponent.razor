@@ -1,0 +1,26 @@
+﻿
+
+
+
+  <img src="@src" class=" w-100 h-auto object-fit-cover @( cssClass )" alt="@alt" />
+   
+@code {
+    [Parameter]
+
+    public string src { get; set; }
+
+
+    [Parameter]
+
+    public string alt { get; set; }
+
+    [Parameter]
+    public string cssClass { get; set; } = "";
+
+
+
+
+
+
+
+}

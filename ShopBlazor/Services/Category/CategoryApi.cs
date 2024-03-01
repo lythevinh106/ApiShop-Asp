@@ -14,11 +14,13 @@ namespace ShopBlazor.Services.Category
     {
         private readonly HttpClient _httpClient;
         private readonly IDispatcher _dispatcher;
+        private readonly StringHelper _stringHelper;
 
-        public CategoryApi(HttpClient httpClient, IDispatcher dispatcher)
+        public CategoryApi(HttpClient httpClient, IDispatcher dispatcher, StringHelper stringHelper)
         {
             _httpClient = httpClient;
             _dispatcher = dispatcher;
+            _stringHelper = stringHelper;
         }
 
         public async Task<List<CategoryResponse>> All()
@@ -83,7 +85,7 @@ namespace ShopBlazor.Services.Category
                 if (response.IsSuccessStatusCode)
                 {
                     CategoryResponse parsedResponse = await response.Content.ReadFromJsonAsync<CategoryResponse>();
-                    await Task.Delay(500);
+                    //await Task.Delay(500);
 
                     _dispatcher.Dispatch(new LoadingAction(false));
                     return parsedResponse;
@@ -107,13 +109,13 @@ namespace ShopBlazor.Services.Category
             {
                 _dispatcher.Dispatch(new LoadingAction(true));
 
-                string query = StringHelper.ConvertObjectToSearchParam(fetchDataCategoryRequest);
+                string query = _stringHelper.ConvertObjectToSearchParam(fetchDataCategoryRequest);
                 Console.WriteLine("query-------" + query);
 
                 PaggingResponse<CategoryResponse> response =
                     await _httpClient.GetFromJsonAsync<PaggingResponse<CategoryResponse>>($"/api/Category/FetchCategory?{query}&PageSize={fetchDataCategoryRequest.PageSize} ");
 
-                await Task.Delay(1000);
+                // await Task.Delay(1000);
 
                 _dispatcher.Dispatch(new LoadingAction(false));
                 return response;

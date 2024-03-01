@@ -1,0 +1,142 @@
+﻿@layout LayoutLogin
+@page "/Register"
+
+
+
+
+
+
+
+<div class="formbg-inner padding-horizontal--48">
+    <div class="padding-bottom--15 text-center text-primary fs-3 fw-bold">Đăng Ký </div>
+
+    <ShopBlazor.Component.Form.FormComponent @ref="@formEl1"
+                                             model=@registerUser
+                                             OnSubmitForm="@HandleOnSubmitForm">
+
+
+        <DataAnnotationsValidator />
+        <div class="field pb-0">
+            <label for="email">Email</label>
+            <InputText class="form-control"
+                       @bind-Value="@registerUser.Email"></InputText>
+
+            <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
+
+                <ValidationMessage style="color:red;margin-top:3px" For="()=>registerUser.Email">
+                </ValidationMessage>
+            </div>
+        </div>
+
+        <div class="field pb-0">
+            <label for="email">Họ</label>
+            <InputText class="form-control"
+                       @bind-Value="@registerUser.LastName"></InputText>
+
+            <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
+
+                <ValidationMessage style="color:red;margin-top:3px" For="()=>registerUser.LastName">
+                </ValidationMessage>
+            </div>
+        </div>
+        <div class="field pb-0">
+            <label for="email">Tên</label>
+            <InputText class="form-control"
+                       @bind-Value="@registerUser.FirstName"></InputText>
+
+            <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
+
+                <ValidationMessage style="color:red;margin-top:3px" For="()=>registerUser.FirstName">
+                </ValidationMessage>
+            </div>
+        </div>
+
+
+
+
+        <div class="field pb-0">
+            <label for="email">Địa Chỉ</label>
+            <InputTextArea class="form-control"
+                           @bind-Value="@registerUser.Address">
+
+            </InputTextArea>
+
+            <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
+
+                <ValidationMessage style="color:red;margin-top:3px" For="()=>registerUser.Address">
+                </ValidationMessage>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="field pb-0">
+            <label for="email">Password</label>
+            <InputText type="password" class="form-control"
+                       @bind-Value="@registerUser.Password"></InputText>
+
+            <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
+
+
+                <ValidationMessage style="color:red;margin-top:3px" For="()=>registerUser.Password">
+                </ValidationMessage>
+
+
+            </div>
+        </div>
+
+        
+        <div class="field py-3 justify-content-center d-flex">
+            <ShopBlazor.Component.ButtonComponent type=ButtonType.Submit> Đăng ký</ShopBlazor.Component.ButtonComponent>
+        </div>
+        <div class="field text-center">
+            <NavLink href="/login">Đã Chưa Tài Khoản Đăng Nhập Tại Đây</NavLink>
+        </div>
+
+
+    </ShopBlazor.Component.Form.FormComponent>
+</div>
+
+
+
+
+
+
+@code {
+    public ShopBlazor.Component.Form.FormComponent formEl1 = default!;
+
+    [Inject] protected ShopBlazor.Services.User.UserApi userApi { get; set; }
+    [Inject] protected NavigationManager navigationManager { get; set; }
+    [Inject] protected ILocalStorageService localStorageService { get; set; }
+
+    [Inject] protected AuthenticationStateProvider authenticationStateProvider { get; set; }
+    [Inject] protected ToastService ToastService { get; set; } = default!;
+
+    public DtoShared.ModulesDto.RegisterUser registerUser { get; set; } = new DtoShared.ModulesDto.RegisterUser();
+
+    async void HandleOnSubmitForm(EditContext editContext)
+    {
+
+
+
+        bool result = await userApi.Register(
+                registerUser
+       );
+
+       
+        if (result)
+        {
+
+            navigationManager.NavigateTo("/");
+            ToastService.Notify(new(ToastType.Success, $"Thông Báo", "Đăng Kí Thành Công Hãy Kiểm Tra Email Để Xác Thực"));
+
+        }
+        
+
+    }
+
+}

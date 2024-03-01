@@ -1,4 +1,5 @@
 ﻿using Presentation.EnumsPresention;
+using Service.Errors;
 
 namespace Presentation.Middlewares
 {
@@ -20,16 +21,14 @@ namespace Presentation.Middlewares
 
             }
 
+
             catch (Exception ex)
             {
 
 
                 context.Response.ContentType = "application/json";
-
                 var (code, message) = HandleException(ex);
-
                 context.Response.StatusCode = code;
-
                 var errorResponse = new ResponseErrors
                 {
                     StatusCode = code,
@@ -41,7 +40,41 @@ namespace Presentation.Middlewares
             }
 
 
+
+
+
         }
+
+        //private (int, string) HandleExceptions(Exception ex)
+        //{
+        //    int statusCode = StatusCodes.Status500InternalServerError;
+
+        //    switch (ex)
+        //    {
+
+
+
+        //        case ConflicDataException:
+        //            statusCode = StatusCodes.Status409Conflict;
+        //            break;
+
+
+        //        default:
+        //            statusCode = StatusCodes.Status500InternalServerError;
+        //            break;
+
+
+
+
+        //    }
+        //    return (statusCode, ex.Message);
+
+
+
+        //}
+
+
+
 
         private (int, string) HandleException(Exception ex)
         {
@@ -58,6 +91,13 @@ namespace Presentation.Middlewares
                 or InvalidOperationException:
                     statusCode = StatusCodes.Status400BadRequest;
                     break;
+
+
+
+                case ConflicDataException:
+                    statusCode = StatusCodes.Status409Conflict;
+                    break;
+
 
                 case UnauthorizedAccessException:
                     statusCode = StatusCodes.Status401Unauthorized;

@@ -114,7 +114,10 @@ else
                                         SortKeySelector="c=>c.Id"
                                         FilterTextboxWidth="100"
                                         IsDefaultSortColumn="true"
-                                        SortDirection="SortDirection.Descending">
+                                        SortDirection="SortDirection.Descending"
+                                        
+                                        
+                                        >
 
                                 <div style="box-sizing: border-box; margin-top: 12px" class=" text-secondary text-xs font-weight-bold  text-center align-items-center ">  @context.Id</div>
                             </GridColumn>
@@ -123,7 +126,7 @@ else
                                         TItem="CategoryResponse"
                                         Filterable="true"
                                         FilterOperator="FilterOperator.None"
-                                        HeaderText="Name" PropertyName="Name" FilterTextboxWidth="100">
+                                        HeaderText="Tên Danh Mục" PropertyName="Name" FilterTextboxWidth="100">
 
                                 <div style="box-sizing: border-box; margin-top: 12px" class=" text-secondary text-xs font-weight-bold  text-center align-items-center ">  @context.Name</div>
                             </GridColumn>
@@ -131,7 +134,7 @@ else
                             <GridColumn Sortable="false"
                                         TItem="CategoryResponse"
                                         Filterable="false"
-                                        HeaderText="Name">
+                                        HeaderText="Thao Tác">
 
                                 <div class="d-flex justify-content-center  text-center d-flex">
 
@@ -163,7 +166,7 @@ else
             @if (categoryUpdateRequest != null && allCatetory != null)
             {
 
-                <InputWrapperComponent labelTitle="Name">
+                <InputWrapperComponent labelTitle="Tên Danh Mục">
 
                     <InputText class="form-control"
                                @bind-Value="@categoryUpdateRequest.Name"></InputText>
@@ -189,7 +192,7 @@ else
                        OnSubmitForm="@HandleOnSubmitForm2">
             <DataAnnotationsValidator />
 
-            <InputWrapperComponent labelTitle="Name">
+            <InputWrapperComponent labelTitle="Tên Danh Mục">
 
                 <InputText class="form-control"
                            @bind-Value="@categoryCreateRequest.Name"></InputText>

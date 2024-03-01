@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using Presentation.Errors;
+using Service.Errors;
+
 
 namespace ApiShop.Presentation
 {

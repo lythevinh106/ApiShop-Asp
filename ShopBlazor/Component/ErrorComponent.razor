@@ -5,15 +5,15 @@
 
 <div>
 
-   @childContent
-
+    @childContent
 </div>
 
 @code {
 
     [Inject] protected ToastService ToastService { get; set; } = default!;
-
-
+    [Inject] protected NavigationManager navigationManager { get; set; } = default!;
+    [Inject] protected ILocalStorageService localStorageService { get; set; }
+    [Inject] private AuthenticationStateProvider authenticationStateProvider { get; set; }
 
     [Parameter]
     public RenderFragment? childContent { get; set; }
@@ -53,7 +53,33 @@
         {
             if (errorState.Value._msg != null)
             {
-                ToastService.Notify(new(ToastType.Danger,BlazorBootstrap.IconName.Bug, errorState.Value._msg, "Đã xảy ra lỗi"));
+
+                if (errorState.Value._msg.Contains("401"))
+                {
+
+                    localStorageService.RemoveItemAsync("token");
+
+                    authenticationStateProvider.GetAuthenticationStateAsync();
+                    navigationManager.NavigateTo("/login");
+
+
+                }
+                else if (errorState.Value._msg.Contains("500"))
+                {
+                    ToastService.Notify(new(ToastType.Danger, BlazorBootstrap.IconName.Bug, errorState.Value._msg, "Đã xảy ra lỗi"));
+                }
+                else
+                {
+                    ToastService.Notify(new(ToastType.Danger, BlazorBootstrap.IconName.Bug, errorState.Value._msg, "Đã xảy ra lỗi"));
+                }
+
+
+
+
+
+
+
+
             }
 
         }

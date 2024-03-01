@@ -1,0 +1,244 @@
+﻿@page "/visualization"
+
+<div class="row mt-3">
+
+    <div class="col-12  ">
+
+        <div class="card mb-4 pb-4 bg-gray-100 ">
+
+            <div class="rounded-2 background-module p-0  align-items-center mt-0  d-flex position-relative
+
+                     " style="background-image: url(template/img/curved-images/curved0.jpg);
+                   background-position-y: 50%;background-size:cover ; min-height:200px;">
+
+                <span class="mask bg-gradient-primary opacity-50 top-0 start-0 w-100 h-100 position-absolute "
+                      style=" background-image:
+                      linear-gradient(310deg, #7928CA 0%, #FF0080 100%);background-position:center center ;background-size:cover"></span>
+
+                <div class=" rounded-4 card-header  py-4  shadow-blur blur d-flex justify-content-between align-items-center   position-absolute start-50 translate-middle-x"
+                     style="bottom: -15%; width: 92%; -webkit-backdrop-filter: saturate(200%) blur(30px);">
+
+                    <div class="fw-normal d-flex align-items-center  ">
+
+                        <ShopBlazor.Component.ButtonComponent ClassEl="mx-1 ms-3" isDisable="true" size="Size.Large" color="ButtonColor.Primary">
+                            <Icon Name="IconName.Activity" Color="IconColor.White"> </Icon>
+                        </ShopBlazor.Component.ButtonComponent>
+                        <span class="h5 ms-2">
+                            Thống Kê Biểu Đồ
+                        </span>
+                    </div>
+
+                    @*<ButtonComponent ClassEl="mx-1 ms-3" color="ButtonColor.Primary"
+                                         OnButtonClick="HandleShowCanvas2">
+                            <span class="me-2 fw-bolder fs-6">Tạo</span> <Icon Name="IconName.PlusCircleFill" Color="IconColor.White"> </Icon>
+                        </ButtonComponent>*@
+                </div>
+            </div>
+
+            <div class="card-body px-0 pt-0 pb-2 mt-5">
+
+                <div class="row justify-content-between mt-5">
+
+                    <div class="col-6 d-flex justify-content-center align-items-center">
+
+                        <DoughnutChart @ref="doughnutChart" Width="400" Class="mb-5" />
+
+                        <input type="number" max="360" name="name" @oninput="UpdateDayNumber" value="@dayNumer" class="d-inline-block "
+                               style="width:55px" />
+                    </div>
+                    <div class="col-6 d-flex flex-wrap justify-content-center align-items-center ">
+                        <div class="text-center w-100 fs-6 fw-bolder">
+                            Số Lượng Sản Phẩm Bán Được Theo Danh Mục Trong
+
+                            
+                            <input type="number"    min="1" max="30" name="name" @oninput="UpdateDayNumberLine" 
+                                   
+                                   
+                                   value="@dayCharLine" class="d-inline-block "
+
+                                
+                               
+                                   style="width:55px" />
+
+
+                            ngày
+                        </div>
+                        <LineChart @ref="lineChart" Width="800" Class="mb-4" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private DoughnutChart doughnutChart = default!;
+    private DoughnutChartOptions doughnutChartOptions = default!;
+    private ChartData chartData = default!;
+    private string[]? backgroundColors;
+
+    [Inject] ShopBlazor.Services.Order.IOrderApi orderApi { get; set; }
+    List<DtoShared.ModulesDto.AnalysisDataInfo> DoughnutData = new List<DtoShared.ModulesDto.AnalysisDataInfo>();
+
+    private int datasetsCount = 0;
+    private int dataLabelsCount = 0;
+    private int dayNumer = 30;
+
+    private string title = $"Danh Mục Sản Phẩm Bán Được Trong  Vòng ";
+
+    private Random random = new();
+
+    //private ChartData chartDataEl = new ChartData();
+
+    //line chart
+    private LineChart lineChart = default!;
+    private LineChartOptions lineChartOptions = default!;
+    private ChartData chartDataLine = default!;
+    private int dayCharLine = 1;
+
+    protected async override Task OnInitializedAsync()
+    {
+
+        ChartData chartDataEl = await callChartData();
+
+        await doughnutChart.InitializeAsync(chartDataEl, doughnutChartOptions);
+
+        //charDataline
+        ChartData chartDataLineEl = await callChartLineData(7);
+
+        await lineChart.InitializeAsync(chartDataLineEl, lineChartOptions);
+
+    }
+
+    private async Task<ChartData> callChartData(int day = 30)
+    {
+        backgroundColors = ColorBuilder.CategoricalTwelveColors;
+
+        DoughnutData = await orderApi.AnalysisData(day);
+
+        doughnutChartOptions = new();
+        doughnutChartOptions.Responsive = true;
+        doughnutChartOptions.Plugins.Title!.Text = title + dayNumer + " ngày";
+        doughnutChartOptions.Plugins.Title.Display = true;
+
+        return new ChartData
+        {
+            Labels = DoughnutData.Select(data => data.nameCategory).ToList(),
+
+            Datasets = new List<IChartDataset>
+       {
+                 new DoughnutChartDataset
+                 {
+                     Label = "Doanh số",
+                     Data = DoughnutData.Select(data =>  (double)data.profit).ToList() ,
+                     BackgroundColor =  GetRandomBackgroundColors() ,
+                    BorderColor =  GetRandomBackgroundColors()
+                 }
+            }
+        };
+
+    }
+
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+
+        await base.OnAfterRenderAsync(firstRender);
+    }
+
+    private List<string> GetRandomBackgroundColors()
+    {
+        var colors = new List<string>();
+        for (var index = 0; index < DoughnutData.Count(); index++)
+        {
+            colors.Add(backgroundColors![index]);
+        }
+
+        return colors;
+    }
+
+    private async Task UpdateDayNumber(ChangeEventArgs e)
+    {
+        if (Int32.TryParse(e.Value?.ToString(), out int dayNumberValue))
+        {
+
+            dayNumer = dayNumberValue;
+
+            await doughnutChart.UpdateAsync(await callChartData(dayNumer), doughnutChartOptions);
+
+        }
+
+    ;
+
+    }
+
+
+
+
+    //LineChart
+
+    private async Task<ChartData> callChartLineData(int day = 5)
+    {
+        dayCharLine = day;
+        DtoShared.ModulesDto.GroupAnalysisDataLineInfo dataLine = await orderApi.AnalysisDataLine(day);
+        lineChartOptions = new() { Responsive = true, Interaction = new Interaction { Mode = InteractionMode.Index } };
+        return new ChartData { Labels = dataLine.Data["success"].Select(d => d.time.Value.Date.ToString("dd/MM/yyyy")).ToList(), Datasets = GetDefaultDataSets(dataLine) };
+
+    }
+
+    private async Task UpdateDayNumberLine(ChangeEventArgs e)
+    {
+
+
+        if (Int32.TryParse(e.Value?.ToString(), out int dayNumberValue))
+        {
+
+            dayCharLine = dayNumberValue;
+
+            await lineChart.UpdateAsync(await callChartLineData(dayCharLine), lineChartOptions);
+
+        }
+
+;
+
+    }
+
+
+
+    private List<IChartDataset> GetDefaultDataSets(DtoShared.ModulesDto.GroupAnalysisDataLineInfo dataLine)
+    {
+        var datasets = new List<IChartDataset>();
+
+        for (int i = 0; i < dataLine.Data.Count(); i++)
+        {
+            var c = ColorBuilder.CategoricalTwelveColors[i].ToColor();
+
+
+            datasets.Add(new LineChartDataset
+            {
+                Label = dataLine.Data.Keys.ElementAt(i),
+
+                Data = dataLine.Data.Values.ElementAt(i).Select(d=>(double)d.orderNumber).ToList(),
+                BackgroundColor = new List<string> { c.ToRgbString() },
+                BorderColor = new List<string> { c.ToRgbString() },
+                BorderWidth = new List<double> { 3 },
+                HoverBorderWidth = new List<double> { 4 },
+                PointBackgroundColor = new List<string> { c.ToRgbString() },
+                PointRadius = new List<int> { 0 }, // hide points
+                PointHoverRadius = new List<int> { 4 }
+            }); ; ; ;
+        }
+
+
+
+        return datasets;
+    }
+
+
+
+
+
+
+
+}

@@ -12,6 +12,13 @@ namespace DtoShared.ModulesDto
         public string Time { get; set; }
     }
 
+    public class UserResponseClient
+    {
+        public string Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Email { get; set; }
+    }
     public class RegisterUser
     {
         [Display(Name = "Ho")]
@@ -31,9 +38,13 @@ namespace DtoShared.ModulesDto
 
         [Display(Name = "Email")]
         [EmailAddress(ErrorMessage = "{0} Khong dung dinh dang")]
+        [Required(ErrorMessage = "{0} phai nhap ")]
         public string Email { get; set; }
 
-        [Required]
+        [Display(Name = "Mật Khẩu")]
+        [Required(ErrorMessage = "{0} phai nhap ")]
+        [RegularExpression(@"^(?=.*[A-Z])(?=.*\d)(?!.*[-_?]).{6,20}$",
+        ErrorMessage = "{0} có ít nhất 1 chữ hoa,1 chữ số và không có kí tự đặc boeejt")]
         public string Password { get; set; }
 
         [Display(Name = "Dia chỉ")]
@@ -64,10 +75,12 @@ namespace DtoShared.ModulesDto
     public class SingInUser
     {
         [Display(Name = "Email")]
-        [EmailAddress(ErrorMessage = "{0} Khong dung dinh dang")]
+        [EmailAddress(ErrorMessage = "{0} Không đúng định dạng")]
+        [Required(ErrorMessage = "{0} phai nhap ")]
         public string Email { get; set; }
 
-        [Required]
+        [Display(Name = "Mật Khẩu")]
+        [Required(ErrorMessage = "{0} phai nhap ")]
         public string Password { get; set; }
     }
 
@@ -107,5 +120,11 @@ namespace DtoShared.ModulesDto
     {
         public string Id { get; set; }
         public string Name { get; set; }
+    }
+
+
+    public class AuthenticationDataMemoryStorage
+    {
+        public string Token { get; set; } = "";
     }
 }

@@ -4,6 +4,7 @@ using DtoShared.FetchData;
 using DtoShared.ModulesDto;
 using DtoShared.Pagging;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Service.Application.Product.Commands;
 using Service.Application.Product.Queries;
@@ -13,7 +14,7 @@ namespace Presentation.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
-
+    [Authorize]
 
     public class ProductController : GenericBaseController
     {

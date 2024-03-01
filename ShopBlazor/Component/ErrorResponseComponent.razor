@@ -1,0 +1,74 @@
+﻿
+@inject IState<ShopBlazor.FluxorServices.ErrorResponse.ErrorResponseState> errorState
+@inject JsHelper jsHelper
+@implements IDisposable
+@inject IDispatcher dispatcher
+
+<div>
+
+    @childContent
+</div>
+
+@code {
+
+    [Inject] protected ToastService ToastService { get; set; } = default!;
+    [Inject] protected NavigationManager navigationManager { get; set; } = default!;
+    [Inject] protected ILocalStorageService localStorageService { get; set; }
+    [Inject] private AuthenticationStateProvider authenticationStateProvider { get; set; }
+
+    [Parameter]
+    public RenderFragment? childContent { get; set; }
+
+    private bool disposed;
+
+    protected async override void OnInitialized()
+    {
+
+        base.OnInitializedAsync();
+        //   await loadingIndicator.Show();
+    }
+
+    protected async override Task OnParametersSetAsync()
+    {
+        base.OnParametersSetAsync();
+
+    }
+
+    protected async override void OnAfterRender(bool firstRender)
+    {
+
+        base.OnAfterRenderAsync(firstRender);
+
+        if (firstRender)
+        {
+            errorState.StateChanged += StateChanged;
+        }
+
+    }
+
+    ///phuong thuc dc goi sau kho state change dien ra lam cho no re-render lại
+    public void StateChanged(object sender, EventArgs args)
+    {
+        InvokeAsync(StateHasChanged);//tương tu StateHasChanged()
+        if (errorState.Value._responseModelErrors !=null)
+        {
+
+            ToastService.Notify(new(ToastType.Danger, BlazorBootstrap.IconName.Bug,  "Đã xảy ra lỗi", errorState.Value._responseModelErrors.Message.ToString()));
+        }
+
+    }
+    void IDisposable.Dispose()
+    {
+        // Hủy đăng ký sự kiện khi component bị hủy bỏ : sau khi roi component
+        if (!disposed)
+        {
+
+            dispatcher.Dispatch(new FluxorServices.Error.ActiveError(false, null));
+
+            errorState.StateChanged -= StateChanged;
+            disposed = true;
+
+        }
+    }
+
+}

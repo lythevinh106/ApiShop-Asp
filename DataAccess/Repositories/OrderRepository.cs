@@ -8,5 +8,21 @@ namespace DataAccess.Repositories
         public OrderRepository(DBApiContext context) : base(context)
         {
         }
+
+        //public async Task<CountOrderInfo> ShowCountOrderInfo(IQueryable queryable)
+        //{
+
+        //    return new CountOrderInfo()
+        //    {
+
+
+        //        dailyProfit = 3,
+        //        dailySoldNumber = 3,
+        //        monthlyProfit = 3,
+        //        monthlySoldNumber = 3
+        //    };
+        //}
+
+
     }
 }

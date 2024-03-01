@@ -4,6 +4,7 @@ using DtoShared.ModulesDto;
 using Model.Modules.CategoryModel;
 using Model.Modules.OrderModel;
 using Model.Modules.ProductModel;
+using Model.Modules.PromotionModel;
 using Model.Modules.UserModel;
 
 namespace Model.Mapping
@@ -44,9 +45,18 @@ namespace Model.Mapping
 
 
             //Order
-            CreateMap<Order, OrderResponse>().ReverseMap();
-            CreateMap<Order, OrderRequest>().ReverseMap();
+            //CreateMap<Order, OrderResponse>().ReverseMap();
+            // CreateMap<Order, OrderRequest>().ReverseMap();
             CreateMap<Order, OrderUpdate>().ReverseMap();
+            CreateMap<Order, OrderDeleteResponse>().ReverseMap();
+
+            ////User module
+
+            CreateMap<Promotion, PromotionResponse>().ReverseMap();
+            CreateMap<Promotion, PromotionRequest>().ReverseMap();
+
+
+
 
             ////Room
 

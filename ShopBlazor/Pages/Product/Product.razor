@@ -26,6 +26,10 @@
     .custom-filter th {
         padding: 6px 6px !important;
     }
+    /*    .custom-row > td{
+
+         position:relative!important;
+    }*/
 
     /*
         td {
@@ -33,6 +37,7 @@
             text-align:center;
         }*/
 </style>
+
 
 @if (@allProduct == null)
 {
@@ -65,7 +70,7 @@ else
                                 <Icon Name="IconName.Box2Fill" Color="IconColor.White"> </Icon>
                             </ButtonComponent>
                             <span class="h5 ms-2">
-                                Product
+                                Sản Phẩm
                             </span>
                         </div>
 
@@ -75,6 +80,8 @@ else
                         </ButtonComponent>
                     </div>
                 </div>
+
+
 
                 <div class="card-body px-0 pt-0 pb-2 mt-5">
                     <div class="table-responsive p-0 position-relative " style="min-height:50vh">
@@ -94,89 +101,220 @@ else
                               FiltersRowCssClass="custom-filter"
                               HeaderRowCssClass="text-uppercase text-secondary text-sm font-weight-bolder opacity-7  text-center">
 
-                            @*<GridColumn TItem="ProductResponse" HeaderText="Id"
-                                            Class=""
-                                            Filterable="false"
-                                            PropertyName="Id"
-                                            SortString="Id"
-                                            SortKeySelector="c=>c.Id"
-                                            FilterTextboxWidth="100"
-                                            IsDefaultSortColumn="true"
-                                            SortDirection="SortDirection.Descending">
 
-                                    <div style="box-sizing: border-box; margin-top: 12px" class=" text-secondary text-xs font-weight-bold  text-center align-items-center ">  @context.Id</div>
-                                </GridColumn>*@
-
-                            <GridColumn Sortable="false"
-                                        TItem="ProductResponse"
-                                        Filterable="true"
-                                        FilterOperator="FilterOperator.None"
-                                        HeaderText="Name" PropertyName="Name" FilterTextboxWidth="100">
-
-                                <div style="box-sizing: border-box; margin-top: 12px" class=" text-secondary text-xs font-weight-bold  text-center align-items-center ">  @context.Name</div>
-                            </GridColumn>
-
-                            <GridColumn Sortable="false"
-                                        TItem="ProductResponse"
-                                        Filterable="true"
-                                        FilterOperator="FilterOperator.None"
-                                        HeaderText="Giá" PropertyName="Price" FilterTextboxWidth="100">
-
-                                <div style="box-sizing: border-box; margin-top: 12px" class=" text-secondary text-xs font-weight-bold  text-center align-items-center ">  @context.Price</div>
-                            </GridColumn>
-
-                            <GridColumn Sortable="false"
-                                        TItem="ProductResponse"
-                                        Filterable="true"
-                                        FilterOperator="FilterOperator.None"
-                                        HeaderText="Danh Mục" PropertyName="CategoryId" FilterTextboxWidth="100">
-
-                                <div style="box-sizing: border-box; margin-top: 12px" class=" text-secondary text-xs font-weight-bold  text-center align-items-center ">  @context.CategoryId</div>
-                            </GridColumn>
-
-                            <GridColumn Sortable="false"
+                            <GridColumn Sortable="true"
+                                        SortString="Time"
                                         TItem="ProductResponse"
                                         Filterable="false"
-                                        HeaderText="Name">
+                                        HeaderText="Ngày Tạo"
+                                        PropertyName="Time"
+                                        SortKeySelector="c=>c.Time"
+                                        SortDirection="SortDirection.Descending"
+                                        IsDefaultSortColumn="true"
+                                        FilterTextboxWidth="100">
 
-                                <div class="d-flex justify-content-center  text-center d-flex">
+                                <div style="box-sizing: border-box; margin-top: 12px" class=" text-secondary text-xs font-weight-bold  text-center align-items-center ">
 
-                                    <ButtonComponent ClassEl="mx-1" OnButtonClick="() => HandleShowCanvas(context.Id)">
-                                        <Icon Name="IconName.Gear" Color="IconColor.White"> </Icon>
-                                    </ButtonComponent>
-
-                                    <ButtonComponent ClassEl="mx-1" color="ButtonColor.Danger" OnButtonClick="() => HandleDelete(context.Id)">
-                                        <Icon Name="IconName.XLg" Color="IconColor.White"> </Icon>
-                                    </ButtonComponent>
+                                    @context.Time
                                 </div>
                             </GridColumn>
-                        </Grid>
+                            <GridColumn Sortable="false"
+                                        TItem="ProductResponse"
+                                        FilterOperator="FilterOperator.None"
+                                        HeaderText="Tên Sản Phẩm"
+                                        PropertyName="Name"
+                                        Filterable="true"
+                                        FilterTextboxWidth="100">
+
+                                <div style="box-sizing: border-box; margin-top:12px"
+                                     class=" text-secondary text-xs font-weight-bold  text-center align-items-center ">  @context.Name</div>
+                                </GridColumn>
+
+                                <GridColumn TItem="ProductResponse" HeaderText="Giá"
+                                            Filterable="false"
+                                            PropertyName="Price"
+                                            SortString="Price"
+                                            FilterTextboxWidth="100"
+                                            Sortable="true"
+                                            SortKeySelector="c=>c.Price"
+                                            IsDefaultSortColumn="false">
+
+                                    <div style="box-sizing: border-box; margin-top:12px"
+                                         class=" text-secondary text-xs font-weight-bold  text-center align-items-center ">
+
+
+                                        @stringHelper.formatNumber(context.Price)
+
+                                    </div>
+                                </GridColumn>
+
+
+
+                                <GridColumn Sortable="false"
+                                            TItem="ProductResponse"
+                                            Filterable="false"
+                                            HeaderText="Hành Động">
+
+                                    <div class="d-flex justify-content-center  text-center d-flex ">
+
+                                        <ButtonComponent ClassEl="mx-1" OnButtonClick="() => HandleShowCanvas(context.Id)">
+                                            <Icon Name="IconName.Gear" Color="IconColor.White"> </Icon>
+                                        </ButtonComponent>
+
+                                        <ButtonComponent ClassEl="mx-1" color="ButtonColor.Danger" OnButtonClick="() => HandleDelete(context.Id)">
+                                            <Icon Name="IconName.XLg" Color="IconColor.White"> </Icon>
+                                        </ButtonComponent>
+                                    </div>
+                                </GridColumn>
+                            </Grid>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <OffCanvasComponent @ref="OffcanvasEl"
-                        title="Chỉnh Sửa Danh Mục">
 
-        <FormComponent @ref="@formEl"
-                       model=@productUpdateRequestClient
-                       OnSubmitForm="@HandleOnSubmitForm">
 
-            <DataAnnotationsValidator />
 
-            @if (productUpdateRequestClient != null && allProduct != null)
-            {
+
+
+
+
+        <OffCanvasComponent @ref="OffcanvasEl"
+                            title="Chỉnh Sửa Danh Mục">
+
+            <FormComponent @ref="@formEl"
+                           model=@productUpdateRequestClient
+                           OnSubmitForm="@HandleOnSubmitForm">
+
+                <DataAnnotationsValidator />
+
+                @if (productUpdateRequestClient != null && allProduct != null)
+                {
+
+                    <InputWrapperComponent labelTitle="Tên">
+
+                        <InputText class="form-control" DisplayName="chcccccccc"
+                                   @bind-Value="@productUpdateRequestClient.Name"></InputText>
+
+                        <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
+
+                            <ValidationMessage For="()=>productUpdateRequest.Name">
+                            </ValidationMessage>
+                        </div>
+                    </InputWrapperComponent>
+
+                    <InputWrapperComponent labelTitle="Giá">
+
+                        <InputNumber class="form-control"
+                                     @bind-Value="productUpdateRequestClient.Price"></InputNumber>
+
+                        <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
+
+                            <ValidationMessage For="()=>productUpdateRequestClient.Price">
+                            </ValidationMessage>
+                        </div>
+                    </InputWrapperComponent>
+
+                    <InputWrapperComponent labelTitle="Mô Tả">
+
+                        <InputTextArea class="form-control" DisplayName="chcccccccc"
+                                       @bind-Value="productUpdateRequestClient.Description"></InputTextArea>
+
+                        <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
+
+                            <ValidationMessage For="()=>productUpdateRequestClient.Description">
+                            </ValidationMessage>
+                        </div>
+                    </InputWrapperComponent>
+
+                    <InputWrapperComponent labelTitle="Ảnh">
+
+                        <InputFile OnChange="OnInputFileChange" class="form-control"
+                                   @bind-Value="productUpdateRequestClient.ImageFile"></InputFile>
+
+                        <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
+
+                            <ValidationMessage For="()=>productUpdateRequestClient.ImageFile">
+                            </ValidationMessage>
+                        </div>
+
+                        <Button @ref="saveImage" Color="ButtonColor.None" Size="Size.ExtraLarge">
+                            <div style="width:150px" class="h-auto">
+
+                                <ImageComponent src="@productUpdateRequestClient.Image">
+                                </ImageComponent>
+                            </div>
+                        </Button>
+                    </InputWrapperComponent>
+
+                    <InputWrapperComponent labelTitle="Danh Mục Sản Phẩm">
+
+                        <InputSelect class="form-control" @bind-Value="productUpdateRequestClient.CategoryId">
+                            <option>Chọn Danh Mục </option>
+
+                            @if (listCategoryName != null)
+                            {
+                                @foreach (var item in listCategoryName)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            }
+                        </InputSelect>
+
+                        <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
+
+                            <ValidationMessage For="()=>productUpdateRequestClient.CategoryId">
+                            </ValidationMessage>
+                        </div>
+                    </InputWrapperComponent>
+
+                    <InputWrapperComponent labelTitle="Chọn Chương Trình Khuyến Mãi">
+
+                        <InputSelect class="form-control" @bind-Value="productUpdateRequestClient.PromotionId">
+
+                            <option > Không Chọn </option>
+
+                            @if (listPromotionName != null)
+                            {
+                                @foreach (var item in listPromotionName)
+                                {
+                                    <option  value="@item.Id">@item.Name</option>
+                                }
+                            }
+                        </InputSelect>
+
+                        <div class="text-danger fs-6 fw-bolder " style="min-height:24px">
+
+                            <ValidationMessage For="()=>productUpdateRequestClient.PromotionId">
+                            </ValidationMessage>
+                        </div>
+                    </InputWrapperComponent>
+
+                }
+
+                <ButtonComponent type=ButtonType.Submit> Cập Nhật</ButtonComponent>
+            </FormComponent>
+        </OffCanvasComponent>
+
+        <OffCanvasComponent @ref="OffcanvasEl2" OnffcanvasHidding="handleOffCanvas2Close"
+                            title="Tạo Sản Phẩm"
+                            size="OffcanvasSize.Large">
+
+            <FormComponent @ref="@formEl2"
+                           model=@productCreateRequestClient
+                           OnSubmitForm="HandleOnSubmitForm2">
+
+                <DataAnnotationsValidator />
 
                 <InputWrapperComponent labelTitle="Tên">
 
-                    <InputText class="form-control" DisplayName="chcccccccc"
-                               @bind-Value="@productUpdateRequestClient.Name"></InputText>
+                    <InputText class="form-control"
+                               @bind-Value="@productCreateRequestClient.Name"></InputText>
 
                     <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
 
-                        <ValidationMessage  For="()=>productUpdateRequest.Name">
+                        <ValidationMessage For="()=>productCreateRequestClient.Name">
                         </ValidationMessage>
                     </div>
                 </InputWrapperComponent>
@@ -184,167 +322,136 @@ else
                 <InputWrapperComponent labelTitle="Giá">
 
                     <InputNumber class="form-control"
-                                 @bind-Value="productUpdateRequestClient.Price"></InputNumber>
+                                 @bind-Value="productCreateRequestClient.Price"></InputNumber>
 
                     <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
 
-                        <ValidationMessage For="()=>productUpdateRequestClient.Price">
+                        <ValidationMessage For="()=>productCreateRequestClient.Price">
                         </ValidationMessage>
                     </div>
                 </InputWrapperComponent>
 
-                <InputWrapperComponent labelTitle="Giá">
 
-                    <InputTextArea class="form-control" DisplayName="chcccccccc"
-                                   @bind-Value="productUpdateRequestClient.Description"></InputTextArea>
+
+
+
+                <InputWrapperComponent labelTitle="Mô tả">
+
+
+
+                    <textarea @bind="productCreateRequestClient.Description"
+                              class="mce_area form-control"></textarea>
+
+
 
                     <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
 
-                        <ValidationMessage For="()=>productUpdateRequestClient.Description">
+                        <ValidationMessage For="()=>productCreateRequestClient.Description">
                         </ValidationMessage>
                     </div>
                 </InputWrapperComponent>
+
+
+
+
+
+
 
                 <InputWrapperComponent labelTitle="Ảnh">
 
-                    <InputFile    OnChange="OnInputFileChange" class="form-control"
-                               @bind-Value="productUpdateRequestClient.ImageFile"></InputFile>
+                    <InputFile accept=".jpg, .png, .gif" OnChange="OnInputFileChange2" class="form-control"
+                               @bind-Value="productCreateRequestClient.ImageFile"></InputFile>
 
                     <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
 
-                        <ValidationMessage For="()=>productUpdateRequestClient.ImageFile">
+                        <ValidationMessage For="()=>productCreateRequestClient.ImageFile">
                         </ValidationMessage>
                     </div>
+                    @if (@productCreateRequestClient?.Image != null)
+                    {
+                        <Button @ref="saveImage" Color="ButtonColor.None" Size="Size.ExtraLarge">
 
-                    <Button @ref="saveImage" Color="ButtonColor.None" Size="Size.ExtraLarge">
-                        <div style="width:150px" class="h-auto">
+                            <div style="width:150px" class="h-auto">
 
-                            <img src="@productUpdateRequestClient.Image" class="w-100 h-auto object-fit-cover " alt="Alternate Text" />
-                        </div>
-                    </Button>
+                                <ImageComponent src="@productCreateRequestClient.Image">
+                                </ImageComponent>
+                            </div>
+                        </Button>
+                    }
                 </InputWrapperComponent>
 
-            }
+                <InputWrapperComponent labelTitle="Danh Mục Sản Phẩm">
 
-        <ButtonComponent type=ButtonType.Submit> Cập Nhật</ButtonComponent>
-        </FormComponent>
-    </OffCanvasComponent>
+                    <InputSelect class="form-control" @bind-Value="productCreateRequestClient.CategoryId">
+                        <option>Chọn Danh Mục</option>
 
-    <OffCanvasComponent @ref="OffcanvasEl2"   OnffcanvasHidding="handleOffCanvas2Close"
-                        title="Tạo Sản Phẩm"
-                        
-                         
-                        >
-
-        <FormComponent @ref="@formEl2"
-                       model=@productCreateRequestClient
-                       OnSubmitForm="HandleOnSubmitForm2">
-
-            <DataAnnotationsValidator />
-
-            <InputWrapperComponent labelTitle="Tên">
-
-                <InputText class="form-control"
-                           @bind-Value="@productCreateRequestClient.Name"></InputText>
-
-                <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
-
-                    <ValidationMessage For="()=>productCreateRequestClient.Name">
-                    </ValidationMessage>
-                </div>
-            </InputWrapperComponent>
-
-            <InputWrapperComponent labelTitle="Giá">
-
-                <InputNumber class="form-control"
-                             @bind-Value="productCreateRequestClient.Price"></InputNumber>
-
-                <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
-
-                    <ValidationMessage For="()=>productCreateRequestClient.Price">
-                    </ValidationMessage>
-                </div>
-            </InputWrapperComponent>
-
-            <InputWrapperComponent labelTitle="Mô tả">
-
-                <InputTextArea class="form-control"
-                               @bind-Value="productCreateRequestClient.Description"></InputTextArea>
-
-                <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
-
-                    <ValidationMessage For="()=>productCreateRequestClient.Description">
-                    </ValidationMessage>
-                </div>
-            </InputWrapperComponent>
-
-            <InputWrapperComponent labelTitle="Ảnh">
-
-                <InputFile accept=".jpg, .png, .gif" OnChange="OnInputFileChange2" class="form-control"
-                           @bind-Value="productCreateRequestClient.ImageFile"></InputFile>
-
-                <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
-
-                    <ValidationMessage For="()=>productCreateRequestClient.ImageFile">
-                    </ValidationMessage>
-
-                </div>
-                @if (@productCreateRequestClient?.Image != null)
-                {
-                    <Button @ref="saveImage" Color="ButtonColor.None" Size="Size.ExtraLarge">
-
-                        <div style="width:150px" class="h-auto">
-
-                            <img src="@productCreateRequestClient.Image" class="w-100 h-auto object-fit-cover " alt="Alternate Text" />
-                        </div>
-                    </Button>
-                }
-            </InputWrapperComponent>
-
-
-            <InputWrapperComponent labelTitle="CategoryId">
-
-                <InputSelect class="form-control" @bind-Value="productCreateRequestClient.CategoryId">
-                    <option>Select a priority</option>
-
-
-                    @if (listCategoryName!=null)
-                    {
-                        @foreach (var item in listCategoryName)
+                        @if (listCategoryName != null)
                         {
-                            <option value="@item.Id">@item.Name</option>
+                            @foreach (var item in listCategoryName)
+                            {
+                                <option value="@item.Id">@item.Name</option>
+                            }
                         }
-                    }
+                    </InputSelect>
 
-                </InputSelect>
+                    <div class="text-danger fs-6 fw-bolder " style="min-height:24px">
 
-                <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
-
-                    <ValidationMessage For="()=>productCreateRequestClient.CategoryId">
-                    </ValidationMessage>
-                </div>
-            </InputWrapperComponent>
-
-
-            <ButtonComponent type=ButtonType.Submit> Tạo</ButtonComponent>
+                        <ValidationMessage For="()=>productCreateRequestClient.CategoryId">
+                        </ValidationMessage>
+                    </div>
+                </InputWrapperComponent>
 
 
 
+                <InputWrapperComponent labelTitle="Chọn Chương Trình Khuyến Mãi">
 
-        </FormComponent>
-    </OffCanvasComponent>
+                    <InputSelect class="form-control" @bind-Value="productCreateRequestClient.PromotionId">
+                   
+                        <option value=""> Không Chọn </option>
 
-    <ConfirmComponent @ref="confirmComponent"></ConfirmComponent>
+                        @if (listPromotionName != null)
+                        {
+                            @foreach (var item in listPromotionName)
+                            {
+                                <option value="@item.Id">@item.Name</option>
+                            }
+                        }
+                    </InputSelect>
 
-}
+                    <div class="text-danger fs-6 fw-bolder " style="min-height:24px">
+
+                        <ValidationMessage For="()=>productCreateRequestClient.CategoryId">
+                        </ValidationMessage>
+                    </div>
+                </InputWrapperComponent>
+
+
+
+                <ButtonComponent type=ButtonType.Submit> Tạo</ButtonComponent>
+            </FormComponent>
+        </OffCanvasComponent>
+
+        <ConfirmComponent @ref="confirmComponent"></ConfirmComponent>
+
+
+
+
+
+
+    }
+
+
+
 
 @code {
 
     [Inject] private IProductApi productApi { get; set; }
     [Inject] private ShopBlazor.Services.Category.ICategoryApi cateogryApi { get; set; }
+    [Inject] private ShopBlazor.Services.Promotion.IPromotionApi promotionApi { get; set; }
     [Inject] protected ToastService ToastService { get; set; } = default!;
 
     [Inject] private JsHelper jsHelper { get; set; }
+    [Inject] public StringHelper stringHelper { get; set; }
 
     public PaggingResponse<ProductResponse> allProduct;
     private DtoShared.FetchData.FetchDataProductRequest request;
@@ -352,7 +459,8 @@ else
     private int pageNumber = 0;
     private int pageSize = 8;
     private string Search = "";
-    private SortProductOption Sort = SortProductOption.Descending;
+    private SortProductOption? Sort = null;
+    private SortProductOption? SortTime = null;
 
     private Grid<ProductResponse> grid;
 
@@ -376,8 +484,16 @@ else
     public bool IsProductCreateRequest { get; set; } = false;
 
     public List<CategoryResponse> listCategoryName = new List<CategoryResponse>();
+    public List<PromotionResponse> listPromotionName = new List<PromotionResponse>();
 
     private string dynamicTitle = "";
+
+    [Inject] public IJSRuntime jSRuntime { get; set; }
+
+    private bool _isInitialized;
+
+
+
 
     protected async override Task OnInitializedAsync()
     {
@@ -385,6 +501,9 @@ else
         //JsHelper.LogObject(Catetory);
 
         await callData();
+
+        // await jSRuntime.InvokeVoidAsync("initTextEditor", ".mce_area");
+        // await jSRuntime.InvokeVoidAsync("initTextEditor2");
 
     }
 
@@ -394,12 +513,19 @@ else
         await base.OnParametersSetAsync();
     }
 
+    private string GetRowClass(ProductResponse pd)
+    {
+
+        return "custom-row";
+    }
+
     private async Task callData()
     {
         request = new FetchDataProductRequest
         {
             PageNumber = pageNumber != 0 ? pageNumber : 1,
             Sort = Sort,
+            SortTime = SortTime,
             PageSize = pageSize,
             Search = Search
         };
@@ -420,11 +546,19 @@ else
 
         if (request.Sorting is not null && request.Sorting.Any())
         {
-            if (request.Sorting.FirstOrDefault()!.SortString == "Id")
+            if (request.Sorting.FirstOrDefault()!.SortString == "Price")
             {
 
                 Sort = request.Sorting.FirstOrDefault().SortDirection == SortDirection.Ascending ? SortProductOption.Ascending : SortProductOption.Descending;
+                SortTime = null;
 
+            }
+
+            if (request.Sorting.FirstOrDefault()!.SortString == "Time")
+            {
+
+                SortTime = request.Sorting.FirstOrDefault().SortDirection == SortDirection.Ascending ? SortProductOption.Ascending : SortProductOption.Descending;
+                Sort = null;
             }
 
         }
@@ -448,6 +582,9 @@ else
 
                 }
 
+
+
+
             }
 
         }
@@ -464,7 +601,8 @@ else
 
     protected async Task HandleShowCanvas(string productId)
     {
-
+        listCategoryName = await cateogryApi.All();
+        listPromotionName = await promotionApi.All();
         OffcanvasEl.offcanvas.ShowAsync();
 
         productUpdateResponse = await productApi.GetProductByID(productId);
@@ -476,6 +614,7 @@ else
             CategoryId = productUpdateResponse.CategoryId,
             Image = productUpdateResponse.Image,
             Description = productUpdateResponse.Description,
+            PromotionId= productUpdateResponse.PromotionId?? null,
 
         };
 
@@ -515,17 +654,19 @@ else
 
     }
 
+
+
+
+
+
     protected async Task HandleShowCanvas2()
     {
+
 
         OffcanvasEl2.offcanvas.ShowAsync();
 
         listCategoryName = await cateogryApi.All();
-
-
-
-
-
+        listPromotionName = await promotionApi.All();
 
     }
 
@@ -565,14 +706,12 @@ else
         {
 
             await callData();
+            productCreateRequestClient = new ProductCreateRequestClient();
             ToastService.Notify(new(ToastType.Success, $"Thong bao", "Tạo  thành công"));
 
         }
 
     }
-
-
-
 
     private async Task OnInputFileChange(InputFileChangeEventArgs inputFileChangeEvent)
     {
@@ -610,11 +749,10 @@ else
         productCreateRequestClient.Image = $"data:image/png;base64,{Convert.ToBase64String(buffer)}";
     }
 
-
     private async Task handleOffCanvas2Close()
     {
 
-        productCreateRequestClient = new ProductCreateRequestClient();
+        //productCreateRequestClient = new ProductCreateRequestClient();
 
     }
 }

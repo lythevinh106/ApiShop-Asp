@@ -1,35 +1,53 @@
 ﻿
 
+@using Microsoft.AspNetCore.Components.Authorization
 
 <Fluxor.Blazor.Web.StoreInitializer />
 
+<CascadingAuthenticationState>
 
+    <ShopBlazor.Component.LoadingComponent>
+    </ShopBlazor.Component.LoadingComponent>
     <ShopBlazor.Component.ErrorComponent>
-        <Toasts class="p-3" AutoHide="true" Delay="4000" Placement="ToastsPlacement.TopRight" />
+        <ShopBlazor.Component.ErrorResponseComponent>
+            <Toasts class="p-3" AutoHide="true" Delay="4000" Placement="ToastsPlacement.TopRight" />
 
 
-        <Router AppAssembly="@typeof(App).Assembly">
-            <Found Context="routeData">
-                <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
-                <FocusOnNavigate RouteData="@routeData" Selector="h1" />
-            </Found>
-            <NotFound>
-                <PageTitle>Not found</PageTitle>
+            <Router AppAssembly="@typeof(App).Assembly">
+
+
+                <Found Context="routeData">
+
+                    <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)">
+
+                        <NotAuthorized>
+
+                            <ShopBlazor.Pages.Generic.RedirectionComponent>
+
+                            </ShopBlazor.Pages.Generic.RedirectionComponent>
+                            <h1>chua dang nhap</h1>
+
+                        </NotAuthorized>
+                    </AuthorizeRouteView>
+
+
+                    <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+                </Found>
 
 
 
 
-                <LayoutView Layout="@typeof(MainLayout)">
+                <NotFound>
+                    <PageTitle>Not found</PageTitle>
 
 
 
+                    <LayoutView Layout="@typeof(MainLayout)">
 
-
-
-
-                    <p role="alert">Sorry, there's nothing at this address.</p>
-                </LayoutView>
-            </NotFound>
-        </Router>
-    </ShopBlazor.Component.ErrorComponent>
-
+                        <p role="alert">Sorry, there's nothing at this address.</p>
+                    </LayoutView>
+                </NotFound>
+            </Router>
+        </ShopBlazor.Component.ErrorResponseComponent>
+        </ShopBlazor.Component.ErrorComponent>
+</CascadingAuthenticationState>

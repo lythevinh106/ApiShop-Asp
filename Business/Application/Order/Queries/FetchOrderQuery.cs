@@ -1,14 +1,14 @@
 ﻿using AutoMapper;
-using Castle.Core.Internal;
 using DataAccess.Infrastructure;
 using DtoShared.FetchData;
 using DtoShared.ModulesDto;
 using DtoShared.Pagging;
 using MediatR;
+using Model.Modules.ProductOrderModel;
 
 namespace Service.Application.Order.Queries
 {
-    public class FetchOrderQuery : IRequest<PaggingResponse<OrderResponse>>
+    public class FetchOrderQuery : IRequest<PaggingResponse<ProductOrderWithUserResponse>>
     {
 
         private readonly FetchDataOrderRequest _fetchDataOrderRequest;
@@ -19,24 +19,25 @@ namespace Service.Application.Order.Queries
         }
 
 
-        public class Handler : BaseHandler, IRequestHandler<FetchOrderQuery, PaggingResponse<OrderResponse>>
+        public class Handler : BaseHandler, IRequestHandler<FetchOrderQuery, PaggingResponse<ProductOrderWithUserResponse>>
         {
             public Handler(IUnitOfWork unitOfWork, IMapper mapper) : base(unitOfWork, mapper)
             {
             }
 
-            public async Task<PaggingResponse<OrderResponse>> Handle(FetchOrderQuery request, CancellationToken cancellationToken)
+            public async Task<PaggingResponse<ProductOrderWithUserResponse>> Handle(FetchOrderQuery request, CancellationToken cancellationToken)
             {
                 var orderRepo = _unitOfWork.OrderRepository;
+                var productOrderRepo = _unitOfWork.ProductOrderRepository;
 
-                IQueryable<Model.Modules.OrderModel.Order> quertListOrder = orderRepo.All();
+                IQueryable<ProductOrder> quertListProductOrder = productOrderRepo.All();
 
 
-                if (!request._fetchDataOrderRequest.Search.IsNullOrEmpty())
-                {
-                    quertListOrder = quertListOrder
-                    .Where(p => p.Id.Contains(request._fetchDataOrderRequest.Search));
-                }
+                //if (!request._fetchDataOrderRequest.Search.IsNullOrEmpty())
+                //{
+                //    quertListProductOrder = quertListProductOrder
+                //    .Where(p => p.Id.Contains(request._fetchDataOrderRequest.Search));
+                //}
 
 
                 if (request._fetchDataOrderRequest.Sort.HasValue
@@ -45,27 +46,60 @@ namespace Service.Application.Order.Queries
                 {
                     if (request._fetchDataOrderRequest.Sort.Value.ToString() == SortOrderOption.Ascending.ToString())
                     {
-                        quertListOrder = orderRepo.Sort(p => (p.Time.ToString()), quertListOrder, false);
+                        quertListProductOrder = productOrderRepo.Sort(p => (p.Time.ToString()), quertListProductOrder, false);
                     }
                     if (request._fetchDataOrderRequest.Sort.Value.ToString() == SortOrderOption.Descending.ToString())
                     {
-                        quertListOrder = orderRepo.Sort(p => (p.Time.ToString()), quertListOrder, true);
+                        quertListProductOrder = productOrderRepo.Sort(p => (p.Time.ToString()), quertListProductOrder, true);
                     }
                 }
 
+
+
+                if (request._fetchDataOrderRequest.SearchWithFilter.HasValue
+
+                    )
+                {
+
+                    quertListProductOrder = quertListProductOrder.Where(lod => lod.Order.Status == request._fetchDataOrderRequest.SearchWithFilter);
+
+
+                }
+
+
+
+
+
                 FetchDataRequest fetchDataRequest = _mapper.Map<FetchDataRequest>(request._fetchDataOrderRequest);
 
-                PagedList<Model.Modules.OrderModel.Order> dataResponse = orderRepo.FectchData(fetchDataRequest, quertListOrder);
+                PagedList<ProductOrder> dataResponse = productOrderRepo.FectchData(fetchDataRequest, quertListProductOrder);
 
 
 
-                PaggingResponse<OrderResponse> results = new PaggingResponse<OrderResponse>
+                PaggingResponse<ProductOrderWithUserResponse> results = new PaggingResponse<ProductOrderWithUserResponse>
                 {
                     CurrentPage = dataResponse.CurrentPage,
                     TotalPage = dataResponse.TotalPages,
                     hasNext = dataResponse.HasNextPage,
                     hasPrv = dataResponse.HasPreviousPage,
-                    Data = dataResponse.Select(p => _mapper.Map<OrderResponse>(p)).ToList()
+                    Data = dataResponse.Select(po => new ProductOrderWithUserResponse
+                    {
+
+                        Status = po.Order.Status,
+                        Time = po.Order.Time,
+
+
+                        Product = _mapper.Map<ProductResponse>(po.Product),
+                        User = _mapper.Map<UserResponse>(po.Order.User),
+
+                        OrderId = po.OrderId
+
+
+
+
+
+
+                    }).ToList()
                 };
 
 

@@ -1,0 +1,19 @@
+﻿ 
+@inject NavigationManager navigationManager 
+
+
+
+@code {
+
+
+
+    [Parameter]
+    public string RedirectUrl { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+         navigationManager.NavigateTo("/login");
+
+    }
+
+}

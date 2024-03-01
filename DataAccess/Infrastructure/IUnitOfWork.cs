@@ -11,6 +11,7 @@ namespace DataAccess.Infrastructure
         CategoryRepository CategoryRepository { get; }
         OrderRepository OrderRepository { get; }
         ProductOrderRepository ProductOrderRepository { get; }
+        PromotionRepository PromotionRepository { get; }
 
 
 
@@ -73,7 +74,19 @@ namespace DataAccess.Infrastructure
         {
             get
             {
-                return ProductOrderRepository ?? new ProductOrderRepository(_context);
+                return productOrderRepository ?? new ProductOrderRepository(_context);
+            }
+
+        }
+
+
+        public PromotionRepository promotionRepository;
+
+        public PromotionRepository PromotionRepository
+        {
+            get
+            {
+                return promotionRepository ?? new PromotionRepository(_context);
             }
 
         }
