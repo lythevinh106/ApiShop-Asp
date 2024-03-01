@@ -30,6 +30,8 @@ namespace ShopBlazor.Pages.Product
         [Display(Name = " Danh Mục Sản Phẩm")]
         [Required(ErrorMessage = "  {0} là bắt buộc ")]
         public string CategoryId { get; set; }
+
+        [Display(Name = " Chương Trình Khuyến Mãi")]
         public string? PromotionId { get; set; }
     }
 
@@ -65,6 +67,8 @@ namespace ShopBlazor.Pages.Product
         [Display(Name = " Danh Mục Sản Phẩm")]
         [Required(ErrorMessage = "  {0} là bắt buộc ")]
         public string CategoryId { get; set; }
+
+        [Display(Name = " Chương Trình Khuyến Mãi")]
         public string? PromotionId { get; set; }
     }
 }

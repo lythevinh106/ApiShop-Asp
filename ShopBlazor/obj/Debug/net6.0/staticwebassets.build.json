@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "W5Oqo8+9UFpukoyiDX5vFFNpavMQkPwb74dyjxtmyFc=",
+  "Hash": "4D4WWU+oGsjZJI7L9Jo4n9oTbcMQLgqysdUIHIl9G9w=",
   "Source": "ShopBlazor",
   "BasePath": "/",
   "Mode": "Root",
@@ -10237,6 +10237,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ShopBlazor.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\appsettings.json",
+      "SourceId": "ShopBlazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "appsettings.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "settings",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\appsettings.json"
     },
     {
       "Identity": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\css\\app.css",

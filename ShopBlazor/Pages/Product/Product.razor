@@ -181,7 +181,10 @@ else
 
 
         <OffCanvasComponent @ref="OffcanvasEl"
-                            title="Chỉnh Sửa Danh Mục">
+                            title="Chỉnh Sửa Sản Phẩm"
+                            
+                            size="OffcanvasSize.Large"
+                            >
 
             <FormComponent @ref="@formEl"
                            model=@productUpdateRequestClient
@@ -218,7 +221,7 @@ else
 
                     <InputWrapperComponent labelTitle="Mô Tả">
 
-                        <InputTextArea class="form-control" DisplayName="chcccccccc"
+                        <InputTextArea  style="height: 200px" class="form-control" 
                                        @bind-Value="productUpdateRequestClient.Description"></InputTextArea>
 
                         <div class="text-danger fs-6 fw-bolder" style="min-height:24px">
@@ -337,10 +340,11 @@ else
 
                 <InputWrapperComponent labelTitle="Mô tả">
 
+                    <InputTextArea style="height: 200px" class="form-control"
+                                   @bind-Value="productCreateRequestClient.Description"></InputTextArea>
 
-
-                    <textarea @bind="productCreateRequestClient.Description"
-                              class="mce_area form-control"></textarea>
+                    @*<textarea  @bind="productCreateRequestClient.Description"
+        class="mce_area form-control"></textarea>*@
 
 
 
@@ -353,7 +357,7 @@ else
 
 
 
-
+             
 
 
 
@@ -406,7 +410,7 @@ else
                 <InputWrapperComponent labelTitle="Chọn Chương Trình Khuyến Mãi">
 
                     <InputSelect class="form-control" @bind-Value="productCreateRequestClient.PromotionId">
-                   
+
                         <option value=""> Không Chọn </option>
 
                         @if (listPromotionName != null)
@@ -420,7 +424,7 @@ else
 
                     <div class="text-danger fs-6 fw-bolder " style="min-height:24px">
 
-                        <ValidationMessage For="()=>productCreateRequestClient.CategoryId">
+                        <ValidationMessage For="()=>productCreateRequestClient.PromotionId">
                         </ValidationMessage>
                     </div>
                 </InputWrapperComponent>
@@ -706,7 +710,9 @@ else
         {
 
             await callData();
+          
             productCreateRequestClient = new ProductCreateRequestClient();
+
             ToastService.Notify(new(ToastType.Success, $"Thong bao", "Tạo  thành công"));
 
         }
