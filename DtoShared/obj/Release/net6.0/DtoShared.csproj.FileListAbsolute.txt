@@ -1,0 +1,13 @@
+C:\Users\VINH\source\repos\ApiShop\DtoShared\bin\Release\net6.0\DtoShared.deps.json
+C:\Users\VINH\source\repos\ApiShop\DtoShared\bin\Release\net6.0\DtoShared.dll
+C:\Users\VINH\source\repos\ApiShop\DtoShared\bin\Release\net6.0\DtoShared.pdb
+C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Release\net6.0\DtoShared.csproj.AssemblyReference.cache
+C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Release\net6.0\DtoShared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Release\net6.0\DtoShared.AssemblyInfoInputs.cache
+C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Release\net6.0\DtoShared.AssemblyInfo.cs
+C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Release\net6.0\DtoShared.csproj.CoreCompileInputs.cache
+C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Release\net6.0\DtoShared.sourcelink.json
+C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Release\net6.0\DtoShared.dll
+C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Release\net6.0\refint\DtoShared.dll
+C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Release\net6.0\DtoShared.pdb
+C:\Users\VINH\source\repos\ApiShop\DtoShared\obj\Release\net6.0\ref\DtoShared.dll

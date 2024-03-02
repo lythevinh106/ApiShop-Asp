@@ -1,0 +1,127 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = ShopBlazor
+build_property.RootNamespace = ShopBlazor
+build_property.ProjectDir = C:\Users\VINH\source\repos\ApiShop\ShopBlazor\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\VINH\source\repos\ApiShop\ShopBlazor
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Component/ButtonComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50XEJ1dHRvbkNvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Component/ErrorComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50XEVycm9yQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Component/ErrorResponseComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50XEVycm9yUmVzcG9uc2VDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Component/Form/ConfirmComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50XEZvcm1cQ29uZmlybUNvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Component/Form/FormComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50XEZvcm1cRm9ybUNvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Component/Form/InputWrapperComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50XEZvcm1cSW5wdXRXcmFwcGVyQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Component/ImageComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50XEltYWdlQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Component/LoadingComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50XExvYWRpbmdDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Component/ModalComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50XE1vZGFsQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Component/OffCanvasComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50XE9mZkNhbnZhc0NvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Pages/Authentication/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb25cTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Pages/Authentication/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb25cUmVnaXN0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Pages/Category/Category.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlcQ2F0ZWdvcnkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Pages/Generic/RedirectionComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VuZXJpY1xSZWRpcmVjdGlvbkNvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Pages/Home/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Pages/Product/Product.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxQcm9kdWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Pages/Promotion/Promotion.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvbW90aW9uXFByb21vdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Pages/Visualization/Visualization.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlzdWFsaXphdGlvblxWaXN1YWxpemF0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Shared/Header.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEhlYWRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Shared/LayoutLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExheW91dExvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-au3t50ltjy
+
+[C:/Users/VINH/source/repos/ApiShop/ShopBlazor/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-9ubdqazm3v
