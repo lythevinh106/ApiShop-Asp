@@ -287,10 +287,27 @@ namespace DataAccess.Repositories
 
 
 
-                signingCredentials: new SigningCredentials(
+                 //signingCredentials: new SigningCredentials(
 
-                    authenKey, SecurityAlgorithms.HmacSha512
+                 //    authenKey,
+                 //    SecurityAlgorithms.HmacSha512
+
+
+                 //    )
+
+                 signingCredentials: new SigningCredentials(
+
+                    authenKey,
+                    SecurityAlgorithms.HmacSha256
+
+
+
                     )
+
+
+
+
+
 
               );
 
