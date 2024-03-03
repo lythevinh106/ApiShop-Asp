@@ -4,6 +4,7 @@ using DtoShared.FetchData;
 using DtoShared.ModulesDto;
 using DtoShared.Pagging;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Service.Application.Promotion.Commands;
 using Service.Application.Promotion.Queries;
@@ -12,7 +13,7 @@ namespace Presentation.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class PromotionController : GenericBaseController
     {
         public PromotionController(IMediator mediator, IMapper mapper) : base(mediator, mapper)

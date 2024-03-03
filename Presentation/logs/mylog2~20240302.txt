@@ -1,0 +1,517 @@
+2024-03-02 18:49:49.037 +07:00 [INF] Start installing Hangfire SQL objects...
+2024-03-02 18:49:49.408 +07:00 [INF] Hangfire SQL objects installed.
+2024-03-02 18:49:49.439 +07:00 [INF] User profile is available. Using 'C:\Users\VINH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-02 18:49:49.529 +07:00 [INF] Now listening on: https://localhost:7148
+2024-03-02 18:49:49.530 +07:00 [INF] Now listening on: http://localhost:5170
+2024-03-02 18:49:49.538 +07:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: LAPTOP-2S90T1IK\SQLEXPRESS@ApiShopHangFire'
+2024-03-02 18:49:49.539 +07:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-03-02 18:49:49.539 +07:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-03-02 18:49:49.550 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-02 18:49:49.551 +07:00 [INF] Hosting environment: Development
+2024-03-02 18:49:49.552 +07:00 [INF] Content root path: C:\Users\VINH\source\repos\ApiShop\Presentation\
+2024-03-02 18:49:49.738 +07:00 [INF] Server laptop-2s90t1ik:21280:3437848e successfully announced in 187,9252 ms
+2024-03-02 18:49:49.743 +07:00 [INF] Server laptop-2s90t1ik:21280:3437848e is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-03-02 18:49:49.748 +07:00 [INF] Server laptop-2s90t1ik:21280:3437848e all the dispatchers started
+2024-03-02 18:49:49.751 +07:00 [INF] 1 servers were removed due to timeout
+2024-03-02 18:49:50.761 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger - -
+2024-03-02 18:49:50.915 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger - - - 301 0 - 154.5023ms
+2024-03-02 18:49:50.942 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/index.html - -
+2024-03-02 18:49:51.041 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/index.html - - - 200 - text/html;charset=utf-8 99.3756ms
+2024-03-02 18:49:51.056 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/swagger-ui.css - -
+2024-03-02 18:49:51.056 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - -
+2024-03-02 18:49:51.056 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/swagger-ui-bundle.js - -
+2024-03-02 18:49:51.056 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/swagger-ui-standalone-preset.js - -
+2024-03-02 18:49:51.059 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - - - 200 13760 application/javascript;+charset=utf-8 2.8411ms
+2024-03-02 18:49:51.077 +07:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-03-02 18:49:51.077 +07:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-03-02 18:49:51.089 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_vs/browserLink - -
+2024-03-02 18:49:51.095 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/swagger-ui-standalone-preset.js - - - 200 312163 application/javascript 39.6114ms
+2024-03-02 18:49:51.095 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/swagger-ui.css - - - 200 144929 text/css 39.7461ms
+2024-03-02 18:49:51.096 +07:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-03-02 18:49:51.099 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/swagger-ui-bundle.js - - - 200 1061536 application/javascript 42.7061ms
+2024-03-02 18:49:51.134 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.5383ms
+2024-03-02 18:49:51.981 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - -
+2024-03-02 18:49:52.057 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/favicon-32x32.png - -
+2024-03-02 18:49:52.059 +07:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-03-02 18:49:52.061 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/favicon-32x32.png - - - 200 628 image/png 4.0809ms
+2024-03-02 18:49:52.203 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 222.7961ms
+2024-03-02 18:49:54.676 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Order/FetchOrder?Sort=Descending&PageNumber=1&PageSize=8 - -
+2024-03-02 18:49:54.680 +07:00 [INF] CORS policy execution successful.
+2024-03-02 18:49:54.725 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-03-02 18:49:54.728 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-03-02 18:49:54.730 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Order/FetchOrder?Sort=Descending&PageNumber=1&PageSize=8 - - - 401 0 - 53.9221ms
+2024-03-02 18:50:38.782 +07:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7148/api/User/SingIn - -
+2024-03-02 18:50:38.783 +07:00 [INF] CORS policy execution successful.
+2024-03-02 18:50:38.786 +07:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7148/api/User/SingIn - - - 204 - - 3.8074ms
+2024-03-02 18:50:38.789 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7148/api/User/SingIn application/json;+charset=utf-8 62
+2024-03-02 18:50:38.793 +07:00 [INF] CORS policy execution successful.
+2024-03-02 18:50:38.801 +07:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.SingIn (Presentation)'
+2024-03-02 18:50:38.835 +07:00 [INF] Route matched with {action = "SingIn", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SingIn(DtoShared.ModulesDto.SingInUser) on controller Presentation.Controllers.UserController (Presentation).
+2024-03-02 18:50:39.646 +07:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-03-02 18:50:39.754 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-03-02 18:50:40.004 +07:00 [INF] Executed DbCommand (18ms) [Parameters=[@__request__singInUser_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__request__singInUser_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-03-02 18:50:40.023 +07:00 [INF] Executed action Presentation.Controllers.UserController.SingIn (Presentation) in 1182.8253ms
+2024-03-02 18:50:40.025 +07:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.SingIn (Presentation)'
+2024-03-02 18:50:40.033 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7148/api/User/SingIn application/json;+charset=utf-8 62 - 409 - application/json 1243.7673ms
+2024-03-02 18:50:45.290 +07:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7148/api/User/SingIn - -
+2024-03-02 18:50:45.291 +07:00 [INF] CORS policy execution successful.
+2024-03-02 18:50:45.292 +07:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7148/api/User/SingIn - - - 204 - - 1.4633ms
+2024-03-02 18:50:45.295 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7148/api/User/SingIn application/json;+charset=utf-8 57
+2024-03-02 18:50:45.296 +07:00 [INF] CORS policy execution successful.
+2024-03-02 18:50:45.300 +07:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.SingIn (Presentation)'
+2024-03-02 18:50:45.302 +07:00 [INF] Route matched with {action = "SingIn", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SingIn(DtoShared.ModulesDto.SingInUser) on controller Presentation.Controllers.UserController (Presentation).
+2024-03-02 18:50:45.339 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-03-02 18:50:45.344 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__request__singInUser_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__request__singInUser_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-03-02 18:50:45.346 +07:00 [INF] Executed action Presentation.Controllers.UserController.SingIn (Presentation) in 42.5899ms
+2024-03-02 18:50:45.347 +07:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.SingIn (Presentation)'
+2024-03-02 18:50:45.348 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7148/api/User/SingIn application/json;+charset=utf-8 57 - 409 - application/json 52.5704ms
+2024-03-02 18:50:54.083 +07:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7148/api/User/SingIn - -
+2024-03-02 18:50:54.084 +07:00 [INF] CORS policy execution successful.
+2024-03-02 18:50:54.086 +07:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7148/api/User/SingIn - - - 204 - - 2.9153ms
+2024-03-02 18:50:54.089 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7148/api/User/SingIn application/json;+charset=utf-8 57
+2024-03-02 18:50:54.091 +07:00 [INF] CORS policy execution successful.
+2024-03-02 18:50:54.092 +07:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.SingIn (Presentation)'
+2024-03-02 18:50:54.093 +07:00 [INF] Route matched with {action = "SingIn", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SingIn(DtoShared.ModulesDto.SingInUser) on controller Presentation.Controllers.UserController (Presentation).
+2024-03-02 18:50:54.114 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-03-02 18:50:54.126 +07:00 [INF] Executed DbCommand (9ms) [Parameters=[@__request__singInUser_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__request__singInUser_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-03-02 18:50:54.129 +07:00 [INF] Executed action Presentation.Controllers.UserController.SingIn (Presentation) in 35.4078ms
+2024-03-02 18:50:54.130 +07:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.SingIn (Presentation)'
+2024-03-02 18:50:54.131 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7148/api/User/SingIn application/json;+charset=utf-8 57 - 409 - application/json 42.1670ms
+2024-03-02 18:51:00.602 +07:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7148/api/User/SingIn - -
+2024-03-02 18:51:00.602 +07:00 [INF] CORS policy execution successful.
+2024-03-02 18:51:00.603 +07:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7148/api/User/SingIn - - - 204 - - 1.3163ms
+2024-03-02 18:51:00.607 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7148/api/User/SingIn application/json;+charset=utf-8 57
+2024-03-02 18:51:00.607 +07:00 [INF] CORS policy execution successful.
+2024-03-02 18:51:00.608 +07:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.SingIn (Presentation)'
+2024-03-02 18:51:00.609 +07:00 [INF] Route matched with {action = "SingIn", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SingIn(DtoShared.ModulesDto.SingInUser) on controller Presentation.Controllers.UserController (Presentation).
+2024-03-02 18:51:00.611 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-03-02 18:51:00.623 +07:00 [INF] Executed DbCommand (9ms) [Parameters=[@__request__singInUser_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__request__singInUser_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-03-02 18:51:00.625 +07:00 [INF] Executed action Presentation.Controllers.UserController.SingIn (Presentation) in 15.0174ms
+2024-03-02 18:51:00.627 +07:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.SingIn (Presentation)'
+2024-03-02 18:51:00.628 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7148/api/User/SingIn application/json;+charset=utf-8 57 - 409 - application/json 21.8181ms
+2024-03-02 18:51:10.202 +07:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7148/api/User/SingIn - -
+2024-03-02 18:51:10.203 +07:00 [INF] CORS policy execution successful.
+2024-03-02 18:51:10.204 +07:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7148/api/User/SingIn - - - 204 - - 2.4431ms
+2024-03-02 18:51:10.208 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7148/api/User/SingIn application/json;+charset=utf-8 57
+2024-03-02 18:51:10.209 +07:00 [INF] CORS policy execution successful.
+2024-03-02 18:51:10.210 +07:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.SingIn (Presentation)'
+2024-03-02 18:51:10.211 +07:00 [INF] Route matched with {action = "SingIn", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SingIn(DtoShared.ModulesDto.SingInUser) on controller Presentation.Controllers.UserController (Presentation).
+2024-03-02 18:51:10.213 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-03-02 18:51:10.217 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__request__singInUser_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__request__singInUser_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-03-02 18:51:10.219 +07:00 [INF] Executed action Presentation.Controllers.UserController.SingIn (Presentation) in 6.3805ms
+2024-03-02 18:51:10.220 +07:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.SingIn (Presentation)'
+2024-03-02 18:51:10.221 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7148/api/User/SingIn application/json;+charset=utf-8 57 - 409 - application/json 13.2519ms
+2024-03-02 18:51:11.305 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7148/api/User/SingIn application/json;+charset=utf-8 57
+2024-03-02 18:51:11.306 +07:00 [INF] CORS policy execution successful.
+2024-03-02 18:51:11.307 +07:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.SingIn (Presentation)'
+2024-03-02 18:51:11.308 +07:00 [INF] Route matched with {action = "SingIn", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SingIn(DtoShared.ModulesDto.SingInUser) on controller Presentation.Controllers.UserController (Presentation).
+2024-03-02 18:51:11.310 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-03-02 18:51:11.312 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__request__singInUser_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__request__singInUser_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-03-02 18:51:11.315 +07:00 [INF] Executed action Presentation.Controllers.UserController.SingIn (Presentation) in 6.1742ms
+2024-03-02 18:51:11.316 +07:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.SingIn (Presentation)'
+2024-03-02 18:51:11.317 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7148/api/User/SingIn application/json;+charset=utf-8 57 - 409 - application/json 12.0761ms
+2024-03-02 18:51:11.490 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7148/api/User/SingIn application/json;+charset=utf-8 57
+2024-03-02 18:51:11.490 +07:00 [INF] CORS policy execution successful.
+2024-03-02 18:51:11.491 +07:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.SingIn (Presentation)'
+2024-03-02 18:51:11.492 +07:00 [INF] Route matched with {action = "SingIn", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SingIn(DtoShared.ModulesDto.SingInUser) on controller Presentation.Controllers.UserController (Presentation).
+2024-03-02 18:51:11.495 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-03-02 18:51:11.498 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__request__singInUser_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__request__singInUser_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-03-02 18:51:11.500 +07:00 [INF] Executed action Presentation.Controllers.UserController.SingIn (Presentation) in 7.5691ms
+2024-03-02 18:51:11.502 +07:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.SingIn (Presentation)'
+2024-03-02 18:51:11.503 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7148/api/User/SingIn application/json;+charset=utf-8 57 - 409 - application/json 13.4120ms
+2024-03-02 18:51:11.677 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7148/api/User/SingIn application/json;+charset=utf-8 57
+2024-03-02 18:51:11.677 +07:00 [INF] CORS policy execution successful.
+2024-03-02 18:51:11.678 +07:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.SingIn (Presentation)'
+2024-03-02 18:51:11.679 +07:00 [INF] Route matched with {action = "SingIn", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SingIn(DtoShared.ModulesDto.SingInUser) on controller Presentation.Controllers.UserController (Presentation).
+2024-03-02 18:51:11.682 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-03-02 18:51:11.685 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__request__singInUser_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__request__singInUser_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-03-02 18:51:11.687 +07:00 [INF] Executed action Presentation.Controllers.UserController.SingIn (Presentation) in 6.9992ms
+2024-03-02 18:51:11.689 +07:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.SingIn (Presentation)'
+2024-03-02 18:51:11.690 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7148/api/User/SingIn application/json;+charset=utf-8 57 - 409 - application/json 13.1528ms
+2024-03-02 18:51:11.833 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7148/api/User/SingIn application/json;+charset=utf-8 57
+2024-03-02 18:51:11.835 +07:00 [INF] CORS policy execution successful.
+2024-03-02 18:51:11.836 +07:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.SingIn (Presentation)'
+2024-03-02 18:51:11.836 +07:00 [INF] Route matched with {action = "SingIn", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] SingIn(DtoShared.ModulesDto.SingInUser) on controller Presentation.Controllers.UserController (Presentation).
+2024-03-02 18:51:11.839 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-03-02 18:51:11.842 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__request__singInUser_Email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__request__singInUser_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-03-02 18:51:11.844 +07:00 [INF] Executed action Presentation.Controllers.UserController.SingIn (Presentation) in 6.7366ms
+2024-03-02 18:51:11.846 +07:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.SingIn (Presentation)'
+2024-03-02 18:51:11.848 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7148/api/User/SingIn application/json;+charset=utf-8 57 - 409 - application/json 14.0936ms
+2024-03-02 18:51:38.962 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/all - -
+2024-03-02 18:51:38.964 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-03-02 18:51:38.965 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-03-02 18:51:38.966 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/all - - - 401 0 - 3.6715ms
+2024-03-02 18:51:44.526 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Category/all - -
+2024-03-02 18:51:44.528 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-03-02 18:51:44.529 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-03-02 18:51:44.530 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Category/all - - - 401 0 - 4.1521ms
+2024-03-02 18:52:05.838 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/User/AllUser - -
+2024-03-02 18:52:05.839 +07:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.AllUser (Presentation)'
+2024-03-02 18:52:05.843 +07:00 [INF] Route matched with {action = "AllUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[DtoShared.ModulesDto.UserResponse]]] AllUser() on controller Presentation.Controllers.UserController (Presentation).
+2024-03-02 18:52:05.847 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-03-02 18:52:05.893 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Time], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-03-02 18:52:05.898 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DtoShared.ModulesDto.UserResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-02 18:52:05.906 +07:00 [INF] Executed action Presentation.Controllers.UserController.AllUser (Presentation) in 61.8785ms
+2024-03-02 18:52:05.907 +07:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.AllUser (Presentation)'
+2024-03-02 18:52:05.908 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/User/AllUser - - - 200 - application/json;+charset=utf-8 69.6993ms
+2024-03-02 18:52:14.659 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/User/FetchUser - -
+2024-03-02 18:52:14.660 +07:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.GetAllUser (Presentation)'
+2024-03-02 18:52:14.666 +07:00 [INF] Route matched with {action = "GetAllUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[DtoShared.Pagging.PaggingResponse`1[DtoShared.ModulesDto.UserResponse]]] GetAllUser(DtoShared.FetchData.FetchUserDataRequest) on controller Presentation.Controllers.UserController (Presentation).
+2024-03-02 18:52:14.674 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-03-02 18:52:14.694 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AspNetUsers] AS [a]
+2024-03-02 18:52:14.698 +07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-03-02 18:52:14.698 +07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-03-02 18:52:14.706 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Time], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-03-02 18:52:14.708 +07:00 [INF] Executing OkObjectResult, writing value of type 'DtoShared.Pagging.PaggingResponse`1[[DtoShared.ModulesDto.UserResponse, DtoShared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-02 18:52:14.710 +07:00 [INF] Executed action Presentation.Controllers.UserController.GetAllUser (Presentation) in 42.8132ms
+2024-03-02 18:52:14.711 +07:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.GetAllUser (Presentation)'
+2024-03-02 18:52:14.712 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/User/FetchUser - - - 200 - application/json;+charset=utf-8 53.0079ms
+2024-03-02 20:27:10.065 +07:00 [INF] Start installing Hangfire SQL objects...
+2024-03-02 20:27:10.582 +07:00 [INF] Hangfire SQL objects installed.
+2024-03-02 20:27:10.645 +07:00 [INF] User profile is available. Using 'C:\Users\VINH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-02 20:27:10.859 +07:00 [INF] Now listening on: https://localhost:7148
+2024-03-02 20:27:10.860 +07:00 [INF] Now listening on: http://localhost:5170
+2024-03-02 20:27:10.868 +07:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: LAPTOP-2S90T1IK\SQLEXPRESS@ApiShopHangFire'
+2024-03-02 20:27:10.869 +07:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-03-02 20:27:10.869 +07:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-03-02 20:27:10.891 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-02 20:27:10.892 +07:00 [INF] Hosting environment: Development
+2024-03-02 20:27:10.892 +07:00 [INF] Content root path: C:\Users\VINH\source\repos\ApiShop\Presentation\
+2024-03-02 20:27:11.059 +07:00 [INF] Server laptop-2s90t1ik:24004:8b7a7cf8 successfully announced in 167,0362 ms
+2024-03-02 20:27:11.064 +07:00 [INF] Server laptop-2s90t1ik:24004:8b7a7cf8 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-03-02 20:27:11.102 +07:00 [INF] 1 servers were removed due to timeout
+2024-03-02 20:27:11.168 +07:00 [INF] Server laptop-2s90t1ik:24004:8b7a7cf8 all the dispatchers started
+2024-03-02 20:27:12.269 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/index.html - -
+2024-03-02 20:27:12.598 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/index.html - - - 200 - text/html;charset=utf-8 330.7752ms
+2024-03-02 20:27:15.393 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - -
+2024-03-02 20:27:15.393 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_vs/browserLink - -
+2024-03-02 20:27:15.398 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - - - 200 13760 application/javascript;+charset=utf-8 5.5623ms
+2024-03-02 20:27:15.445 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 52.5807ms
+2024-03-02 20:27:15.556 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - -
+2024-03-02 20:27:15.792 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 235.6091ms
+2024-03-02 20:27:47.150 +07:00 [INF] Start installing Hangfire SQL objects...
+2024-03-02 20:27:47.432 +07:00 [INF] Hangfire SQL objects installed.
+2024-03-02 20:27:47.460 +07:00 [INF] User profile is available. Using 'C:\Users\VINH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-02 20:27:47.528 +07:00 [INF] Now listening on: https://localhost:7148
+2024-03-02 20:27:47.530 +07:00 [INF] Now listening on: http://localhost:5170
+2024-03-02 20:27:47.535 +07:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: LAPTOP-2S90T1IK\SQLEXPRESS@ApiShopHangFire'
+2024-03-02 20:27:47.536 +07:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-03-02 20:27:47.537 +07:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-03-02 20:27:47.545 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-02 20:27:47.545 +07:00 [INF] Hosting environment: Development
+2024-03-02 20:27:47.546 +07:00 [INF] Content root path: C:\Users\VINH\source\repos\ApiShop\Presentation\
+2024-03-02 20:27:47.631 +07:00 [INF] Server laptop-2s90t1ik:21496:ecbc1923 successfully announced in 86,5982 ms
+2024-03-02 20:27:47.634 +07:00 [INF] Server laptop-2s90t1ik:21496:ecbc1923 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-03-02 20:27:47.638 +07:00 [INF] Server laptop-2s90t1ik:21496:ecbc1923 all the dispatchers started
+2024-03-02 20:27:47.902 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/index.html - -
+2024-03-02 20:27:48.090 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/index.html - - - 200 - text/html;charset=utf-8 188.4911ms
+2024-03-02 20:27:48.106 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - -
+2024-03-02 20:27:48.108 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - - - 200 13760 application/javascript;+charset=utf-8 2.0560ms
+2024-03-02 20:27:48.128 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_vs/browserLink - -
+2024-03-02 20:27:48.159 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.7842ms
+2024-03-02 20:27:48.965 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - -
+2024-03-02 20:27:49.095 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 129.6861ms
+2024-03-02 20:27:54.355 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/index.html - -
+2024-03-02 20:27:54.358 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/index.html - - - 200 - text/html;charset=utf-8 3.0370ms
+2024-03-02 20:27:54.377 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - -
+2024-03-02 20:27:54.377 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_vs/browserLink - -
+2024-03-02 20:27:54.378 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - - - 200 13760 application/javascript;+charset=utf-8 1.2297ms
+2024-03-02 20:27:54.386 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 8.3421ms
+2024-03-02 20:27:54.675 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - -
+2024-03-02 20:27:54.687 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 12.7504ms
+2024-03-02 20:28:01.650 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/api/Order/FetchOrder?Sort=Descending&PageNumber=1&PageSize=8 - -
+2024-03-02 20:28:01.654 +07:00 [INF] CORS policy execution successful.
+2024-03-02 20:28:01.680 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-03-02 20:28:01.683 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-03-02 20:28:01.685 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Order/FetchOrder?Sort=Descending&PageNumber=1&PageSize=8 - - - 401 0 - 34.6334ms
+2024-03-02 20:28:31.649 +07:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7148/api/User - -
+2024-03-02 20:28:31.651 +07:00 [INF] CORS policy execution successful.
+2024-03-02 20:28:31.653 +07:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7148/api/User - - - 204 - - 3.2104ms
+2024-03-02 20:28:31.657 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7148/api/User application/json;+charset=utf-8 118
+2024-03-02 20:28:31.659 +07:00 [INF] CORS policy execution successful.
+2024-03-02 20:28:31.666 +07:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.CreateUser (Presentation)'
+2024-03-02 20:28:31.704 +07:00 [INF] Route matched with {action = "CreateUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean]] CreateUser(DtoShared.ModulesDto.RegisterUser) on controller Presentation.Controllers.UserController (Presentation).
+2024-03-02 20:28:32.495 +07:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-03-02 20:28:32.602 +07:00 [INF] Entity Framework Core 6.0.25 initialized 'DBApiContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: using lazy loading proxies 
+2024-03-02 20:28:34.282 +07:00 [ERR] An error occurred using the connection to database 'ApiShop' on server 'severapiasp.database.windows.net'.
+2024-03-02 20:28:34.305 +07:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Model.DBApiContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user 'lythevinh106'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CheckPoolBlockingPeriod(Exception e)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:68757507-cbd5-476f-b6ad-cd2368993b53
+Error Number:18456,State:1,Class:14
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user 'lythevinh106'.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CheckPoolBlockingPeriod(Exception e)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:68757507-cbd5-476f-b6ad-cd2368993b53
+Error Number:18456,State:1,Class:14
+2024-03-02 20:28:34.317 +07:00 [INF] Executed action Presentation.Controllers.UserController.CreateUser (Presentation) in 2605.7218ms
+2024-03-02 20:28:34.319 +07:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.CreateUser (Presentation)'
+2024-03-02 20:28:34.328 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7148/api/User application/json;+charset=utf-8 118 - 500 - application/json 2670.4178ms
+2024-03-02 20:30:18.528 +07:00 [INF] Start installing Hangfire SQL objects...
+2024-03-02 20:30:18.844 +07:00 [INF] Hangfire SQL objects installed.
+2024-03-02 20:30:18.876 +07:00 [INF] User profile is available. Using 'C:\Users\VINH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-02 20:30:18.954 +07:00 [INF] Now listening on: https://localhost:7148
+2024-03-02 20:30:18.955 +07:00 [INF] Now listening on: http://localhost:5170
+2024-03-02 20:30:18.962 +07:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: LAPTOP-2S90T1IK\SQLEXPRESS@ApiShopHangFire'
+2024-03-02 20:30:18.963 +07:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-03-02 20:30:18.963 +07:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-03-02 20:30:18.975 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-02 20:30:18.975 +07:00 [INF] Hosting environment: Development
+2024-03-02 20:30:18.976 +07:00 [INF] Content root path: C:\Users\VINH\source\repos\ApiShop\Presentation\
+2024-03-02 20:30:19.019 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/index.html - -
+2024-03-02 20:30:19.084 +07:00 [INF] Server laptop-2s90t1ik:528:8babd622 successfully announced in 110,6342 ms
+2024-03-02 20:30:19.087 +07:00 [INF] Server laptop-2s90t1ik:528:8babd622 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-03-02 20:30:19.095 +07:00 [INF] Server laptop-2s90t1ik:528:8babd622 all the dispatchers started
+2024-03-02 20:30:19.240 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/index.html - - - 200 - text/html;charset=utf-8 220.6763ms
+2024-03-02 20:30:19.262 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - -
+2024-03-02 20:30:19.262 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_vs/browserLink - -
+2024-03-02 20:30:19.266 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - - - 200 13760 application/javascript;+charset=utf-8 3.8250ms
+2024-03-02 20:30:19.309 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.2470ms
+2024-03-02 20:30:20.406 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - -
+2024-03-02 20:30:20.529 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 122.9141ms
+2024-03-02 20:30:38.665 +07:00 [INF] Start installing Hangfire SQL objects...
+2024-03-02 20:30:38.967 +07:00 [INF] Hangfire SQL objects installed.
+2024-03-02 20:30:38.997 +07:00 [INF] User profile is available. Using 'C:\Users\VINH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-02 20:30:39.068 +07:00 [INF] Now listening on: https://localhost:7148
+2024-03-02 20:30:39.069 +07:00 [INF] Now listening on: http://localhost:5170
+2024-03-02 20:30:39.076 +07:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: LAPTOP-2S90T1IK\SQLEXPRESS@ApiShopHangFire'
+2024-03-02 20:30:39.076 +07:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-03-02 20:30:39.077 +07:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-03-02 20:30:39.085 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-02 20:30:39.086 +07:00 [INF] Hosting environment: Development
+2024-03-02 20:30:39.086 +07:00 [INF] Content root path: C:\Users\VINH\source\repos\ApiShop\Presentation\
+2024-03-02 20:30:39.175 +07:00 [INF] Server laptop-2s90t1ik:10540:be7696b5 successfully announced in 91,2123 ms
+2024-03-02 20:30:39.179 +07:00 [INF] Server laptop-2s90t1ik:10540:be7696b5 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-03-02 20:30:39.182 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/index.html - -
+2024-03-02 20:30:39.184 +07:00 [INF] Server laptop-2s90t1ik:10540:be7696b5 all the dispatchers started
+2024-03-02 20:30:39.364 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/index.html - - - 200 - text/html;charset=utf-8 182.8534ms
+2024-03-02 20:30:39.377 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - -
+2024-03-02 20:30:39.377 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_vs/browserLink - -
+2024-03-02 20:30:39.379 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - - - 200 13760 application/javascript;+charset=utf-8 1.7751ms
+2024-03-02 20:30:39.399 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.1456ms
+2024-03-02 20:30:40.379 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - -
+2024-03-02 20:30:40.500 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 120.0939ms
+2024-03-02 20:30:49.104 +07:00 [INF] Start installing Hangfire SQL objects...
+2024-03-02 20:30:49.326 +07:00 [INF] Hangfire SQL objects installed.
+2024-03-02 20:30:49.362 +07:00 [INF] User profile is available. Using 'C:\Users\VINH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-02 20:30:49.435 +07:00 [INF] Now listening on: https://localhost:7148
+2024-03-02 20:30:49.437 +07:00 [INF] Now listening on: http://localhost:5170
+2024-03-02 20:30:49.442 +07:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: LAPTOP-2S90T1IK\SQLEXPRESS@ApiShopHangFire'
+2024-03-02 20:30:49.443 +07:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-03-02 20:30:49.443 +07:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-03-02 20:30:49.453 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-02 20:30:49.454 +07:00 [INF] Hosting environment: Development
+2024-03-02 20:30:49.455 +07:00 [INF] Content root path: C:\Users\VINH\source\repos\ApiShop\Presentation\
+2024-03-02 20:30:49.540 +07:00 [INF] Server laptop-2s90t1ik:9252:71f2fc27 successfully announced in 88,0967 ms
+2024-03-02 20:30:49.542 +07:00 [INF] Server laptop-2s90t1ik:9252:71f2fc27 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-03-02 20:30:49.546 +07:00 [INF] Server laptop-2s90t1ik:9252:71f2fc27 all the dispatchers started
+2024-03-02 20:30:49.619 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/index.html - -
+2024-03-02 20:30:49.793 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/index.html - - - 200 - text/html;charset=utf-8 174.8730ms
+2024-03-02 20:30:49.810 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_vs/browserLink - -
+2024-03-02 20:30:49.810 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - -
+2024-03-02 20:30:49.815 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - - - 200 13760 application/javascript;+charset=utf-8 4.3494ms
+2024-03-02 20:30:49.839 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.2950ms
+2024-03-02 20:30:50.912 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - -
+2024-03-02 20:30:51.030 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 118.6178ms
+2024-03-02 20:32:04.010 +07:00 [INF] Start installing Hangfire SQL objects...
+2024-03-02 20:32:04.321 +07:00 [INF] Hangfire SQL objects installed.
+2024-03-02 20:32:04.352 +07:00 [INF] User profile is available. Using 'C:\Users\VINH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-02 20:32:04.421 +07:00 [INF] Now listening on: https://localhost:7148
+2024-03-02 20:32:04.422 +07:00 [INF] Now listening on: http://localhost:5170
+2024-03-02 20:32:04.428 +07:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: LAPTOP-2S90T1IK\SQLEXPRESS@ApiShopHangFire'
+2024-03-02 20:32:04.429 +07:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-03-02 20:32:04.429 +07:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-03-02 20:32:04.438 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-02 20:32:04.438 +07:00 [INF] Hosting environment: Development
+2024-03-02 20:32:04.439 +07:00 [INF] Content root path: C:\Users\VINH\source\repos\ApiShop\Presentation\
+2024-03-02 20:32:04.526 +07:00 [INF] Server laptop-2s90t1ik:1924:5487082e successfully announced in 89,0931 ms
+2024-03-02 20:32:04.530 +07:00 [INF] Server laptop-2s90t1ik:1924:5487082e is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-03-02 20:32:04.534 +07:00 [INF] Server laptop-2s90t1ik:1924:5487082e all the dispatchers started
+2024-03-02 20:32:04.572 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/index.html - -
+2024-03-02 20:32:04.746 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/index.html - - - 200 - text/html;charset=utf-8 174.2497ms
+2024-03-02 20:32:04.764 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - -
+2024-03-02 20:32:04.764 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_vs/browserLink - -
+2024-03-02 20:32:04.767 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - - - 200 13760 application/javascript;+charset=utf-8 3.0635ms
+2024-03-02 20:32:04.788 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.6834ms
+2024-03-02 20:32:05.757 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - -
+2024-03-02 20:32:05.882 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 124.6075ms
+2024-03-02 20:32:18.023 +07:00 [INF] Start installing Hangfire SQL objects...
+2024-03-02 20:32:18.243 +07:00 [INF] Hangfire SQL objects installed.
+2024-03-02 20:32:18.275 +07:00 [INF] User profile is available. Using 'C:\Users\VINH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-02 20:32:18.348 +07:00 [INF] Now listening on: https://localhost:7148
+2024-03-02 20:32:18.349 +07:00 [INF] Now listening on: http://localhost:5170
+2024-03-02 20:32:18.355 +07:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: LAPTOP-2S90T1IK\SQLEXPRESS@ApiShopHangFire'
+2024-03-02 20:32:18.355 +07:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-03-02 20:32:18.356 +07:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-03-02 20:32:18.364 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-02 20:32:18.364 +07:00 [INF] Hosting environment: Development
+2024-03-02 20:32:18.365 +07:00 [INF] Content root path: C:\Users\VINH\source\repos\ApiShop\Presentation\
+2024-03-02 20:32:18.448 +07:00 [INF] Server laptop-2s90t1ik:3912:bf96b5c0 successfully announced in 84,9858 ms
+2024-03-02 20:32:18.453 +07:00 [INF] Server laptop-2s90t1ik:3912:bf96b5c0 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-03-02 20:32:18.457 +07:00 [INF] 1 servers were removed due to timeout
+2024-03-02 20:32:18.459 +07:00 [INF] Server laptop-2s90t1ik:3912:bf96b5c0 all the dispatchers started
+2024-03-02 20:32:18.506 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/index.html - -
+2024-03-02 20:32:18.680 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/index.html - - - 200 - text/html;charset=utf-8 174.1852ms
+2024-03-02 20:32:18.696 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_vs/browserLink - -
+2024-03-02 20:32:18.696 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - -
+2024-03-02 20:32:18.699 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - - - 200 13760 application/javascript;+charset=utf-8 3.0322ms
+2024-03-02 20:32:18.719 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.3481ms
+2024-03-02 20:32:19.672 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - -
+2024-03-02 20:32:19.790 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 118.0744ms
+2024-03-02 20:32:21.792 +07:00 [INF] Start installing Hangfire SQL objects...
+2024-03-02 20:32:22.026 +07:00 [INF] Hangfire SQL objects installed.
+2024-03-02 20:32:22.055 +07:00 [INF] User profile is available. Using 'C:\Users\VINH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-02 20:32:22.124 +07:00 [INF] Now listening on: https://localhost:7148
+2024-03-02 20:32:22.125 +07:00 [INF] Now listening on: http://localhost:5170
+2024-03-02 20:32:22.130 +07:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: LAPTOP-2S90T1IK\SQLEXPRESS@ApiShopHangFire'
+2024-03-02 20:32:22.131 +07:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-03-02 20:32:22.131 +07:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-03-02 20:32:22.140 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-02 20:32:22.141 +07:00 [INF] Hosting environment: Development
+2024-03-02 20:32:22.142 +07:00 [INF] Content root path: C:\Users\VINH\source\repos\ApiShop\Presentation\
+2024-03-02 20:32:22.232 +07:00 [INF] Server laptop-2s90t1ik:21768:9ef23ee9 successfully announced in 92,4604 ms
+2024-03-02 20:32:22.235 +07:00 [INF] Server laptop-2s90t1ik:21768:9ef23ee9 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-03-02 20:32:22.240 +07:00 [INF] Server laptop-2s90t1ik:21768:9ef23ee9 all the dispatchers started
+2024-03-02 20:32:22.243 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/index.html - -
+2024-03-02 20:32:22.423 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/index.html - - - 200 - text/html;charset=utf-8 179.7319ms
+2024-03-02 20:32:22.443 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - -
+2024-03-02 20:32:22.443 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_vs/browserLink - -
+2024-03-02 20:32:22.446 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - - - 200 13760 application/javascript;+charset=utf-8 2.4783ms
+2024-03-02 20:32:22.468 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.1203ms
+2024-03-02 20:32:23.393 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - -
+2024-03-02 20:32:23.539 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 145.5608ms
+2024-03-02 20:37:22.241 +07:00 [INF] 6 servers were removed due to timeout
