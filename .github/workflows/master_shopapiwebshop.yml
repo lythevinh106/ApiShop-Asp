@@ -27,7 +27,7 @@ jobs:
         working-directory: "ShopBlazor"
 
       - name: dotnet publish
-        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/ShopBlazo
+        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/ShopBlazor
         working-directory: "ShopBlazor"
 
       - name: Upload artifact for deployment job
