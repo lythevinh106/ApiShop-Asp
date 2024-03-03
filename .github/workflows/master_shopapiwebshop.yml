@@ -21,7 +21,15 @@ jobs:
         with:
           dotnet-version: '6.0.x'
           include-prerelease: true
+          
+      - name: Build with api
+        run: dotnet build --configuration Release
+        working-directory: "Presentation"
 
+      - name: dotnet publish api
+        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/Presentation
+        working-directory: "Presentation"
+        
       - name: Build with dotnet
         run: dotnet build --configuration Release
         working-directory: "ShopBlazor"
