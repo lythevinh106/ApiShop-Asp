@@ -445,7 +445,6 @@ C:\Users\VINH\source\repos\ApiShop\ShopBlazor\bin\Debug\net6.0\wwwroot\_framewor
 C:\Users\VINH\source\repos\ApiShop\ShopBlazor\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Intrinsics.dll.gz
 C:\Users\VINH\source\repos\ApiShop\ShopBlazor\bin\Debug\net6.0\wwwroot\_framework\System.Security.Cryptography.Algorithms.dll.gz
 C:\Users\VINH\source\repos\ApiShop\ShopBlazor\bin\Debug\net6.0\wwwroot\_framework\System.Xml.XmlSerializer.dll.gz
-C:\Users\VINH\source\repos\ApiShop\ShopBlazor\bin\Debug\net6.0\appsettings.json
 C:\Users\VINH\source\repos\ApiShop\ShopBlazor\bin\Debug\net6.0\ShopBlazor.staticwebassets.runtime.json
 C:\Users\VINH\source\repos\ApiShop\ShopBlazor\bin\Debug\net6.0\ShopBlazor.dll
 C:\Users\VINH\source\repos\ApiShop\ShopBlazor\bin\Debug\net6.0\ShopBlazor.pdb

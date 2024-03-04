@@ -65,6 +65,10 @@
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
+      "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\environment\\env.config.json",
+      "PackagePath": "staticwebassets\\environment\\env.config.json"
+    },
+    {
       "Id": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },

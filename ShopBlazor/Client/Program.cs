@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using ShopBlazor.Authentication;
+using ShopBlazor.Extension;
 using ShopBlazor.Helpers;
 using ShopBlazor.Services.Category;
 using ShopBlazor.Services.Order;
@@ -11,6 +12,7 @@ using ShopBlazor.Services.Prmotion;
 using ShopBlazor.Services.Product;
 using ShopBlazor.Services.Promotion;
 using ShopBlazor.Services.User;
+
 
 namespace ShopBlazor
 {
@@ -22,7 +24,15 @@ namespace ShopBlazor
             builder.RootComponents.Add<App>("#app");
             builder.RootComponents.Add<HeadOutlet>("head::after");
 
-            builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.Configuration["ServerIP"]) });
+
+            var environment = await builder.GetEnvironment();
+            var DefaultApi = builder.Configuration.GetValue<string>($"{environment.Environment}-baseUrl");
+            builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(DefaultApi) });
+
+            //builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.Configuration["ServerIP"]) });
+
+
+
             builder.Services.AddScoped<JsHelper>();
             builder.Services.AddScoped<StringHelper>();
 
