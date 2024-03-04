@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4D4WWU+oGsjZJI7L9Jo4n9oTbcMQLgqysdUIHIl9G9w=",
+  "Hash": "sdoGpW7GFs0dGAxpXEWgYWd7GoyM3G8YDccvHnXQwtY=",
   "Source": "ShopBlazor",
   "BasePath": "/",
   "Mode": "Root",
@@ -10484,6 +10484,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
+    },
+    {
+      "Identity": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\environment\\env.config.json",
+      "SourceId": "ShopBlazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "environment/env.config.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\environment\\env.config.json"
     },
     {
       "Identity": "C:\\Users\\VINH\\source\\repos\\ApiShop\\ShopBlazor\\wwwroot\\favicon.ico",
