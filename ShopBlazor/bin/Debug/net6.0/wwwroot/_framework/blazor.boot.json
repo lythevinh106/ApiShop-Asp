@@ -1,7 +1,7 @@
 {
   "entryAssembly": "ShopBlazor",
   "resources": {
-    "hash": "sha256-WwSBS2K6kmnR9pCFiIEklIVNLL4iafJs9Uyzo5A1gmk=",
+    "hash": "sha256-+uvZHrZNAN66m51Z3W4Jh18ubqScHM1SrfMseqYimwE=",
     "runtime": {
       "dotnet.6.0.25.qqgezcgs2j.js": "sha256-1jUGCCSGH9JWhkqbHdQk8JBjBI8K/VC63En5zlypVps=",
       "dotnet.timezones.blat": "sha256-KsGUR9nqtXb3Hy6IrNlnc1HoSS+AFlsXTX9rq4oChtA=",
@@ -221,12 +221,12 @@
       "mscorlib.dll": "sha256-veli+XvWHzkA3s4t4DKI+XiyNMpfHQjiO002+ExANkU=",
       "netstandard.dll": "sha256-O9JhHo5KqxkmwmapuxuhG/iMRV7RHcrCDO9z+yv+8yI=",
       "System.Private.CoreLib.dll": "sha256-6rKu8tPdUGsvbSpesoNMVzbx7bNqPRMPV34eI7vSYaQ=",
-      "DtoShared.dll": "sha256-RRYuvaaAKOtiCvV6jleRTx6D1Gc2eaD+oxFcgAE391I=",
-      "ShopBlazor.dll": "sha256-9xhRiJPX3wER0bojjLuMooGbfxS4NTGXSERGPxv9CUU="
+      "DtoShared.dll": "sha256-LJ9IQyJaTg29LNTdw+gBI0KRIauvVjG1IKYlCMXoj2Y=",
+      "ShopBlazor.dll": "sha256-mX17sy2fRrgBkhjh1iB7mxLKdmld9BlMX4yecoKO6E0="
     },
     "pdb": {
-      "DtoShared.pdb": "sha256-QgLieDaZdrwtl4T74kdFa9bPR9YhIoA081mU84dZlT8=",
-      "ShopBlazor.pdb": "sha256-f93QwisNwhcWuNTOd4zDM0KLopufqMMOthAjOSp4eEA="
+      "DtoShared.pdb": "sha256-RWNxeohY89Lju5tsofN9+99ClAr7s5CrO+wB8M+3X20=",
+      "ShopBlazor.pdb": "sha256-6nXeiGm4GPQ0OrqeLMTFoHKY1ng2dF16paksXDx72Ss="
     },
     "runtimeAssets": {
       "dotnet.wasm": {
