@@ -9980,3 +9980,36 @@ OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
 2024-03-03 17:13:50.000 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7148/hangfire/stats application/x-www-form-urlencoded;+charset=UTF-8 392
 2024-03-03 17:13:50.001 +07:00 [INF] CORS policy execution successful.
 2024-03-03 17:13:50.088 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7148/hangfire/stats application/x-www-form-urlencoded;+charset=UTF-8 392 - 200 - application/json 88.0749ms
+2024-03-03 17:47:28.887 +07:00 [INF] Start installing Hangfire SQL objects...
+2024-03-03 17:47:31.066 +07:00 [INF] Hangfire SQL objects installed.
+2024-03-03 17:47:31.150 +07:00 [INF] User profile is available. Using 'C:\Users\VINH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-03 17:47:31.227 +07:00 [INF] Now listening on: https://localhost:7148
+2024-03-03 17:47:31.228 +07:00 [INF] Now listening on: http://localhost:5170
+2024-03-03 17:47:31.234 +07:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: tcp:lythevinh106.database.windows.net,1433@ApiShopHangFire'
+2024-03-03 17:47:31.235 +07:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-03-03 17:47:31.235 +07:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-03-03 17:47:31.244 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-03 17:47:31.245 +07:00 [INF] Hosting environment: Development
+2024-03-03 17:47:31.245 +07:00 [INF] Content root path: C:\Users\VINH\source\repos\ApiShop\Presentation\
+2024-03-03 17:47:31.414 +07:00 [INF] Server laptop-2s90t1ik:10324:dfa5bce0 successfully announced in 170,2902 ms
+2024-03-03 17:47:31.417 +07:00 [INF] Server laptop-2s90t1ik:10324:dfa5bce0 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-03-03 17:47:31.424 +07:00 [INF] Server laptop-2s90t1ik:10324:dfa5bce0 all the dispatchers started
+2024-03-03 17:47:31.469 +07:00 [INF] 1 servers were removed due to timeout
+2024-03-03 17:47:31.689 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/index.html - -
+2024-03-03 17:47:31.830 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/index.html - - - 200 - text/html;charset=utf-8 141.4659ms
+2024-03-03 17:47:31.855 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_vs/browserLink - -
+2024-03-03 17:47:31.855 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - -
+2024-03-03 17:47:31.858 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - - - 200 13760 application/javascript;+charset=utf-8 2.9980ms
+2024-03-03 17:47:31.902 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.8430ms
+2024-03-03 17:47:32.735 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - -
+2024-03-03 17:47:32.877 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 142.4512ms
+2024-03-03 19:52:32.737 +07:00 [INF] 1 servers were removed due to timeout
+2024-03-03 20:02:32.841 +07:00 [INF] 1 servers were removed due to timeout
+2024-03-03 20:07:32.893 +07:00 [INF] 2 servers were removed due to timeout
+2024-03-03 20:12:32.946 +07:00 [INF] 1 servers were removed due to timeout
+2024-03-03 21:50:58.953 +07:00 [INF] Execution DelayedJobScheduler recovered from the Faulted state after 00:00:17.3132182 and is in the Running state now
+2024-03-03 21:51:07.846 +07:00 [INF] Execution RecurringJobScheduler recovered from the Faulted state after 00:00:16.2616967 and is in the Running state now
