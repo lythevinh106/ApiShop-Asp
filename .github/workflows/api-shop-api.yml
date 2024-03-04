@@ -2,7 +2,7 @@ name: Build and deploy .NET Core application to Web App api-shop-api
 on:
   push:
     branches:
-    - dev_lythevinh
+    - master
 env:
   AZURE_WEBAPP_NAME: api-shop-api
   AZURE_WEBAPP_PACKAGE_PATH: Presentation\publish
@@ -44,5 +44,5 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
-        publish-profile: ${{ secrets.api_shop_api_E61F }}
+        publish-profile: ${{ secrets.api_shop_api_44BE }}
         package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
