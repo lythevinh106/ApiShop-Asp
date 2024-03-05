@@ -614,7 +614,7 @@ else
         productUpdateRequestClient = new ProductUpdateRequestClient()
         {
             Name = productUpdateResponse.Name,
-            Price = productUpdateResponse.Price,
+            Price = Math.Round(productUpdateResponse.Price,0),
             CategoryId = productUpdateResponse.CategoryId,
             Image = productUpdateResponse.Image,
             Description = productUpdateResponse.Description,
