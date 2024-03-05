@@ -13,8 +13,10 @@ namespace ShopBlazor.Extension
                 BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)
             };
 
-            var environment = await httpClient.GetFromJsonAsync<EnvironmentModel>("environment/env.config.json");
 
+
+            var environment = await httpClient.GetFromJsonAsync<EnvironmentModel>("environment/env.config.json");
+            Console.WriteLine(environment);
             return environment;
         }
     }

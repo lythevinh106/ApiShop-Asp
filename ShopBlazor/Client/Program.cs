@@ -26,6 +26,9 @@ namespace ShopBlazor
 
 
             var environment = await builder.GetEnvironment();
+
+
+
             var DefaultApi = builder.Configuration.GetValue<string>($"{environment.Environment}-baseUrl");
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(DefaultApi) });
 

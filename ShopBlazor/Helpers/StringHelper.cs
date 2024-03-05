@@ -51,7 +51,7 @@ namespace ShopBlazor.Helpers
         public string formatNumber(decimal number)
         {
 
-            return string.Format("{0:C0}", number) + "-vnd";
+            return string.Format("{0:F0}", number) + "-vnd";
 
 
         }
