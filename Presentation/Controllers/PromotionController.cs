@@ -24,7 +24,7 @@ namespace Presentation.Controllers
 
 
 
-
+        [AllowAnonymous]
         [HttpGet("FetchPromotion")]
         public async Task<ActionResult<PaggingResponse<PromotionResponse>>> FetchAllPromotion([FromQuery] FetchDataPromotionRequest fetchDataPromotionRequest)
         {
@@ -39,7 +39,7 @@ namespace Presentation.Controllers
             PaggingResponse<PromotionResponse> results = await _imediator.Send(new FetchPromotionQueryClient(fetchDataPromotionRequest));
             return Ok(results);
         }
-
+        [AllowAnonymous]
 
         [HttpGet("all")]
         public async Task<ActionResult<List<PromotionResponse>>> GetAllPromotion()
