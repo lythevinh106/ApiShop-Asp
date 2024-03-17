@@ -44,8 +44,22 @@ namespace Service.Application.Product.Queries
                 }
 
 
+                if (request._fetchDataProductRequest.isPromotion.HasValue
+
+                )
+                {
+
+                    if (request._fetchDataProductRequest.isPromotion == true)
+                    {
+
+                        quertListProduct = quertListProduct
+                        .Where(p => p.Promotion.Value != null
+                        && p.Promotion.TimeEnd >= DateTime.Now);
+
+                    }
 
 
+                }
 
                 if (request._fetchDataProductRequest.SortTime.HasValue
 

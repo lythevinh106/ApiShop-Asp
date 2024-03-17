@@ -23,7 +23,7 @@ namespace Presentation.Controllers
         }
 
 
-
+        [AllowAnonymous]
         [HttpGet("all")]
         public async Task<ActionResult<List<CategoryResponse>>> GetAllCategory()
         {
@@ -31,7 +31,7 @@ namespace Presentation.Controllers
             return Ok(results);
         }
 
-
+        [AllowAnonymous]
         [HttpGet("FetchCategory")]
         public async Task<ActionResult<PaggingResponse<CategoryResponse>>> GetAllCategory([FromQuery] FetchDataCategoryRequest fetchDataCategoryRequest)
         {
@@ -41,7 +41,7 @@ namespace Presentation.Controllers
 
 
 
-
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<ActionResult<CategoryResponse>> GetCategory(string id)
         {
