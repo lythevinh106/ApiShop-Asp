@@ -4,7 +4,6 @@ using DtoShared.FetchData;
 using DtoShared.ModulesDto;
 using DtoShared.Pagging;
 using MediatR;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Service.Application.Product.Commands;
 using Service.Application.Product.Queries;
@@ -14,7 +13,7 @@ namespace Presentation.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
 
     public class ProductController : GenericBaseController
     {
@@ -30,6 +29,26 @@ namespace Presentation.Controllers
             PaggingResponse<ProductResponse> results = await _imediator.Send(new FetchProductQuery(fetchDataProductRequest));
             return Ok(results);
         }
+
+
+        [HttpGet("FetchProductClient")]
+        public async Task<ActionResult<PaggingResponse<ProductClientResponse>>> GetAllProductClient([FromQuery] FetchDataProductRequest fetchDataProductRequest)
+        {
+            PaggingResponse<ProductClientResponse> results = await _imediator.Send(new FetchProductClientQuery(fetchDataProductRequest));
+            return Ok(results);
+        }
+
+
+
+        [HttpGet("getProductClient/{id}")]
+        public async Task<ActionResult<ProductResponseClient>> GetProductClient(string id)
+        {
+
+
+            ProductResponseClient newProduct = await _imediator.Send(new GetProductByIdQueryClient(id));
+            return Ok(newProduct);
+        }
+
 
 
 

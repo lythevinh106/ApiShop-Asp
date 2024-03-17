@@ -83,4 +83,35 @@ namespace DtoShared.ModulesDto
         public string? PromotionId { get; set; }
         public string Time { get; set; }
     }
+
+
+    public class ProductResponseClient
+    {
+
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public decimal Price { get; set; }
+        public string Image { get; set; }
+        public string Description { get; set; }
+        public CategoryResponse Category { get; set; }
+        public PromotionResponse Promotion { get; set; }
+        public string Time { get; set; }
+    }
+
+
+    public class ProductClientResponse
+    {
+
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public decimal Price { get; set; }
+        public string Image { get; set; }
+        public string Description { get; set; }
+
+        public PromotionResponse? promotion { get; set; }
+        public CategoryResponse category { get; set; }
+
+
+        public DateTime Time { get; set; }
+    }
 }
