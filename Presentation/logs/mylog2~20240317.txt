@@ -10523,3 +10523,29 @@ WHERE [c].[Id] = @__p_0
 2024-03-17 16:57:16.997 +07:00 [INF] Executed action Presentation.Controllers.ProductController.GetAllProductClient (Presentation) in 222.2148ms
 2024-03-17 16:57:16.998 +07:00 [INF] Executed endpoint 'Presentation.Controllers.ProductController.GetAllProductClient (Presentation)'
 2024-03-17 16:57:17.000 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/api/Product/FetchProductClient?PageSize=6&CategoryId=&PageNumber=1&Sort=Ascending&SortTime=Ascending&isPromotion=true&PromotionId=cb77f50a-18c1-4a1b-97e7-c10db1db2bf8 - - - 200 - application/json;+charset=utf-8 227.8221ms
+2024-03-17 17:09:21.886 +07:00 [INF] Start installing Hangfire SQL objects...
+2024-03-17 17:09:23.751 +07:00 [INF] Hangfire SQL objects installed.
+2024-03-17 17:09:23.824 +07:00 [INF] User profile is available. Using 'C:\Users\VINH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-17 17:09:23.928 +07:00 [INF] Now listening on: https://localhost:7148
+2024-03-17 17:09:23.929 +07:00 [INF] Now listening on: http://localhost:5170
+2024-03-17 17:09:23.935 +07:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: tcp:lythevinh106.database.windows.net,1433@ApiShopHangFire'
+2024-03-17 17:09:23.935 +07:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2024-03-17 17:09:23.936 +07:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2024-03-17 17:09:23.945 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-17 17:09:23.946 +07:00 [INF] Hosting environment: Development
+2024-03-17 17:09:23.947 +07:00 [INF] Content root path: C:\Users\VINH\source\repos\ApiShop\Presentation\
+2024-03-17 17:09:24.096 +07:00 [INF] Server laptop-2s90t1ik:25300:dc3ee890 successfully announced in 152,038 ms
+2024-03-17 17:09:24.099 +07:00 [INF] Server laptop-2s90t1ik:25300:dc3ee890 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-03-17 17:09:24.103 +07:00 [INF] Server laptop-2s90t1ik:25300:dc3ee890 all the dispatchers started
+2024-03-17 17:09:25.485 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/index.html - -
+2024-03-17 17:09:25.692 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/index.html - - - 200 - text/html;charset=utf-8 207.3297ms
+2024-03-17 17:09:25.714 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - -
+2024-03-17 17:09:25.719 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_framework/aspnetcore-browser-refresh.js - - - 200 13760 application/javascript;+charset=utf-8 4.6870ms
+2024-03-17 17:09:25.743 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/_vs/browserLink - -
+2024-03-17 17:09:25.799 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 55.9023ms
+2024-03-17 17:09:26.751 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - -
+2024-03-17 17:09:26.992 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7148/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 241.2494ms
